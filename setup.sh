@@ -1,6 +1,6 @@
-kata="kata1-merge-conflict"
+kata="kata5-merge-conflict"
 
-git checkout -b $kata-branch1
+git checkout -b $kata-master
 
 echo "This is a relevant fact" > file.txt
 
@@ -8,17 +8,11 @@ git add file.txt
 
 git commit -m "add relevant fact"
 
-git checkout master
+git checkout -b quickfix HEAD~1
 
-git checkout -b $kata-branch2
+echo "This is a very quick fix" > fix.txt
 
-echo "This is an indispensable truth!" > file.txt
+git add fix.txt
 
-git add file.txt
-
-git commit -m "add indispensable truth!"
-
-git checkout $kata
-
-
+git commit -m "Make quick fix"
 
