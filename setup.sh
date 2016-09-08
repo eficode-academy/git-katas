@@ -8,13 +8,18 @@ git add file.txt
 
 git commit -m "add relevant fact"
 
+
+git checkout master
+
 git checkout -b $kata-branch2
 
 echo "This is an indispensable truth!" > file.txt
 
-git add filt.txt
+git add file.txt
 
 git commit -m "add indispensable truth!"
+
+git checkout $kata
 
 
 
