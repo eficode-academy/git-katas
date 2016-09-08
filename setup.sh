@@ -1,4 +1,4 @@
-kata="kata5-merge-conflict"
+kata="kata5-commit-on-wrong-branch"
 
 git checkout -b $kata-master
 
@@ -8,7 +8,7 @@ git add file.txt
 
 git commit -m "add relevant fact"
 
-git checkout -b quickfix HEAD~1
+git checkout -b $kata-quickfix HEAD~1
 
 echo "This is a very quick fix" > fix.txt
 
