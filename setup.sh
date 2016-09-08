@@ -9,7 +9,7 @@ git add file.txt
 git commit -m "add relevant fact"
 
 
-git checkout master
+git checkout $kata
 
 git checkout -b $kata-branch2
 
