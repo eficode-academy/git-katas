@@ -1,24 +1,26 @@
-kata="kata1-merge-conflict"
+kata="kata2-squashing"
 
 git checkout -b $kata-branch1
 
-echo "This is a relevant fact" > file.txt
+echo "This is a relevant fact\n" > file.txt
 
 git add file.txt
 
-git commit -m "add relevant fact"
+git commit -m "Add relevant fact"
 
-git checkout master
+echo "This is also relevant\n" >> file.txt
 
-git checkout -b $kata-branch2
+git commit -am "Add more relevancy"
 
-echo "This is an indispensable truth!" > file.txt
+echo "Perhaps this is the most relevant\n" >> file.txt
 
-git add file.txt
+git commit -am "most relevant!"
 
-git commit -m "add indispensable truth!"
+echo "This is the prime directive\n" >> file.txt
 
-git checkout $kata
+git commit -am "add prime directive\n"
 
+echo "NEVER change public history" >> file.txt
 
+git commit -am "add the word!"
 
