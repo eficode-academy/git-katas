@@ -1,24 +1,42 @@
-kata="kata1-merge-conflict"
+kata="kata7-reorder-the-history"
 
-git checkout -b $kata-branch1
+git checkout -b $kata-master
 
-echo "This is a relevant fact" > file.txt
+echo "1" > file1
+git add file1
+git commit -m "file1"
 
-git add file.txt
+echo "9" > file9
+git add file9
+git commit -m "file9"
 
-git commit -m "add relevant fact"
+echo "8" > file8
+git add file8
+git commit -m "file8"
 
-git checkout master
+echo "3" > file3
+git add file3
+git commit -m "file3"
 
-git checkout -b $kata-branch2
+echo "4" > file4
+git add file4
+git commit -m "file4"
 
-echo "This is an indispensable truth!" > file.txt
+echo "5" > file5
+git add file5
+git commit -m "file5"
 
-git add file.txt
+echo "2" > file2
+git add file2
+git commit -m "file2"
 
-git commit -m "add indispensable truth!"
+echo "6" > file6
+git add file6
+git commit -m "file6"
 
-git checkout $kata
+echo "7" > file7
+git add file7
+git commit -m "file7"
 
 
 
