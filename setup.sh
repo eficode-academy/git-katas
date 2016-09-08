@@ -1,4 +1,4 @@
-kata="kata2-squashing"
+kata="kata4-bad-commit"
 
 git checkout -b $kata-branch1
 
