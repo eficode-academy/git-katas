@@ -1,6 +1,6 @@
 kata="kata2-squashing"
 
-git checkout -b $kata-branch1
+git checkout -b $kata-master
 
 echo "This is a relevant fact\n" > file.txt
 
