@@ -1,30 +1,27 @@
 kata="kata4-bad-commit"
 
-git checkout -b $kata-branch1
+git checkout -b $kata-master
 
-echo "This is a relevant fact\n" > file.txt
+touch file1
+git add file1
+git commit -m "File1"
 
-git add file.txt
+touch file2
+git add file2
+git commit -m "File2"
 
-git commit -m "Add relevant fact"
+touch badfile
+git add badfile
+git commit -m "File3"
 
-echo "This is also relevant\n" >> file.txt
+touch file4
+git add file4
+git commit -m "File4"
 
-git commit -am "Add more relevancy"
+touch file5
+git add file5
+git commit -m "File5"
 
-echo "Perhaps this is the most relevant\n" >> file.txt
 
-git commit -am "most relevant!"
 
-echo "This is some random bullshit Johan made up!" >> file.txt
-
-git commit -am "as important as it gets"
-
-echo "This is the prime directive\n" >> file.txt
-
-git commit -am "add prime directive\n"
-
-echo "NEVER change public history" >> file.txt
-
-git commit -am "add the word!"
 
