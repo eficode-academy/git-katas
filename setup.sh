@@ -14,5 +14,5 @@ echo "This is a very quick fix" > fix.txt
 
 git add fix.txt
 
-git commit -m "Make quick fix"
+git commit -m "Make quick fix - should be moved to master"
 
