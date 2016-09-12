@@ -19,7 +19,7 @@ git add file.txt
 
 git commit -m "add indispensable truth!"
 
-git checkout $kata
+git checkout $kata-branch1
 
 
 
