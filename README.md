@@ -11,8 +11,9 @@ Each kata resides in their own branch.
 
 You can `git checkout kataname` to get to the kata.
 
-Setup the kata by running `./setup.sh` when the kata you want to do is checked out.
+Setup the kata afterwards by running `./setup.sh` when the kata you want to do is checked out.
 
+The `README.md` will be updated to reflect the current kata.
 ## Useful commands
 These are the commands that you might need
 
