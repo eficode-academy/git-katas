@@ -1,27 +1,29 @@
-# Git Kata: Basic Commits
+# Git Kata: Basic Branching
 ## Setup:
 Run ./setup.sh
 
 ## The task
-You live in your own branch now.
-- Use `git status` to see what branch you are on.
-- What does `git log` look like?
-- Create a file
-- How does the output from `git status` look like now?
-- `add` the file to the staging area
-- How does `git status` look now?
-- `commit` the file to the repository
-- How does `git status` look now?
-- Change the content of the file that you created earlier
-- How does `git status` look like now?
-- `add` the file change
-- How does `git status` look like now?
-- Change the file again
-- Make a `commit`
-- How does the `status` look like now? The `log`?
-- Commit the newest change
+You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
+
+- Use git branch -l basic-branching* to see the two branches that are relevant for this exercise
+- What branch are you on?
+- use `git branch <branch-name>` to create a new branch
+- use `git checkout <branch-name>` to switch to your new branch
+- How do the output from `git status` change when you switch between the master and the new branch that you have created?
+- How does the workspace change when you change between the two branches?
+- In the branch you created create a file called `file1.txt`.
+- Add your name to the file, make a commit with this change.
+- merge the `basic-branching-master` onto your current branch.
+- Checkout `basic-branching-master`, merge your branch onto this master branch
+- What happened?
+- Merge the `basic-branching-second-branch` onto your master branch
+- Resolve the merge conflict ( `git status` always helps you )
+- Having resolved the merge conflict take a look at `git log` and see what happened.
+- Draw what happened!
 
 ## Useful commands
+- `git checkout`
+- `git checkout -b`
 - `git add`
 - `git commit`
 - `git commit -m`
