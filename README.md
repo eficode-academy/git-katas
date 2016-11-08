@@ -14,21 +14,12 @@ You can `git checkout kataname` to get to the kata.
 Setup the kata afterwards by running `./setup.sh` when the kata you want to do is checked out.
 
 The `README.md` will be updated to reflect the current kata.
+
+If you are confused about git - the best place to start is `git checkout basic-commits`.
 ## Useful commands
 These are the commands that you might need
-
-- `git rebase -i`
-- `git merge`
-- `git log`
-- `git log --oneline`
-- `git log --oneline --decorate --graph --all`
-- `git cherry-pick`
-- `git diff`
-- `git diff --staged`
-- `git cat-file <ref>`
-- `git add -p`
-- `git reflog`
-
+- `git checkout <branch-name>`
+- `git branch -r`
 ## Aliases
 You can set up aliases as such:
 `git config --global alias.lol log --oneline --decorate --graph --all`
