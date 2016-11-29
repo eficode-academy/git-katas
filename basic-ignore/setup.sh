@@ -1,4 +1,4 @@
-kata="basic-branching"
+kata="basic-ignore"
 mkdir exercise
 cd exercise
 git init
