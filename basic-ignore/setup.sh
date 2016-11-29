@@ -1,6 +1,5 @@
-kata="basic-ignore"
+kata="basic-branching"
+mkdir exercise
+cd exercise
+git init
 git checkout -b $kata-master
-echo "test" > file1.txt
-git add "Add file1.txt"
-git commit -m "Adding file1.txt"
-git checkout $kata-master

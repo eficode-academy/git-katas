@@ -19,8 +19,7 @@ You have your own branch. We'll work a bit with .gitignore
 - What does `git status` say?
 
 ## Useful commands
-- `git checkout`
-- `git checkout -b`
+- `git rm`
 - `git add`
 - `git commit`
 - `git commit -m`
