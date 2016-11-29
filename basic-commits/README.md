@@ -2,6 +2,7 @@
 ## The task
 You live in your own branch now.
 - run ./setup.sh    
+- `cd exercise`
 - Use `git status` to see what branch you are on.
 - What does `git log` look like?
 - Create a file
