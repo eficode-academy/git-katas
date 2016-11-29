@@ -1,22 +1,20 @@
 # Git Katas
 In this repository you find a bunch of git exercises.
 The concept is stolen without shame from [Schauderhaft.de](http://blog.schauderhaft.de/gitkata/).
-They have unfortunately not maintained the system - and I feel like we need more good git exercises.
+They have unfortunately not maintained the system - and we need more good git exercises.
 
-Each kata resides in its own branch.
+Each kata resides in its own directory. Each directory contains a
+`README.md` file that describes the task and a `setup.sh` file that
+will setup a git repository for you to do the exercise in.
 
-You can `git checkout kataname` to get to the kata.
+To do an exercise go to the directory, run the `setup.sh` script and checkout what is in the `README.md`
 
-When the kata you want to do is checked out, set it up by running `./setup.sh`.
-
-The `README.md` will be updated to reflect the current kata.
-
-If you are confused about git - the best place to start is `git checkout basic-commits`.
+If you are confused about git - the best place to start is `basic-commits`.
 
 ## Useful commands
-These are the commands that you might need:
-- `git checkout <branch-name>`
-- `git branch -r`
+- `cd <folder>` to go into a folder
+- `ls` to list directory content
+- `./setup.sh` to run the script that sets up the kata    
 
 
 
