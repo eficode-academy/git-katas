@@ -6,6 +6,8 @@ They have unfortunately not maintained the system - and we need more good git ex
 Each kata resides in its own directory. Each directory contains a
 `README.md` file that describes the task and a `setup.sh` file that
 will setup a git repository for you to do the exercise in.
+Note that not all terminals will be able to run the `setup.sh` script for you.
+If you are on Windows you might need to use Git bash that is a part of the ordinary git installation.
 
 To do an exercise go to the directory, run the `setup.sh` script and checkout what is in the `README.md`
 
