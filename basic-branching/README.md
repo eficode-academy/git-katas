@@ -5,7 +5,7 @@ Run ./setup.sh
 ## The task
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
 
-- Use `git branch --list basic*` to see the two branches that are relevant for this exercise
+- Use `git branch to see the two branches that are relevant for this exercise
 - What branch are you on?
 - use `git branch <branch-name>` to create a new branch
 - use `git checkout <branch-name>` to switch to your new branch
