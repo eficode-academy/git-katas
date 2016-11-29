@@ -20,3 +20,14 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 - Resolve the merge conflict ( `git status` always helps you )
 - Having resolved the merge conflict take a look at `git log` and see what happened.
 - Draw what happened!
+
+## Useful commands
+- `git checkout`
+- `git checkout -b`
+- `git add`
+- `git commit`
+- `git commit -m`
+- `git log`
+- `git log -n 5`
+- `git log --oneline`
+- `git log --oneline --decorate --graph`
