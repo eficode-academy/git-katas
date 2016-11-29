@@ -27,6 +27,9 @@ You live in your own branch now.
 - `git log -n 5`
 - `git log --oneline`
 - `git log --oneline --decorate --graph`
+- `touch filename` to create a file
+- `echo content > file` to overwrite file with content
+- `echo content >> file` to append file with content
 
 
 ## Aliases
