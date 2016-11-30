@@ -1,4 +1,8 @@
 kata="kata3-detached-head"
+mkdir exercise
+
+cd exercise
+git init
 
 git checkout $kata-master
 
@@ -16,6 +20,6 @@ git commit -am "C"
 
 touch file4
 git add file4
-git commid -am "D"
+git commit -am "D"
 
 git checkout HEAD~3

@@ -1,5 +1,8 @@
 # gitkatas
 ## Kata-3 detached headstate
+To get the full experience from this exercise do:
+`. ./setup.sh`.
+
 The user has ended up in a "detached head" state in the `kata3-detached-head-master` branch.
 
 This is a scary situation for the user, but as we know, git is not scary.
