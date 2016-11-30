@@ -1,7 +1,17 @@
 # gitkatas
 ## Kata2 squash commits
-In kata2-squashing-master there are too many commits.
-Squash the commits changing `file.txt` into one commit
+In this kata I did not worked as I should have, but I would like to clean up my history a bit.
+
+The five newest commits all tinker with file.txt which obviously contains my feature.
+
+I would like these commits to be squashed into a single commit!
+
+While you are at it I would really like the ugly `\n` to be removed from the history.
+
+## Task
+- _Squash_ the five relevant commits into one, cleaning up the commit msg of one of the commits
+- How does `git log` look now?
 
 ### Relevant commands
-- `git rebase -i`
+- `git rebase -i <ref>`
+- `git rev-parse <ref>`

@@ -1,6 +1,12 @@
 kata="kata2-squashing"
+mkdir exercise
+cd exercise
+git init
 
-git checkout -b $kata-master
+touch alsoafile.txt
+
+git add alsoafile.txt
+git commit -m "initial file"
 
 echo "This is a relevant fact\n" > file.txt
 
