@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+protected_branch='refs/heads/master'
+current_branch=$(git symbolic-ref HEAD) 
+
+if [ $current_branch = $protected_branch ]
+then 
+	echo "you can't push to master!"
+	exit 1
+else
+	exit 0
+fi
