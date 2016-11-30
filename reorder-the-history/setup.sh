@@ -1,6 +1,13 @@
 kata="kata7-reorder-the-history"
+mkdir exercise
 
-git checkout -b $kata-master
+cd exercise
+
+git init
+
+echo "initial" > foo.txt
+git add foo.txt
+git commit -m "foo.txt"
 
 echo "1" > file1
 git add file1
