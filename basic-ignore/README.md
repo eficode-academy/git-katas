@@ -31,5 +31,5 @@ You have your own branch. We'll work a bit with .gitignore
 
 ## Aliases
 You can set up aliases as such:
-`git config --global alias.lol log --oneline --decorate --graph --all`
+`git config --global alias.lol 'log --oneline --decorate --graph --all'`
 This might be useful to you.
