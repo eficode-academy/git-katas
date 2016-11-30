@@ -1,4 +1,4 @@
-# Git Kata: Basic Ignore
+# Git Kata: Basic Staging
 ## Setup:
 Run ./setup.sh
 
