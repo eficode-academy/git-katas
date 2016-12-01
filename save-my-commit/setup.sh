@@ -1,6 +1,12 @@
 kata="kata6-save-my-commit"
 
-git checkout -b $kata-master
+mkdir exercise
+cd exercise
+git init
+
+echo "initial" > thing.txt
+git add thing.txt
+git commit -m "Inital commit"
 
 echo "This is a relevant fact" > file.txt
 
