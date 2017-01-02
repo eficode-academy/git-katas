@@ -4,7 +4,7 @@ mkdir exercise
 cd exercise
 git init
 
-git checkout $kata-master
+git checkout -b $kata-master
 
 touch file1
 git add file1
