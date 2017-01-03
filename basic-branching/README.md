@@ -25,10 +25,5 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 ## Useful commands
 - `git checkout`
 - `git checkout -b`
-- `git add`
-- `git commit`
-- `git commit -m`
-- `git log`
-- `git log -n 5`
-- `git log --oneline`
 - `git log --oneline --decorate --graph`
+- `git merge <branch>`
