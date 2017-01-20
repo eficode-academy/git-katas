@@ -5,29 +5,29 @@ Run ./setup.sh
 ## The task
 You live in your own repository. There is a file called file.txt
 
-- What's the content of file.txt?
-- Overwrite the content in file.txt: `echo 2 > file.txt`
-- What does `git diff` tell you?
-- What does `git diff --staged` tell you?
-- Run `git add file.txt` to stage your change
-- What does `git diff` tell you?
-- What does `git diff --staged` tell you?
-- Overwrite the content in file.txt: `echo 3 > file.txt`
-- What does `git diff` tell you?
-- What does `git diff --staged` tell you?
-- Explain what is happening
-- Run `git reset HEAD file.txt` to unstage the change
-- What does git status tell you now?
-- Stage the change and make a commit
-- What does the log look like?
-- Overwrite the content in file.txt
-- What is the content of file.txt?
-- What does `git status` tell us?    
-- run `git checkout file.txt`
-- What is the content of file.txt?
-- What does `git status` tell us?
-          
-                           
+1. What's the content of file.txt?
+1. Overwrite the content in file.txt: `echo 2 > file.txt`
+1. What does `git diff` tell you?
+1. What does `git diff --staged` tell you?
+1. Run `git add file.txt` to stage your change
+1. What does `git diff` tell you?
+1. What does `git diff --staged` tell you?
+1. Overwrite the content in file.txt: `echo 3 > file.txt`
+1. What does `git diff` tell you?
+1. What does `git diff --staged` tell you?
+1. Explain what is happening
+1. Run `git reset HEAD file.txt` to unstage the change
+1. What does git status tell you now?
+1. Stage the change and make a commit
+1. What does the log look like?
+1. Overwrite the content in file.txt
+1. What is the content of file.txt?
+1. What does `git status` tell us?    
+1. Run `git checkout file.txt`
+1. What is the content of file.txt?
+1. What does `git status` tell us?
+
+
 
 ## Useful commands
 - `git add`

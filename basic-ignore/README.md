@@ -5,18 +5,18 @@ Run ./setup.sh
 ## The task
 You have your own branch. We'll work a bit with .gitignore
 
-- Create a `.s` file
-- What is the output of `git status`?
-- create a `.gitignore` file in your working directory containing `*.s`
-- What is the output of `git status`?
-- Commit the `.gitignore` file
-- Add `txt` files to `.gitignore`
-- What does `git status` tell us?
-- Change `file1.txt`
-- What does `git status` tell us?
-- Make another textfile in the repository, what does `git status` look like now?
-- Stage the removal of `file1.txt`
-- What does `git status` say?
+1. Create a `.s` file
+1. What is the output of `git status`?
+1. Create a `.gitignore` file in your working directory containing `*.s`
+1. What is the output of `git status`?
+1. Commit the `.gitignore` file
+1. Add `txt` files to `.gitignore`
+1. What does `git status` tell us?
+1. Change `file1.txt`
+1. What does `git status` tell us?
+1. Make another textfile in the repository, what does `git status` look like now?
+1. Stage the removal of `file1.txt`
+1. What does `git status` say?
 
 ## Useful commands
 - `git rm`

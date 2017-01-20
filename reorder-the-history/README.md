@@ -5,7 +5,7 @@ Unfortunately they actually contain useful information - it's just that the hist
 You should fix this such that our `git log` looks great!
 
 ## Task
-- Reorder the history such that it actually makes sense
+1. Reorder the history such that it actually makes sense
 
 ### useful commands
 - `git rebase -i`

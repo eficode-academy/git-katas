@@ -8,12 +8,12 @@ Objects are stored in `<repository>/.git/objects` in subfolders matching the fir
 `git ls-tree master .` inflates and lists the content of a folder.
 
 ## Task
-- Use `git log` to find the sha of a commit
-- Locate the file in the `.git` folder
-- What is in the file?
-- Use `git cat-file -p <sha>` to inflate and view the content.
-- Use `git cat-file` to look at the tree referenced in your commit
-- Use `git cat-file` to look at the parent commit
-- Do these commands work in the `.git` folder? Do you have to be in there?
-- Compare `cat-file` looking at a _tree_ object to using `ls-tree` on a _commit_
-- How does it look on an older commit compared to what you have in `HEAD`?
+1. Use `git log` to find the sha of a commit
+1. Locate the file in the `.git` folder
+1. What is in the file?
+1. Use `git cat-file -p <sha>` to inflate and view the content.
+1. Use `git cat-file` to look at the tree referenced in your commit
+1. Use `git cat-file` to look at the parent commit
+1. Do these commands work in the `.git` folder? Do you have to be in there?
+1. Compare `cat-file` looking at a _tree_ object to using `ls-tree` on a _commit_
+1. How does it look on an older commit compared to what you have in `HEAD`?

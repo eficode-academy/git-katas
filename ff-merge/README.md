@@ -6,19 +6,19 @@ Run ./setup.sh && cd exercise
 ## The task
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
 
- 1. Create a branch called uppercase
- 2. Checkout the branch
- 3. What is the output of `git status`?
- 4. Edit the greeting.txt to contain an uppercase greeting
- 5. Add greeting.txt files to staging area and commit
- 6. 3. What is the output of `git branch`?
- 6. What is the output of `git log --oneline --decorate --graph --all`
- 7. Checkout `master` branch
- 8. Use `cat` to see the contents of the greetings
- 9. Diff the branches
- 10. Merge the branches
- 11. Use `cat` to see the contents of the greetings
- 12. Delete the uppercase branch
+1. Create a branch called uppercase
+1. Checkout the branch
+1. What is the output of `git status`?
+1. Edit the greeting.txt to contain an uppercase greeting
+1. Add greeting.txt files to staging area and commit
+1. What is the output of `git branch`?
+1. What is the output of `git log --oneline --decorate --graph --all`
+1. Checkout `master` branch
+1. Use `cat` to see the contents of the greetings
+1. Diff the branches
+1. Merge the branches
+1. Use `cat` to see the contents of the greetings
+1. Delete the uppercase branch
 
 ## Useful commands
 - `git branch`

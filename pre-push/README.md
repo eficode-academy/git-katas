@@ -5,8 +5,8 @@ You can look in the `.git/hooks/` folder to see what hooks are available.
 They are all named `*.sample` to prevent them from being executed.
 
 ## Task
-- Clone a repository ( or use one that you already have )
-- In the repository's `.git/hooks/` folder put the file `pre-push` that's in this repository
-- What happens when you try to push to master?
-- What happens if you try to push to a different branch?
-- What happens if you switch the if / else blocks?
+1. Clone a repository ( or use one that you already have )
+1. In the repository's `.git/hooks/` folder put the file `pre-push` that's in this repository
+1. What happens when you try to push to master?
+1. What happens if you try to push to a different branch?
+1. What happens if you switch the if / else blocks?
