@@ -1,24 +1,24 @@
 # Git Kata: Basic Commits
 ## The task
-You live in your own branch now.
-- run ./setup.sh    
-- `cd exercise`
-- Use `git status` to see what branch you are on.
-- What does `git log` look like?
-- Create a file
-- How does the output from `git status` look like now?
-- `add` the file to the staging area
-- How does `git status` look now?
-- `commit` the file to the repository
-- How does `git status` look now?
-- Change the content of the file that you created earlier
-- How does `git status` look like now?
-- `add` the file change
-- How does `git status` look like now?
-- Change the file again
-- Make a `commit`
-- How does the `status` look like now? The `log`?
-- Commit the newest change
+
+1. run ./setup.sh    
+1. `cd exercise`
+1. Use `git status` to see which branch you are on.
+1. What does `git log` look like?
+1. Create a file
+1. What does the output from `git status` look like now?
+1. `add` the file to the staging area
+1. How does `git status` look now?
+1. `commit` the file to the repository
+1. How does `git status` look now?
+1. Change the content of the file you created earlier
+1. What does `git status` look like now?
+1. `add` the file change
+1. What does `git status` look like now?
+1. Change the file again
+1. Make a `commit`
+1. What does the `status` look like now? The `log`?
+1. Commit the newest change
 
 ## Useful commands
 - `git add`
