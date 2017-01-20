@@ -1,7 +1,7 @@
 # Git Kata: Basic Commits
 ## The task
 
-1. run ./setup.sh    
+1. Run ./setup.sh
 1. `cd exercise`
 1. Use `git status` to see which branch you are on.
 1. What does `git log` look like?
