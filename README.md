@@ -1,3 +1,6 @@
+---
+maintainer: randomsort
+---
 # Git Katas
 In this repository you find a bunch of git exercises.
 The concept is stolen without shame from [Schauderhaft.de](http://blog.schauderhaft.de/gitkata/).
