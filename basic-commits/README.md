@@ -1,4 +1,5 @@
 # Git Kata: Basic Commits
+You can look at the bottom of this file, if you have not yet done basic git configuration.
 ## The task
 
 1. Run ./setup.sh
@@ -33,7 +34,16 @@
 - `echo content >> file` to append file with content
 
 
+## Git Initial Configuration
+1. `git config --global user.name "John Doe"`
+1. `git config --global user.email "johndoe@example.com`
+For the vim scared:
+- `git config --global core.editor emacs`
+
+for the windows peeps:
+- `git config --global core.editor notepad`
 ## Aliases
+
 You can set up aliases as such:
 `git config --global alias.lol 'log --oneline --decorate --graph --all'`
 This might be useful to you.
