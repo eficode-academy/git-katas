@@ -10,6 +10,7 @@ You have your own branch. We'll work a bit with .gitignore
 1. Create a `.gitignore` file in your working directory containing `*.s`
 1. What is the output of `git status`?
 1. Commit the `.gitignore` file
+1. Commit `file1.txt`
 1. Add `txt` files to `.gitignore`
 1. What does `git status` tell us?
 1. Change `file1.txt`
