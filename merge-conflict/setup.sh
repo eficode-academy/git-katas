@@ -1,4 +1,4 @@
-kata="ff-merge"
+kata="merge-conflict"
 mkdir exercise
 cd exercise
 git init
