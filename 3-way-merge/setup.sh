@@ -1,4 +1,4 @@
-kata="ff-merge"
+kata="3-way-merge"
 rm -rf exercise
 mkdir exercise
 cd exercise
