@@ -1,4 +1,4 @@
-# Git Kata: Basic Branching
+# Git Kata: Fast-forward Merge
 ## Setup:
 Run ./setup.sh && cd exercise
 
