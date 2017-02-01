@@ -10,7 +10,7 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 1. Look at the log for the master branch
 1. Check out the uppercase branch
 1. How does the log compare to the log on the master branch?
-1. Rebase your uppercase branch with the master (git rebase master)
+1. Rebase your uppercase branch with the master (`git rebase master`)
 1. What did just happen? Draw it!
 1. Now checkout the master branch
 1. Merge uppercase into master
