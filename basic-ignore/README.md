@@ -1,6 +1,6 @@
 # Git Kata: Basic Ignore
 ## Setup:
-Run ./setup.sh
+Run ./setup.sh && cd exercise
 
 ## The task
 You have your own branch. We'll work a bit with .gitignore
