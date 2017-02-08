@@ -2,7 +2,7 @@
 maintainer: randomsort
 ---
 # Git Katas
-In this repository you find a bunch of git exercises.
+In this repository you find a bunch of Git exercises.
 The concept is stolen without shame from [Schauderhaft.de](http://blog.schauderhaft.de/gitkata/).
 They have unfortunately not maintained the system - and we need more good git exercises.
 
