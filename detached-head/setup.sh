@@ -1,4 +1,5 @@
 kata="kata3-detached-head"
+rm -rf exercise
 mkdir exercise
 
 cd exercise
