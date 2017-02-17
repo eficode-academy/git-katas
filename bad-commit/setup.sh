@@ -1,5 +1,10 @@
 kata="kata4-bad-commit"
 
+rm -rf exercise
+mkdir exercise
+cd exercise
+git init
+
 git checkout -b $kata-master
 
 touch file1
