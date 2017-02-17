@@ -1,7 +1,6 @@
+rm -rf exercise
 mkdir exercise
-
 cd exercise
-
 git init
 
 echo "foo" > foo.txt
