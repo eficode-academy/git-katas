@@ -1,4 +1,5 @@
 kata="kata2-squashing"
+rm -rf exercise
 mkdir exercise
 cd exercise
 git init
@@ -24,7 +25,7 @@ git commit -am "most relevant!"
 
 echo "This is the prime directive\n" >> file.txt
 
-git commit -am "add prime directive\n"
+git commit -am "add prime directive"
 
 echo "NEVER change public history" >> file.txt
 
