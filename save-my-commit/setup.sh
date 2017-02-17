@@ -1,5 +1,6 @@
 kata="kata6-save-my-commit"
 
+rm -rf exercise
 mkdir exercise
 cd exercise
 git init
