@@ -1,4 +1,5 @@
 kata="ff-merge"
+rm -rf exercise
 mkdir exercise
 cd exercise
 git init
