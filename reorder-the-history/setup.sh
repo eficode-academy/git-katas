@@ -1,4 +1,5 @@
 kata="kata7-reorder-the-history"
+rm -rf exercise
 mkdir exercise
 
 cd exercise
