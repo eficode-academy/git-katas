@@ -1,4 +1,5 @@
 kata="merge-conflict"
+rm -rf exercise
 mkdir exercise
 cd exercise
 git init
