@@ -1,3 +1,4 @@
+rm -rf exercise
 mkdir exercise
 
 cd exercise
