@@ -1,5 +1,8 @@
-git init exercise
+rm -rf exercise
+mkdir exercise
 cd exercise
+git init
+
 touch test.md
 git add test.md
 git commit -m "add test.md"
