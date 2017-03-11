@@ -2,26 +2,27 @@
 maintainer: randomsort
 ---
 # Git Katas
+## Quick Start
+- Clone this repository
+- Go into the folder you want to solve an exercise in
+- Run the `setup.sh` script
+- Consult the README.md in that folder to get a exercise description
+
+## Purpose of Git Katas
 In this repository you find a bunch of Git exercises.
 The concept is stolen without shame from [Schauderhaft.de](http://blog.schauderhaft.de/gitkata/).
 They have unfortunately not maintained the system - and we need more good Git exercises.
 
-Each kata resides in its own directory. It contains a `README.md` file describing the task.
-It also contains a `setup.sh` file that will setup a Git repository for you to do the exercise in.
-Note that not all terminals will be able to run the `setup.sh` script for you.
-If you are on Windows you might need to use Git bash that is a part of the ordinary Git installation.
+The exercises are designed for use when we are teaching Git courses. You should be able to use them as self-contained exercises that will allow you to keep your Git skills sharp.
 
-To do an exercise, go to the directory, run the `setup.sh` script and read the `README.md`
+Exercises starting with _basic_ are entry-level - other exercises vary greatly in difficulty.
 
-If you are confused about Git, the best place to start is `basic-commits`.
+Feel free to use these exercises, that's why they're public!
 
-## Useful commands
-- `cd <folder>` to go into a folder
-- `ls` to list directory content
-- `./setup.sh` to run the script that sets up the kata    
+## Contributing
+If you miss exercises or find errors in any of them, feel free to improve them and make a pull request.
 
-## Aliases
-You can set up aliases such as:
-`git config --global alias.lol 'log --oneline --decorate --graph --all'`
+You can also make an issue so we notice an opportunity to improve!
 
-This might be useful to you.
+Thank you!
+
