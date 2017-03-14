@@ -1,10 +1,8 @@
 # Git Kata: Basic Branching
-## Setup:
-Run ./setup.sh
-
 ## The task
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
 
+1. Run ./setup.sh
 1. `cd exercise`
 1. Use `git branch` to see the two branches that are relevant for this exercise
 1. What branch are you on?
