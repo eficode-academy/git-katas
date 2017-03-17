@@ -1,6 +1,7 @@
 # Git Kata: Basic Branching
 ## The task
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
+Hint: `git checkout` will make you switch from one branch to another.
 
 1. Run `./setup.sh`
 1. `cd exercise`
@@ -9,7 +10,7 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 1. Use `git branch mybranch` to create a new branch called mybranch
 1. Use `git branch` again to see the new branch created
 1. Use `git checkout mybranch` to switch to your new branch
-1. How does the output from `git status` change when you switch between the master and the new branch that you have created? Hint: `git checkout` will make you switch from one branch to another 
+1. How does the output from `git status` change when you switch between the master and the new branch that you have created? 
 1. How does the workspace change when you change between the two branches?
 1. In the branch you created, create a file called `file1.txt`.
 1. Add your name to the file, make a commit with this change.
