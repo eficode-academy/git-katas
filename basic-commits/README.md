@@ -1,4 +1,6 @@
 # Git Kata: Basic Commits
+This kata will introduce you to the commands `git add` and `git commit`.
+
 You can look at the bottom of this file, if you have not yet done basic git configuration.
 ## The task
 
