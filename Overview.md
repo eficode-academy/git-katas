@@ -4,37 +4,37 @@
 ## [Bad-commit](bad-commit/README.md)
 Cleaning up a bit.
 
-## basic-commits
+## [basic-commits](basic-branching/README.md)
 Very basic creation of commits.
 
-## basic-staging
+## [basic-staging](basic-staging/README.md)
 interacting with the stage (index).
 
-## basic-branching
+## [basic-branching](basic-branching/README.md)
 The first stride into branching.
 
-## basic-ignore
+## [ignore](ignore/README.md)
 The basics of using the `.gitignore` file.
 
-## commit-on-wrong-branch
+## [commit-on-wrong-branch](commit-on-wrong-branch/README.md)
 An administrative exercise, how do we _move_ a commit that we accidentially put on the wrong branch.
 
-## ff-merge
+## [ff-merge](ff-merge/README.md)
 A tour around the most trivial of merges.
 
-## 3-way-merge
+## [3-way-merge](3-way-merge/README.md)
 A basic merge, involving multiple diverged branches.
 
-## merge-conflict
+## [merge-conflict](merge-conflict/README.md)
 A basic merge between diverging branches with incompatible changesets.
 
-## merge-mergesort
+## [merge-mergesort](merge-mergesort/README.md)
 A merge confligt with actual code.
 
-## rebase-branch
+## [rebase-branch](rebase-branch/README.md)
 Using rebase as an alternative to merging.
 
-## pre-push
+## [pre-push](pre-push/README.md)
 A quick exercise in using Git hooks.
 
 
