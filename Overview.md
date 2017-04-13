@@ -38,24 +38,24 @@ Using rebase as an alternative to merging.
 A quick exercise in using Git hooks.
 
 
-## reorder-the-history
+## [reorder-the-history](reorder-the-history/README.md)
 We might have created our commits in a suboptimal order, practice to fix that scenario here.
 
-## reset
+## [reset](reset/README.md)
 Reset is a powerful and slightly dangerous command if you do not know what you are doing. 
 Go trough the three modes of resetting here.
 
-## save-my-commit
+## [save-my-commit](save-my-commit/README.md)
 Should you accidentially or on purpose delete a commit, go here to try and save it.
 
-## squashing
+## [squashing](squashing/README.md)
 A lot of small commits is good when you are working locally, but for sharing your code, it might be more beneficial to deliver your code changes in large sets. Go here to experiment with that.
 
-## submodules
+## [submodules](submodules/README.md)
 Submodules are loathed by many. Run through this exercise to see what the ruckus is all about.
 
-## Investigation
+## [Investigation](investigation/README.md)
 Discover what is going on in a Git repo, figure out what it looks like under the hood.
 
-## Objects
+## [Objects](objects/README.md)
 A small exercise into Git internals.
