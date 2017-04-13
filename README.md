@@ -17,8 +17,9 @@ The exercises are designed for use when we are teaching Git courses. You should 
 
 Exercises starting with _basic_ are entry-level - other exercises vary greatly in difficulty.
 
-Feel free to use these exercises, that's why they're public!
+To get an overview of the exercises in here look in [Overview.md](Overview.md).
 
+Feel free to use these exercises, that's why they're public!
 ## Contributing
 If you miss exercises or find errors in any of them, feel free to improve them and make a pull request.
 
