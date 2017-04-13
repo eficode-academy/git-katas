@@ -1,7 +1,7 @@
 # Overview of Git Katas
 
 
-## Bad-commit
+## [Bad-commit](bad-commit/README.md)
 Cleaning up a bit.
 
 ## basic-commits
