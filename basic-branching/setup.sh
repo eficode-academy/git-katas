@@ -1,11 +1,14 @@
+#!/bin/bash
+
+# Include utils
+source ../utils/utils.sh
+
 kata="basic-branching"
-rm -rf exercise
-mkdir exercise
-cd exercise
-git init
-git checkout -b $kata-master
+makerepo
+
+git checkout master
 echo "dummy" > dummy.txt
 git add dummy.txt
 git commit -m "dummy commit"
-git checkout -b $kata-second-branch
-git checkout $kata-master
+git checkout -b second-branch
+git checkout master
