@@ -1,6 +1,4 @@
+#!/bin/bash
 kata="basic-commits-master"
-rm -rf exercise
-mkdir exercise
-cd exercise
-git init
-git checkout -b $kata
+source ../utils/utils.sh
+makerepo
