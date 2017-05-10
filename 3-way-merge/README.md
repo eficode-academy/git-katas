@@ -1,11 +1,9 @@
 # Git Kata: 3-Way Merge
-## Setup:
-Run ./setup.sh && cd exercise
-
 
 ## The task
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
 
+1. Run `. setup.sh`
 1. Create a branch called greeting and check it out
 1. Edit the greeting.txt to contain your favorite greeting
 1. Add greeting.txt files to staging area using patch mode
