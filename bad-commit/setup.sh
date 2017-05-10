@@ -1,11 +1,11 @@
+#!/bin/bash
+
+# Include utils
+source ../utils/utils.sh
+
 kata="kata4-bad-commit"
 
-rm -rf exercise
-mkdir exercise
-cd exercise
-git init
-
-git checkout -b $kata-master
+makerepo
 
 touch file1
 git add file1
