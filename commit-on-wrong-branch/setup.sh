@@ -1,12 +1,11 @@
+#!/bin/bash
+
+# Include utils
+source ../utils/utils.sh
+
 kata="kata5-commit-on-wrong-branch"
-rm -rf exercise
 
-mkdir exercise 
-cd exercise
-
-git init
-
-git checkout -b $kata-master
+makerepo 
 
 touch file.txt
 
@@ -19,7 +18,7 @@ git add file.txt
 
 git commit -m "add relevant fact"
 
-git checkout -b $kata-quickfix HEAD~1
+git checkout -b quickfix HEAD~1
 
 echo "This is a very quick fix" > fix.txt
 
