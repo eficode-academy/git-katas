@@ -5,7 +5,7 @@ Sometimes we just forget something obvious that we want to fix quickly.
 `git commit --amend` allows us to do that - tinker with the last commit we made.
 
 ## The task
-1. Run the command `./setup.sh`
+1. Run the command `. setup.sh`
 1. What does `git status` tell us?
 1. What does `git log` tell us?
 1. Stage the addition of bar.txt

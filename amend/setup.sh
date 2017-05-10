@@ -1,8 +1,10 @@
-rm -rf exercise
-mkdir exercise
-cd exercise
-git init
+#!/bin/bash
 
+# Include utils
+
+source ../utils/utils.sh
+
+makerepo
 echo "foo" > foo.txt
 
 echo "bar" > bar.txt
