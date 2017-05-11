@@ -1,11 +1,9 @@
 # Git Kata: Fast-forward Merge
-## Setup:
-Run ./setup.sh && cd exercise
-
-
 ## The task
+
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
 
+1. Run the command `. setup.sh`
 1. Create a branch called uppercase
 1. Checkout the branch
 1. What is the output of `git status`?
