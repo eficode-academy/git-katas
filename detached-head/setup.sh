@@ -1,11 +1,11 @@
+#!/bin/bash
+
+# Include utils
+source ../utils/utils.sh
+
 kata="kata3-detached-head"
-rm -rf exercise
-mkdir exercise
+makerepo
 
-cd exercise
-git init
-
-git checkout -b $kata-master
 
 touch file1
 git add file1

@@ -1,5 +1,6 @@
 # gitkatas
-## Kata-3 detached headstate
+## detached head state
+
 To get the full experience from this exercise do:
 `. ./setup.sh`.
 
