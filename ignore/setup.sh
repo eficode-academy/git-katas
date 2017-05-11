@@ -1,7 +1,11 @@
+#!/bin/bash
+
+# Include utils
+source ../utils/utils.sh
+
 kata="basic-ignore"
-rm -rf exercise
-mkdir exercise
-cd exercise
+makerepo
+
 echo "hello" > file1.txt
 git init
-git checkout -b $kata-master
+git checkout -b master
