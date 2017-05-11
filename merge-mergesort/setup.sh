@@ -1,8 +1,11 @@
+#!/bin/bash
+
+# Include utils
+source ../utils/utils.sh
+
 kata="merge-mergesort"
-rm -rf exercise
-mkdir exercise
-cd exercise
-git init
+makerepo
+
 cp ../base.py mergesort.py
 git add mergesort.py
 git commit -m "Fake it till you make it - Faking mergesort using python .sort() method"
