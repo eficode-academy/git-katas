@@ -1,10 +1,12 @@
+#/bin/bash
+
+# Include utils
+source ../utils/utils.sh
 kata="rebase-branch"
 set -e
 
-rm -rf exercise
-mkdir exercise
-cd exercise
-git init
+makerepo
+
 touch greeting.txt
 git add greeting.txt
 git commit -m "Add file greeting.txt"
