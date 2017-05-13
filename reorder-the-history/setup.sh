@@ -1,10 +1,8 @@
-kata="kata7-reorder-the-history"
-rm -rf exercise
-mkdir exercise
+#!/bin/bash
+#Include utils
+source ../utils/utils.sh
 
-cd exercise
-
-git init
+makerepo 
 
 echo "initial" > foo.txt
 git add foo.txt
