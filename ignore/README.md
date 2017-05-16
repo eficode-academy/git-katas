@@ -10,7 +10,7 @@ If you want to signal to git that a file needs to be removed from git, but still
 ## The task
 
 1. Run the command `. setup.sh`
-1. Create a file with the name `.s`
+1. Create a file with the name `foo.s`
 1. What is the output of `git status`?
 1. Create a `.gitignore` file in your working directory containing `*.s`
 1. What is the output of `git status`?
