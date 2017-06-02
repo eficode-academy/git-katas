@@ -5,6 +5,8 @@ maintainer: randomsort
 
 ## Quick Start
 
+![Quick Start](/images/quickstart.gif)
+
 - Clone this repository
 - Go into the folder you want to solve an exercise in
 - Run the `setup.sh` script
@@ -33,4 +35,3 @@ If you miss exercises or find errors in any of them, feel free to improve them a
 You can also make an issue so we notice an opportunity to improve!
 
 Thank you!
-
