@@ -14,6 +14,6 @@ Save it!
 1. For extra credit what if someone reset their branch, force pushed and you pulled? Can you restore the old state?
 
 ## Relevant git commands
--`git reflog
-- git cherry-pick
-- git reset --hard`
+- `git reflog`
+- `git cherry-pick`
+- `git reset --hard`
