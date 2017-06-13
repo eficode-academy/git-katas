@@ -1,6 +1,6 @@
 # gitkatas
 ## Kata 5: Commit on wrong branch
-This kata was shameless ripped off [Git Katas](from http://blog.schauderhaft.de/gitkata/)
+This kata was shameless ripped off from [Git Katas](http://blog.schauderhaft.de/gitkata/)
 
 You are working really hard on the master branch. 
 Part of your work is already committed. This is when your boss comes in with an urgent request.
