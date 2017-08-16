@@ -4,7 +4,7 @@ This kata will introduce you to the commands `git add` and `git commit`.
 You can look at the bottom of this file, if you have not yet done basic git configuration.
 ## The task
 
-1. Run `./setup.sh`
+1. Run `. setup.sh`
 1. `cd exercise`
 1. Use `git status` to see which branch you are on.
 1. What does `git log` look like?
