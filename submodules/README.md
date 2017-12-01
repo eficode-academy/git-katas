@@ -27,7 +27,8 @@ Go back to your product repo.
 1. What is the status now in your product repo?
 1. Go to your include folder, make a change and `push` it back to its origin
 
-1. Go to the `./exercise/ComponentA/` folder, how does it look?
+Making a fresh clone
+
 1. Go to the `exercise` dir
 1. Run `git clone productA productB`
 1. What happened?
