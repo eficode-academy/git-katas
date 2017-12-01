@@ -7,18 +7,26 @@ A _product_ repository and two component repositories.
 You will only need the _product_ repo and one _component_, but feel free to use the other component to experiment.
 
 # Task
+In product:
+
 1. Go into the _product_ repo and run `git submodule add ../ComponentA/ include`
 1. What does your working directory look like?
 1. Does `git status` look like you expect? What if you cd to `include`?
 1. Commit the changes to your product repo.
+
+In Component A:
+
 1. Go to the `ComponentA` repository in the exercise folder. Does it know that it is a submodule?
 1. Make a change and commit it to your component.
-1. Execute `git checkout master~0` to detach the HEAD.  We need to do this to be able to push to the repo.
-1. Go back to your product repo.
+1. Execute `git checkout master~0` to detach the HEAD.  We need to do this to be able to push to this repo.
+
+Go back to your product repo.
+
 1. Does `git status` or `git submodule status` tell you anything about this new commit?
 1. Go to the `include` path and pull the newest version.
 1. What is the status now in your product repo?
-1. Go to your include folder, make a change and push it back to its origin
+1. Go to your include folder, make a change and `push` it back to its origin
+
 1. Go to the `./exercise/ComponentA/` folder, how does it look?
 1. Go to the `exercise` dir
 1. Run `git clone productA productB`
