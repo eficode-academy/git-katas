@@ -11,8 +11,9 @@ You will only need the _product_ repo and one _component_, but feel free to use 
 1. What does your working directory look like?
 1. Does `git status` look like you expect? What if you cd to `include`?
 1. Commit the changes to your product repo.
-1. Go to the component repository in the exercise folder. Does it know that it is a submodule?
+1. Go to the `ComponentA` repository in the exercise folder. Does it know that it is a submodule?
 1. Make a change and commit it to your component.
+1. Execute `git checkout master~0`
 1. Go back to your product repo.
 1. Does `git status` or `git submodule status` tell you anything about this new commit?
 1. Go to the `include` path and pull the newest version.
