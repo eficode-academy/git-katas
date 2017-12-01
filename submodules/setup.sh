@@ -1,31 +1,31 @@
-rm -rf exercise
-mkdir exercise
+#!/usr/bin/env bash
 
-cd exercise
+SCRIPT_PATH="$( cd "$(dirname "$0")" ; pwd -P )"
+echo ${SCRIPT_PATH}
 
-mkdir ComponentA
+EXERCISE_DIR=${SCRIPT_PATH}/exercise
 
-cd ComponentA
+if [ -d ${EXERCISE_DIR} ]; then
+  rm -rf ${EXERCISE_DIR}
+fi
+
+mkdir ${EXERCISE_DIR}
+
+cd ${EXERCISE_DIR}
+
+mkdir component
+
+cd component
 git init
-touch CompA.h
-git add CompA.h
-git commit -m "component A"
+touch component.h
+git add component.h
+git commit -m "Touch component header."
 
 cd ..
 
-mkdir ComponentB
-cd ComponentB
+mkdir product
+cd product
 git init
-touch CompB.h
-git add CompB.h
-git commit -m "component B"
-
-cd ..
-
-
-mkdir productA
-cd productA
-git init
-touch ProductA.h
-git add ProductA.h
-git commit -m "productA"
+touch product.h
+git add product.h
+git commit -m "Touch product header."
