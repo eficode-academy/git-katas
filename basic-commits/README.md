@@ -44,8 +44,3 @@ For the vim scared:
 
 for the windows peeps:
 - `git config --global core.editor notepad`
-## Aliases
-
-You can set up aliases as such:
-`git config --global alias.lol 'log --oneline --decorate --graph --all'`
-This might be useful to you.
