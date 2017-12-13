@@ -1,6 +1,24 @@
 # Git Kata: Configuring git
 
-## Windows
+
+## 1. Git Initial Configuration
+1. `git config --global user.name "John Doe"`
+1. `git config --global user.email "johndoe@example.com`
+
+For the vim scared:
+- `git config --global core.editor emacs`
+
+For the windows peeps:
+- `git config --global core.editor notepad`
+
+## Aliases
+
+You can set up aliases as such:
+* `git config --global alias.lol 'log --oneline --decorate --graph --all'`
+
+This might be useful to you.
+
+## 2. Downloading and Installing on Windows
 
 * Download at [https://git-scm.com/download/win](https://git-scm.com/download/win)
 * Install using the pre-selected defaults
@@ -18,22 +36,3 @@ For GitHub this is a section in user settings.
 For BitBucket server this is SSH Keys under Manage Account
 
 Git clone ssh://git@github.com/praqma-training/gitkatas.git
-
-
-
-## Git Initial Configuration
-1. `git config --global user.name "John Doe"`
-1. `git config --global user.email "johndoe@example.com`
-
-For the vim scared:
-- `git config --global core.editor emacs`
-
-For the windows peeps:
-- `git config --global core.editor notepad`
-
-## Aliases
-
-You can set up aliases as such:
-* `git config --global alias.lol 'log --oneline --decorate --graph --all'`
-
-This might be useful to you.
