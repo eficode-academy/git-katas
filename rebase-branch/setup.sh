@@ -3,7 +3,6 @@
 # Include utils
 source ../utils/utils.sh
 kata="rebase-branch"
-set -e
 
 makerepo
 
