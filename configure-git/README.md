@@ -6,7 +6,7 @@
 1. `git config --global user.email "johndoe@example.com`
 
 For the vim scared:
-- `git config --global core.editor emacs`
+- `git config --global core.editor nano`
 
 For the windows peeps:
 - `git config --global core.editor notepad`

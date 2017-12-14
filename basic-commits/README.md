@@ -40,7 +40,7 @@ You can look at the bottom of this file, if you have not yet done basic git conf
 1. `git config --global user.name "John Doe"`
 1. `git config --global user.email "johndoe@example.com`
 For the vim scared:
-- `git config --global core.editor emacs`
+- `git config --global core.editor nano`
 
 for the windows peeps:
 - `git config --global core.editor notepad`
