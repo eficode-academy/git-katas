@@ -10,14 +10,13 @@ maintainer: randomsort
 - Clone this repository
 - Go into the folder you want to solve an exercise in
 - Run the `setup.sh` script
-- Consult the README.md in that folder to get a exercise description
-
+- Consult the README.md in that folder to get a description of the exercise
 
 ## Purpose of Git Katas
 
-In this repository you find a bunch of Git exercises.
+This repository is a collection of Git exercises.
 The concept is stolen without shame from [Schauderhaft.de](http://blog.schauderhaft.de/gitkata/).
-They have unfortunately not maintained the system - and we need more good Git exercises.
+Unfortunately, they have not maintained the system - and we need more good Git exercises.
 
 The exercises are designed for use when we are teaching Git courses. You should be able to use them as self-contained exercises that will allow you to keep your Git skills sharp.
 
