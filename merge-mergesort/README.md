@@ -11,7 +11,7 @@ The task is to look at the merge conflict, and solve it by editing the file acco
 
 1. Run the command `. setup.sh`
 1. run `git branch` to see the two branches present
-1. `git merge MergeSort-impl`
+1. `git merge Mergesort-impl`
 1. Solve the merge conflict :)
 
 
