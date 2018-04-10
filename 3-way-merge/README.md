@@ -6,7 +6,7 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 1. Run `. setup.sh`
 1. Create a branch called greeting and check it out
 1. Edit the greeting.txt to contain your favorite greeting
-1. Add greeting.txt files to staging area using patch mode
+1. Add greeting.txt files to staging area using patch mode (`-p`)
 1. Commit
 1. Switch back to the master branch
 1. Create a file README.md with information about this repository
