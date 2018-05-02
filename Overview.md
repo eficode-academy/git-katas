@@ -4,7 +4,7 @@
 ## [Bad-commit](bad-commit/README.md)
 Cleaning up a bit.
 
-## [basic-commits](basic-branching/README.md)
+## [basic-commits](basic-commits/README.md)
 Very basic creation of commits.
 
 ## [basic-staging](basic-staging/README.md)
