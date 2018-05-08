@@ -5,6 +5,7 @@ You can look at the bottom of this file, if you have not yet done basic git conf
 ## The task
 
 1. Run `. setup.sh`
+1. Run `cd exercise` to switch to the exercise directory
 1. Use `git status` to see which branch you are on.
 1. What does `git log` look like?
 1. Create a file
