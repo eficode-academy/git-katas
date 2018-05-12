@@ -12,7 +12,7 @@ Hint: `git checkout` will make you switch from one branch to another.
 1. Use `git checkout mybranch` to switch to your new branch.
 1. How does the output from `git status` change when you switch between the _master_ and the new branch that you have created? 
 1. How does the workspace change when you change between the two branches?
-1. Switch to your _mybranch_ branch.
+1. Make sure you are on your _mybranch_ branch before you continue.
 1. Create a file called `file1.txt` with your name.
 1. `Add` the file and `commit` with this change.
 1. Use `git log --oneline --decorate --graph` to see your branch pointing to the new commit.
