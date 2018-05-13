@@ -31,3 +31,5 @@ Suddenly, you're made aware that a bug has made it to production.  You'll stash 
 - `git stash list`
 - `git stash apply`
 - `git log --oneline --decorate --all --graph`
+- `git commit`
+- `git add`
