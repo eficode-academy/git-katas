@@ -10,33 +10,17 @@ $ . ./setup.sh
 You are working on a project that involves generated files.  say you are compiling C files into object files.
 before checking out a new branch you want to start clean
 
-1. 
-1. what does the commit log look like ?
-1. use git stash to stash your current work
-1. now, what work do you have in the working directory?  what work do you have staged ?
-1. what does the commit log look like ?
-1. what does the stash list look like ?
-1. fix the typos in bug.txt on master and commit your changes.
-1. now to get back to your work, apply the stash to master.
-1. what work do you have in the working directory?  what work do you have staged ? 
-1. what does the commit log look like ?
-1. what does the stash list look like ?
-1. commit the changes to master
-1. what does the stash list look like ?
-1. we won't need the stash anymore. drop it.
-1. what does the stash list look like ?
-1. what does the commit log look like ?
+1. Explore the directory with `ls -R`. There is a lot going on.  Code files, temp files, object files,..  Lets clean up!
+1. Just to be safe, do a dry run and execute the clean command with the ` -n` option
+1. Oh noes!  there's a .c file that would have been deleted!  
+1. Add mylib.c to the staging area. don't commit it.
+1. Run the clean command with the ` -n` option. notice that mylib.c would not be deleted. Also notice that the files in the obj directoy are not listed
+1. Run the clean command with the ` -n -d ` option. 
+1. Looks good! clean the repo ` -f -d `
 
 
 ## Useful commands
-- `git status`
-- `git status -s`
-- `git diff`
-- `git diff master`
-- `git stash`
-- `git stash list`
-- `git stash apply`
-- `git stash drop`
-- `git log --oneline --decorate --all --graph`
-- `git commit`
+- `git clean -n`
 - `git add`
+- `git clean -n -d`
+- `git clean -f -d`
