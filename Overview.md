@@ -16,6 +16,9 @@ The first stride into branching.
 ## [basic-stashing](basic-stashing/README.md)
 The first stride into branching.
 
+## [basic-cleaning](basic-cleaning/README.md)
+Cleaning the workspace.
+
 ## [ignore](ignore/README.md)
 The basics of using the `.gitignore` file.
 
@@ -39,7 +42,6 @@ Using rebase as an alternative to merging.
 
 ## [pre-push](pre-push/README.md)
 A quick exercise in using Git hooks.
-
 
 ## [reorder-the-history](reorder-the-history/README.md)
 We might have created our commits in a suboptimal order, practice to fix that scenario here.
