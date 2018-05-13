@@ -13,6 +13,9 @@ interacting with the stage (index).
 ## [basic-branching](basic-branching/README.md)
 The first stride into branching.
 
+## [basic-cleaning](basic-cleaning/README.md)
+Cleaning the workspace.
+
 ## [ignore](ignore/README.md)
 The basics of using the `.gitignore` file.
 
