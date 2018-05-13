@@ -8,21 +8,22 @@ kata="kata5-commit-on-wrong-branch"
 makerepo 
 
 echo "Initial content of the file" > file.txt
+touch fix.txt
 
-git add file.txt
+git add file.txt fix.txt
 git commit -m "Initial commit"
 
 
-echo "this file hos soome tyypposs" > bug.txt
+echo "this file haaasss some typos" > bug.txt
 
 git add bug.txt
 git commit -m "add bug.txt"
 
-echo "some changes i made and staged" >> file.txt
+echo "some changes I made and staged" >> file.txt
 
 git add file.txt
 
-echo "some changes i made and did not stage yet" >> file.txt
+echo "some changes I made and did not stage yet" >> file.txt
 
-echo "a file i was making and did not stage" > fix.txt
+echo "changes I did not stage" > fix.txt
 
