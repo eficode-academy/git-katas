@@ -1,4 +1,4 @@
-# Git Kata: rebase branch Basic stashing 
+# Git Kata: Basic stashing 
 
 ## Setup:
 In your terminal, run
