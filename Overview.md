@@ -14,7 +14,10 @@ interacting with the stage (index).
 The first stride into branching.
 
 ## [basic-stashing](basic-stashing/README.md)
-The first stride into branching.
+The first stride into stashing.
+
+## [basic-cleaning](basic-cleaning/README.md)
+Cleaning the workspace.
 
 ## [ignore](ignore/README.md)
 The basics of using the `.gitignore` file.
