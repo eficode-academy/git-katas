@@ -4,7 +4,7 @@
 
 In your terminal, run
 ```
-$ ./setup.sh && cd excercise
+$ ./setup.sh && cd exercise
 ```
 
 ## The task
