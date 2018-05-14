@@ -13,9 +13,6 @@ interacting with the stage (index).
 ## [basic-branching](basic-branching/README.md)
 The first stride into branching.
 
-## [basic-stashing](basic-stashing/README.md)
-The first stride into branching.
-
 ## [basic-cleaning](basic-cleaning/README.md)
 Cleaning the workspace.
 
@@ -49,6 +46,9 @@ We might have created our commits in a suboptimal order, practice to fix that sc
 ## [reset](reset/README.md)
 Reset is a powerful and slightly dangerous command if you do not know what you are doing. 
 Go trough the three modes of resetting here.
+
+## [basic-stashing](basic-stashing/README.md)
+The first stride into stashing.
 
 ## [save-my-commit](save-my-commit/README.md)
 Should you accidentially or on purpose delete a commit, go here to try and save it.
