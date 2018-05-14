@@ -40,13 +40,15 @@ Using rebase as an alternative to merging.
 ## [pre-push](pre-push/README.md)
 A quick exercise in using Git hooks.
 
-
 ## [reorder-the-history](reorder-the-history/README.md)
 We might have created our commits in a suboptimal order, practice to fix that scenario here.
 
 ## [reset](reset/README.md)
 Reset is a powerful and slightly dangerous command if you do not know what you are doing. 
 Go trough the three modes of resetting here.
+
+## [basic-stashing](basic-stashing/README.md)
+The first stride into stashing.
 
 ## [save-my-commit](save-my-commit/README.md)
 Should you accidentially or on purpose delete a commit, go here to try and save it.
