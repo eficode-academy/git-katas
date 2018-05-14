@@ -3,7 +3,7 @@
 # Include utils
 source ../utils/utils.sh
 
-kata="kata5-commit-on-wrong-branch"
+kata="basic-stashing"
 
 makerepo 
 
