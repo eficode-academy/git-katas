@@ -10,8 +10,8 @@ At some point, your team integrates a new version library-1.2.4. Because you are
 prudent, you do this on a branch `integrate-library-1.2.4`.
 
 Unfortunately, you discover after your merge that the library has a bug, which
-has to be fixed by this other team. To prevent from releasing it into production,
-you decide to revert the merge commit.
+has to be fixed by this other team. To prevent the bug from being released into
+production, you decide to revert the merge commit.
 
 ## The task
 * Revert the merge commit
