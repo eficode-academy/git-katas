@@ -14,7 +14,8 @@ has to be fixed by this other team. To prevent the bug from being released into
 production, you decide to revert the merge commit.
 
 ## The task
-* Revert the merge commit
+* Revert the merge commit  
+  *Note: You may assume that feature Y is also working with the old library version*
 * Take the role of the library team and fix the bug in the library on the branch
 * Explore how you can get the changes from the branch into the master again  
   Try to merge first to see what happens
