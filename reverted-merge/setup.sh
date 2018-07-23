@@ -44,12 +44,3 @@ git commit -m"Merge integrate-library-1.2.4" --no-edit
 echo "Useful feature Y" >> mymodule.txt
 git add mymodule.txt
 git commit -m"Add feature Y"
-
-
-# git revert HEAD~1 -m 1 --no-edit
-# # deal with revert conflict
-# echo "module using library-1.2.3" > mymodule.txt
-# echo "Promising feature X" >> mymodule.txt
-# echo "Useful feature Y" >> mymodule.txt
-# git add mymodule.txt
-# git commit --no-edit
