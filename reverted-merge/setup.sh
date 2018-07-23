@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash
 
 # Include utils
 source ../utils/utils.sh
