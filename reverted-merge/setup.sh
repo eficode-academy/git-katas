@@ -6,12 +6,6 @@ source ../utils/utils.sh
 kata="reverted-merge"
 makerepo
 
-if [[ ! `pwd` =~ .*exercise.* ]]; then
-  echo "Not in correct directory"
-  echo "Exiting to prevent changes from surrounding repository"
-  return
-fi
-
 echo "library-1.2.3" > lib.txt
 echo "module using library-1.2.3" > mymodule.txt
 git add lib.txt mymodule.txt
