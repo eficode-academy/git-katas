@@ -3,7 +3,6 @@
 # Include utils
 source ../utils/utils.sh
 
-kata="reverted-merge"
 makerepo
 
 echo "library-1.2.3" > lib.txt
