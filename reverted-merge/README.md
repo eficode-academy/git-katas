@@ -22,6 +22,9 @@ production, you decide to revert the merge commit.
 * Explore how you can get the changes from the branch into the master again  
   Try to merge first to see what happens
 
+For in depth discussion of some the the issues that can happen when reverting a merge commit consult this gist:
+[Reverting a faulty merge](https://github.com/git/git/blob/master/Documentation/howto/revert-a-faulty-merge.txt).
+
 ## Useful commands
 
 * `git revert`

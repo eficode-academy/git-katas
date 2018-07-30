@@ -14,7 +14,7 @@ git branch integrate-library-1.2.4
 git checkout integrate-library-1.2.4
 
 echo "library-1.2.4" > lib.txt
-echo "New libarry funtcionality" >> lib.txt
+echo "New library functionality" >> lib.txt
 echo "module using library-1.2.4" > mymodule.txt
 git add lib.txt
 git add mymodule.txt
