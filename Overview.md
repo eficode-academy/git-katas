@@ -22,6 +22,10 @@ The basics of using the `.gitignore` file.
 ## [commit-on-wrong-branch](commit-on-wrong-branch/README.md)
 An administrative exercise, how do we _move_ a commit that we accidentially put on the wrong branch.
 
+## [commit-on-wrong-branch-2](commit-on-wrong-branch-2/README.md)
+Another exercise on what to do if you have accidentially committed
+on the wrong branch.
+
 ## [ff-merge](ff-merge/README.md)
 A tour around the most trivial of merges.
 
