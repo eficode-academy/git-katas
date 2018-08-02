@@ -34,6 +34,9 @@ A basic merge between diverging branches with incompatible changesets.
 ## [merge-mergesort](merge-mergesort/README.md)
 A merge confligt with actual code.
 
+## [reverted-merge](reverted-merge/README.md)
+A merge has to be reverted, but this causes problems.
+
 ## [rebase-branch](rebase-branch/README.md)
 Using rebase as an alternative to merging.
 
@@ -44,7 +47,7 @@ A quick exercise in using Git hooks.
 We might have created our commits in a suboptimal order, practice to fix that scenario here.
 
 ## [reset](reset/README.md)
-Reset is a powerful and slightly dangerous command if you do not know what you are doing. 
+Reset is a powerful and slightly dangerous command if you do not know what you are doing.
 Go trough the three modes of resetting here.
 
 ## [basic-stashing](basic-stashing/README.md)
