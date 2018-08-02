@@ -14,6 +14,7 @@ the `master` branch instead of the feature branch.
 
 1. Run `. setup.sh`
 2. Move the faulty commit from the `master` branch to the `new-feature` branch.
+3. How would you also bring the bugfix to your feature branch?
 
 ## Useful Commands
 
