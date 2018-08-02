@@ -12,8 +12,8 @@ the `master` branch instead of the feature branch.
 
 ## The task
 
-* Move the commit from the `master` branch to the `new-feature` branch.
-* What should happen to the bug fix with respect to the `new-feature` branch?
+1. Run `. setup.sh`
+2. Move the faulty commit from the `master` branch to the `new-feature` branch.
 
 ## Useful Commands
 
