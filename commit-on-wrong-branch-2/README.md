@@ -18,6 +18,6 @@ the `master` branch instead of the feature branch.
 
 ## Useful Commands
 
-* `git reset HEAD~1` to remove the last commit from the repository, i.e. move
-  the HEAD pointer to the commit before the last
+* `git reset HEAD~1` to move the current branch one step back. This has the consequence of _removing_ the newest commit from a branch
 * `git stash` to temporarily save your changes so that you can switch branches
+* `git cherry-pick` to add changeset from commit on current branch
