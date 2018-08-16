@@ -28,7 +28,7 @@ Go to the `product` repository.
 
 1. Does `git status` or `git submodule status` tell you anything about this new commit?
 1. Go to the `include` path and `git pull` the latest version.
-1. Go to the `project` path. What is the status now in your product repository?
+1. Go to the `product` path. What is the status now in your product repository?
 1. Go to your `include` folder. Make a change and `push` it back to its origin.
 
 Go to the `exercise` directory. We will make a clone.
