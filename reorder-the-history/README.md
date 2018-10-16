@@ -12,4 +12,4 @@ You should fix this such that our `git log` looks great!
 ### useful commands
 
 - `git rebase -i`
-- `git rev-parse`
+- `git reflog`
