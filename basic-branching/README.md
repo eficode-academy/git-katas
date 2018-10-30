@@ -3,8 +3,7 @@
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
 Hint: `git checkout` will make you switch from one branch to another.
 
-1. Run the script setup.sh: `./setup.sh`
-1. `cd exercise`
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
 1. Use `git branch` to see the two branches that are relevant for this exercise
 1. What branch are you on?
 1. Use `git branch mybranch` to create a new branch called _mybranch_

@@ -1,10 +1,8 @@
 # Git Kata: Basic cleaning 
 
 ## Setup:
-In your terminal, run
-```
-$ . ./setup.sh
-```
+
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## The task
 You are working on a project that involves generated files.  Say you are compiling C files into object files. Before checking out a new branch you want to start clean

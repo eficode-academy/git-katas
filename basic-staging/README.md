@@ -16,15 +16,15 @@ We will also work with `git reset` to reset the staged changes of a file, and `g
 
 You live in your own repository. There is a file called file.txt
 
-1. Run `. setup.sh`
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
 1. What's the content of file.txt?
-1. Overwrite the content in file.txt: `echo 2 > file.txt` to change the state of your file in the working directory
+1. Overwrite the content in file.txt: `echo 2 > file.txt` to change the state of your file in the working directory (or `sc file.txt '2'` in PowerShell)
 1. What does `git diff` tell you? 
 1. What does `git diff --staged` tell you? why is this blank?
 1. Run `git add file.txt` to stage your changes from the working directory.
 1. What does `git diff` tell you?
 1. What does `git diff --staged` tell you?
-1. Overwrite the content in file.txt: `echo 3 > file.txt` to change the state of your file in the working directory.
+1. Overwrite the content in file.txt: `echo 3 > file.txt` to change the state of your file in the working directory (or `sc file.txt '3'` in PowerShell).
 1. What does `git diff` tell you?
 1. What does `git diff --staged` tell you?
 1. Explain what is happening
@@ -33,7 +33,7 @@ You live in your own repository. There is a file called file.txt
 1. What does git status tell you now?
 1. Stage the change and make a commit
 1. What does the log look like?
-1. Overwrite the content in file.txt: `echo 4 > file.txt`
+1. Overwrite the content in file.txt: `echo 4 > file.txt` (or `sc file.txt '4'` in PowerShell)
 1. What is the content of file.txt?
 1. What does `git status` tell us?    
 1. Run `git checkout file.txt`
