@@ -5,7 +5,7 @@ makerepo
 
 echo '#! /usr/bin/env bash' > 'test.sh'
 echo 'if [[ $(( $(find * | wc -l) + 10 )) -gt 32 ]] ;then' >> 'test.sh'
-echo '  echo "test faild"' >> 'test.sh'
+echo '  echo "test failed"' >> 'test.sh'
 echo '  exit 1' >> 'test.sh'
 echo 'else' >> 'test.sh'
 echo '  echo "test passed"' >> 'test.sh'
