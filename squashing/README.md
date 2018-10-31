@@ -1,6 +1,7 @@
 # gitkatas
 ## Kata2 squash commits
-In this kata I did not worked as I should have, but I would like to clean up my history a bit.
+
+In this kata I did not work as I should have, but I would like to clean up my history a bit.
 
 The five newest commits all tinker with file.txt which obviously contains my feature.
 
