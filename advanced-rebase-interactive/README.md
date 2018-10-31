@@ -14,7 +14,7 @@ As this is an advanced exercise, there are no specific steps to follow and no si
 
 ## Task
 
-1. Run the command `source ./setup.sh`
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
 2. Explore the repo and the history so you know what happened
 3. Use `git rebase --interactive v0.0` to let you edit the "recipe" for the entire feature development.
 4. Clean up the history such that it actually makes sense. Try to use as many of the rebase "features" (e.g. reword, squash, fixup, drop) as possible. You decide yourself if you want to rewrite the whole thing in one go, or apply a few changes first, then run a new `git rebase -i v0.0` to keep cleaning.

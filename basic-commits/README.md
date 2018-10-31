@@ -4,8 +4,7 @@ This kata will introduce you to the commands `git add` and `git commit`.
 You can look at the bottom of this file, if you have not yet done basic git configuration.
 ## The task
 
-1. Run `. setup.sh`
-1. Run `cd exercise` to switch to the exercise directory
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
 1. Use `git status` to see which branch you are on.
 1. What does `git log` look like?
 1. Create a file
@@ -31,9 +30,9 @@ You can look at the bottom of this file, if you have not yet done basic git conf
 - `git log -n 5`
 - `git log --oneline`
 - `git log --oneline --decorate --graph`
-- `touch filename` to create a file
-- `echo content > file` to overwrite file with content
-- `echo content >> file` to append file with content
+- `touch filename` to create a file (or `sc filename ''` in PowerShell)
+- `echo content > file` to overwrite file with content (or `sc filename 'content'` in PowerShell)
+- `echo content >> file` to append file with content (or `ac filename 'content'` in PowerShell)
 
 
 ## Git Initial Configuration
