@@ -6,7 +6,7 @@ You should fix this such that our `git log` looks great!
 
 ## Task
 
-1. Run the command `. setup.sh`
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
 1. Reorder the history such that it actually makes sense
 
 ### useful commands

@@ -9,7 +9,7 @@ The task is to look at the merge conflict, and solve it by editing the file acco
 
 ## The task
 
-1. Run the command `. setup.sh`
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
 1. run `git branch` to see the two branches present
 1. `git merge Mergesort-impl`
 1. Solve the merge conflict :)
