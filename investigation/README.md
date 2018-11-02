@@ -1,4 +1,5 @@
 # Git Kata: Git objects
+
 Objects are stored in `<repository>/.git/objects` in subfolders matching the first two chars of the sha.
 `fc1da6e8f` is therefore the file: `.git/objects/fc/1da6e8f`.
 
@@ -8,6 +9,8 @@ Objects are stored in `<repository>/.git/objects` in subfolders matching the fir
 `git ls-tree master .` inflates and lists the content of a folder.
 
 ## Task
-Using `git ls-tree` and `git cat-file`, draw the entire Git datastructure.
-- What tree and blob objects do you have and what do they point at
-- What commits point inside this graph and where?
+
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+1. Using `git ls-tree` and `git cat-file`, draw the entire Git datastructure.
+	- What tree and blob objects do you have and what do they point at?
+	- What commits point inside this graph and where?

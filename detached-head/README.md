@@ -2,7 +2,7 @@
 ## detached head state
 
 To get the full experience from this exercise do:
-`. ./setup.sh`.
+`. setup.sh` (or `.\setup.ps1` in PowerShell)
 
 The user has ended up in a "detached head" state in the `kata3-detached-head-master` branch.
 

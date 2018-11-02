@@ -4,7 +4,7 @@ We can manipulate the History very much so. We should only ever tinker with our 
 We use reset to unstage change, but we can also do many more different things.
 
 ## Task
-1. Run the command `. setup.sh`
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
 1. How does your working directory look like?
 1. What does your log look like?
 1. Try to run `git reset --soft HEAD~1`
