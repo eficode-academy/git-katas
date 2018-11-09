@@ -39,3 +39,8 @@ If you miss exercises or find errors in any of them, feel free to improve them a
 You can also make an issue so we notice an opportunity to improve!
 
 Thank you!
+
+## Testing
+
+There is a very small test that you can run in powershell or bash.
+It is contained in the scripts `test.sh` and `test.ps1`.
