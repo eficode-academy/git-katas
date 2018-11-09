@@ -1,4 +1,10 @@
-#Rebase Exec
+# Rebase Exec
+
+## Setup
+
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+
+## Task
 
 Verify commits before push
 

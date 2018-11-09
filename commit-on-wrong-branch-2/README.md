@@ -10,9 +10,12 @@ After the bug fix, you continue to work on the new feature. After you committed
 the second part of the feature, you realize that you have done your commit on
 the `master` branch instead of the feature branch.
 
-## The task
+## Setup:
 
 1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+
+## The task
+
 2. Move the faulty commit from the `master` branch to the `new-feature` branch.
 3. How would you also bring the bugfix to your feature branch?
 

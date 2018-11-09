@@ -8,9 +8,12 @@ Sometimes you add a file by accident that was not meant for git eg. binary files
 If you want to signal to git that a file needs to be removed from git, but still want it in your working directory, then use `git rm --cached` to issue a remove command on the staging area, but not in your working directory.
 
 
-## The task
+## Setup:
 
 1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+
+## The task
+
 1. Create a file with the name `foo.s`
 1. What is the output of `git status`?
 1. Create a `.gitignore` file in your working directory containing `*.s`

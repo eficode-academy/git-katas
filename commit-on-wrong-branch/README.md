@@ -1,4 +1,8 @@
 # gitkatas
+## Setup:
+
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+
 ## Kata 5: Commit on wrong branch
 This kata was shameless ripped off from [Git Katas](http://blog.schauderhaft.de/gitkata/)
 

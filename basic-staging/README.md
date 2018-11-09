@@ -12,11 +12,14 @@ These changes do not have to be the same.
 
 We will also work with `git reset` to reset the staged changes of a file, and `git checkout` to return a file to a previous state.
 
+## Setup:
+
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+
 ## The task
 
 You live in your own repository. There is a file called file.txt
 
-1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
 1. What's the content of file.txt?
 1. Overwrite the content in file.txt: `echo 2 > file.txt` to change the state of your file in the working directory (or `sc file.txt '2'` in PowerShell)
 1. What does `git diff` tell you? 

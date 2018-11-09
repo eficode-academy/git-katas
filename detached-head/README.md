@@ -1,8 +1,10 @@
 # gitkatas
-## detached head state
 
-To get the full experience from this exercise do:
-`. setup.sh` (or `.\setup.ps1` in PowerShell)
+## Setup:
+
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+
+## Detached head state
 
 The user has ended up in a "detached head" state in the `kata3-detached-head-master` branch.
 
