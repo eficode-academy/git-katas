@@ -14,10 +14,13 @@ To run the tests I can execute the test script:
 ```
 $ ./test.sh
 ```
+## Setup:
+
+1. Run `. setup.sh`
+
 ## Tasks
 
-- Run the setup script `. setup.sh`
-- Use `git bisect` to locate the bad commit
+1. Use `git bisect` to locate the bad commit
 
 ## Verify
 

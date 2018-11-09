@@ -1,9 +1,12 @@
 # Git Kata: Basic revert
+## Setup:
+
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+
 ## The task
 
 You again live in your own branch, this time we will revert some change on a branch.
 
-1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
 1. Create a branch called `reverting`
 1. Checkout the branch
 1. What is the output of `git branch`?

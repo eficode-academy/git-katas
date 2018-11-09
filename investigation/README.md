@@ -8,9 +8,12 @@ Objects are stored in `<repository>/.git/objects` in subfolders matching the fir
 
 `git ls-tree master .` inflates and lists the content of a folder.
 
-## Task
+## Setup:
 
 1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+
+## Task
+
 1. Using `git ls-tree` and `git cat-file`, draw the entire Git datastructure.
 	- What tree and blob objects do you have and what do they point at?
 	- What commits point inside this graph and where?

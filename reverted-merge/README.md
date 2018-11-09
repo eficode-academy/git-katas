@@ -14,6 +14,10 @@ Unfortunately, you discover after your merge that the library has a bug, which
 has to be fixed by this other team. To prevent the bug from being released into
 production, you decide to revert the merge commit.
 
+## Setup
+
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+
 ## The task
 
 * Revert the merge commit  

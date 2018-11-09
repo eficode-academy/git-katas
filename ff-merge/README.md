@@ -1,9 +1,12 @@
 # Git Kata: Fast-forward Merge
+## Setup:
+
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+
 ## The task
 
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
 
-1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
 1. Create a branch called uppercase
 1. Checkout the branch
 1. What is the output of `git status`?

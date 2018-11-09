@@ -3,8 +3,11 @@
 We've lost the holy grail!
 Save it!
 
-# Task
+## Setup
+
 1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+
+# Task
 1. Save the most important commit that was lost
 1. What's the difference between saving using reset and using cherry-pick?
 1. Remove the `exercise` folder.

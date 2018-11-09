@@ -3,11 +3,17 @@
 Submodules are a way to embed other git repositories into your own, retaining a pointer to its `origin`.
 This allows you to grab source change directly, as well as _pushing_ them back.
 
-After running `. setup.sh` or `. ./setup.sh`, you'll be left in two repositories.
+## Setup
+
+1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+
+## Task
+
+After running `. setup.sh` or `. ./setup.sh`, you'll be left with two repositories inside the `exercises` folder.
+
 * A `product` repository
 * A `component` repository.
 
-# Task
 
 Go to the `product` repository.
 
