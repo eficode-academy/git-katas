@@ -5,6 +5,12 @@ maintainer: randomsort
 
 ## Quick Start
 
+### In the Cloud
+
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/praqma-training/git-katas.git)
+
+### On Your Local Machine
+
 ![Quick Start](/images/quickstart.gif)
 
 - Clone this repository
@@ -25,7 +31,6 @@ Exercises starting with _basic_ are entry-level - other exercises vary greatly i
 To get an overview of the exercises in here look in [Overview.md](Overview.md).
 
 Feel free to use these exercises, that's why they're public!
-
 
 ## Contributing
 
