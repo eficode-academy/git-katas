@@ -101,3 +101,9 @@ git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-
 ## Using the alias
 git lol     # Does a "git log --graph --decorate --pretty=oneline --abbrev-commit --all"
 ```
+
+## Testing
+
+There is a very small test that you can run in powershell or bash.
+It is contained in the scripts `test.sh` and `test.ps1`.
+
