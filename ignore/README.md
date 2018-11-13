@@ -24,7 +24,7 @@ If you want to signal to git that a file needs to be removed from git, but still
 1. What does `git status` tell us?
 1. Change `file1.txt`
 1. What does `git status` tell us? Why was the file tracked even though the `txt` extension is in the ignore file?
-1. Make another textfile in the repository, what does `git status` look like now? Why is it not tracked?
+1. Make another text file in the repository, what does `git status` look like now? Why is it not tracked?
 1. Stage the removal of `file1.txt` with the command `git rm --cached`
 1. What does `git status` say?
 

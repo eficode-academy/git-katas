@@ -1,6 +1,6 @@
 # Bisect
 
-The master branch is broken, now I wish we used pretested integrateion. I have been gone some days on vacation and now when I'm back I realize that master is broken and has been broken for a while. All the pull requests have been working but everyone have been too busy to realize that the master build is failing.
+The master branch is broken, now I wish we used pretested integration. I have been gone some days on vacation and now when I'm back I realize that master is broken and has been broken for a while. All the pull requests have been working but everyone have been too busy to realize that the master build is failing.
 
 I would like to know what commit introduced the test failure. But it seems that it's too hard to figure out by hand, the test is complicated and there are so many commits to go through and no one changed the test script.
 

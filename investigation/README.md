@@ -14,6 +14,6 @@ Objects are stored in `<repository>/.git/objects` in subfolders matching the fir
 
 ## Task
 
-1. Using `git ls-tree` and `git cat-file`, draw the entire Git datastructure.
+1. Using `git ls-tree` and `git cat-file`, draw the entire Git data structure.
 	- What tree and blob objects do you have and what do they point at?
 	- What commits point inside this graph and where?
