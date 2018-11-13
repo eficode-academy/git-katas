@@ -11,6 +11,11 @@ For the vim scared:
 For the windows peeps:
 - `git config --global core.editor notepad`
 
+or alternatively:
+
+- `git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"`
+
+
 ## Aliases
 
 You can set up aliases as such:
