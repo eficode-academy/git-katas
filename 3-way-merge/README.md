@@ -16,7 +16,7 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 1. Try adding README.md file to staging area using patch mode (it wont work)
 1. What is the output of `git status`?
 1. Add the README.md file to staging area and make the commit
-1. What is the output of `git log --oneline --decorate --graph --all`?
+1. What is the output of `git log --oneline --graph --all`?
 1. Diff the branches
 1. Merge the greeting branch into master
 
@@ -33,4 +33,4 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 - `git commit -m`
 - `git merge <branchA> <branchB>`
 - `git diff <branchA> <branchB>`
-- `git log --oneline --decorate --graph --all`
+- `git log --oneline --graph --all`
