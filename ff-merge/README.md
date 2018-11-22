@@ -13,7 +13,7 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 1. Edit the greeting.txt to contain an uppercase greeting
 1. Add greeting.txt files to staging area and commit
 1. What is the output of `git branch`?
-1. What is the output of `git log --oneline --decorate --graph --all`
+1. What is the output of `git log --oneline --graph --all`
 1. Checkout `master` branch
 1. Use `cat` to see the contents of the greetings
 1. Diff the branches
@@ -32,4 +32,4 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 - `git commit -m`
 - `git merge <branch>`
 - `git diff <branchA> <branchB>`
-- `git log --oneline --decorate --graph --all`
+- `git log --oneline --graph --all`

@@ -22,7 +22,7 @@ You live in your own repository. There is a file called file.txt
 
 1. What's the content of file.txt?
 1. Overwrite the content in file.txt: `echo 2 > file.txt` to change the state of your file in the working directory (or `sc file.txt '2'` in PowerShell)
-1. What does `git diff` tell you? 
+1. What does `git diff` tell you?
 1. What does `git diff --staged` tell you? why is this blank?
 1. Run `git add file.txt` to stage your changes from the working directory.
 1. What does `git diff` tell you?
@@ -38,7 +38,7 @@ You live in your own repository. There is a file called file.txt
 1. What does the log look like?
 1. Overwrite the content in file.txt: `echo 4 > file.txt` (or `sc file.txt '4'` in PowerShell)
 1. What is the content of file.txt?
-1. What does `git status` tell us?    
+1. What does `git status` tell us?
 1. Run `git checkout file.txt`
 1. What is the content of file.txt?
 1. What does `git status` tell us?
@@ -51,11 +51,11 @@ You live in your own repository. There is a file called file.txt
 - `git commit`
 - `git commit -m`
 - `git reset`
-- `git checkout`        
+- `git checkout`
 - `git log`
 - `git log -n 5`
 - `git log --oneline`
-- `git log --oneline --decorate --graph`
+- `git log --oneline --graph`
 - `git reset HEAD `
 - `git checkout`
 
