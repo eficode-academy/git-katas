@@ -11,7 +11,7 @@ Part of your work is already committed. This is when your boss comes in with an 
 
 Since your current HEAD is not ready for prime time you backup one commit, and start a new branch named 'quickfix'. You do whatever your boss wants and commit the changes to that new branch.
 
-Thats when you realize you created a minor mess with your branches.
+That's when you realize you created a minor mess with your branches.
 
 Currently your commits look like this
 ```

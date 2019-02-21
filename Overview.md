@@ -20,10 +20,10 @@ Cleaning the workspace.
 The basics of using the `.gitignore` file.
 
 ## [commit-on-wrong-branch](commit-on-wrong-branch/README.md)
-An administrative exercise, how do we _move_ a commit that we accidentially put on the wrong branch.
+An administrative exercise, how do we _move_ a commit that we accidentally put on the wrong branch.
 
 ## [commit-on-wrong-branch-2](commit-on-wrong-branch-2/README.md)
-Another exercise on what to do if you have accidentially committed
+Another exercise on what to do if you have accidentally committed
 on the wrong branch.
 
 ## [ff-merge](ff-merge/README.md)
@@ -36,7 +36,7 @@ A basic merge, involving multiple diverged branches.
 A basic merge between diverging branches with incompatible changesets.
 
 ## [merge-mergesort](merge-mergesort/README.md)
-A merge confligt with actual code.
+A merge conflict with actual code.
 
 ## [reverted-merge](reverted-merge/README.md)
 A merge has to be reverted, but this causes problems.
@@ -58,7 +58,7 @@ Go trough the three modes of resetting here.
 The first stride into stashing.
 
 ## [save-my-commit](save-my-commit/README.md)
-Should you accidentially or on purpose delete a commit, go here to try and save it.
+Should you accidentally or on purpose delete a commit, go here to try and save it.
 
 ## [squashing](squashing/README.md)
 A lot of small commits is good when you are working locally, but for sharing your code, it might be more beneficial to deliver your code changes in large sets. Go here to experiment with that.
