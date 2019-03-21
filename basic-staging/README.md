@@ -49,7 +49,7 @@ You live in your own repository. There is a file called file.txt
 
 - `git add`
 - `git commit`
-- `git commit -m`
+- `git commit -m "My lazy short commit message"`
 - `git reset`
 - `git checkout`
 - `git log`
