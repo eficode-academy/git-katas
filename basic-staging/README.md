@@ -62,5 +62,5 @@ You live in your own repository. There is a file called file.txt
 ## Aliases
 
 You can set up aliases as such:
-`git config --global alias.lol 'log --oneline --decorate --graph --all'`
+`git config --global alias.lol 'log --oneline --graph --all'`
 This might be useful to you.
