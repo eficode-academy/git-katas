@@ -43,3 +43,6 @@ Output:
 Writes the string "Hello World" to a file.txt, overwriting current content or creating the file if needed.
 
 `echo "More stuff" >> file.txt` appends "More stuff" to the end of the file on a new line.
+
+`touch file.txt`
+Create an empty file
