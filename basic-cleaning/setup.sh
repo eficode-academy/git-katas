@@ -9,13 +9,13 @@ makerepo
 mkdir src
 
 echo "** SOME USEFUL INFO ** " > README.txt
-echo "// awsome C code " > src/myapp.c
-echo "// awsome C header " > src/myapp.h
+echo "// awesome C code " > src/myapp.c
+echo "// awesome C header " > src/myapp.h
 
 git add src/myapp.* README.txt
 git commit -m "C code for my app"
 
-echo "// awsome C library  " > src/mylib.c
+echo "// awesome C library  " > src/mylib.c
 
 touch src/myapp.c~ src/oldfile.c~ 
 touch README.txt~
