@@ -26,7 +26,7 @@ Output:
 
 `ls -l` (list files in long form)
 
-`ls -a` (list all including hidden files
+`ls -a` (list all including hidden files)
 
 ## Change directory
 `cd <foldername>`
