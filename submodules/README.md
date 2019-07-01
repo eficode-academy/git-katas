@@ -7,13 +7,14 @@ This allows you to grab source change directly, as well as _pushing_ them back.
 
 1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
 
+> NOTE: If running setup.sh on windows, you can run into problems by sourcing the setup script. Instead, run `./setup.sh`, and the folders would be created correctly.
+
 ## Task
 
 After running `. setup.sh` or `. ./setup.sh`, you'll be left with two repositories inside the `exercises` folder.
 
 * A `product` repository
 * A `component` repository.
-
 
 Go to the `product` repository.
 
