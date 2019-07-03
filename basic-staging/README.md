@@ -33,7 +33,7 @@ You live in your own repository. There is a file called `file.txt`.
 1. Explain what is happening
 1. Run `git status` and observe that `file.txt` are present twice in the output.
 1. Run `git reset HEAD file.txt` to unstage the change
-1. What does git status tell you now?
+1. What does `git status` tell you now?
 1. Stage the change and make a commit
 1. What does the log look like?
 1. Overwrite the content in `file.txt`: `echo 4 > file.txt` (or `sc file.txt '4'` in PowerShell)
