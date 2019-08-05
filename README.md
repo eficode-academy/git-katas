@@ -32,6 +32,28 @@ To get an overview of the exercises in here look in [Overview.md](Overview.md).
 
 Feel free to use these exercises, that's why they're public!
 
+## Suggested Learning Path
+
+If you are coming to this repository for some basic Git knowledge, we recommend going through the exercises in the following order.
+This is the order that Jan Krag at Praqma teaches Git and might change over time. There are more exercises than this, but these should take you through
+everything you need to be able to use Git effectively in your day to day life. 
+
+- [Basic Commits](./basic-commits/README.md)
+- [Basic Staging](./basic-staging/README.md)
+- [Investigation](./investigation/README.md)
+- [Basic Branching](./basic-branching/README.md)
+- [Fast Forward Merge](./ff-merge/README.md)
+- [3 way Merge](./3-way-merge/README.md)
+- [Merge Mergesort](./merge-mergesort/README.md)
+- [Rebase Branch](./rebase-branch/README.md)
+- [Basic Revert](./basic-revert/README.md)
+- [Reset](./reset/README.md)
+- [Basic Cleaning](./basic-cleaning/README.md)
+- [Amend](./amend/README.md)
+- [Reorder the History](./reorder-the-history/README.md)
+- [Advanced Rebase Interactive](./advanced-rebase-interactive/README.md)
+- [Basic Stashing](./basic-stashing/README.md)
+
 ## Contributing
 
 If you miss exercises or find errors in any of them, feel free to improve them and make a pull request.
