@@ -9,11 +9,11 @@ Objects are stored in `<repository>/.git/objects` in subfolders matching the fir
 
 ## Task
 1. Use `git log` to find the sha of a commit
-1. Locate the file in the `.git` folder
-1. What is in the file?
-1. Use `git cat-file -p <sha>` to inflate and view the content.
-1. Use `git cat-file` to look at the tree referenced in your commit
-1. Use `git cat-file` to look at the parent commit
-1. Do these commands work in the `.git` folder? Do you have to be in there?
-1. Compare `cat-file` looking at a _tree_ object to using `ls-tree` on a _commit_
-1. How does it look on an older commit compared to what you have in `HEAD`?
+2. Locate the file in the `.git` folder
+3. What is in the file?
+4. Use `git cat-file -p <sha>` to inflate and view the content.
+5. Use `git cat-file` to look at the tree referenced in your commit
+6. Use `git cat-file` to look at the parent commit
+7. Do these commands work in the `.git` folder? Do you have to be in there?
+8. Compare `cat-file` looking at a _tree_ object to using `ls-tree` on a _commit_
+9. How does it look on an older commit compared to what you have in `HEAD`?

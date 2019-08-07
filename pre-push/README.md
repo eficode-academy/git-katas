@@ -6,7 +6,7 @@ They are all named `*.sample` to prevent them from being executed.
 
 ## Task
 1. Clone a repository ( or use one that you already have )
-1. In the repository's `.git/hooks/` folder put the file `pre-push` that's in this repository
-1. What happens when you try to push to master?
-1. What happens if you try to push to a different branch?
-1. What happens if you switch the if / else blocks?
+2. In the repository's `.git/hooks/` folder put the file `pre-push` that's in this repository
+3. What happens when you try to push to master?
+4. What happens if you try to push to a different branch?
+5. What happens if you switch the if / else blocks?

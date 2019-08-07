@@ -11,27 +11,27 @@ Suddenly, you're made aware that a bug has made it to production. You'll stash y
 
 1. Explore the repo
    1. What work do you have in the working directory?
-   1. What work do you have staged ?
-   1. What does the commit log look like ?
+   2. What work do you have staged ?
+   3. What does the commit log look like ?
    >*Notice that file.txt has some staged changes (i.e. changes in the index) and unstaged changes (changes in the working directory)*
-1. Use `git stash` to stash your current work.
+2. Use `git stash` to stash your current work.
    1. Now, what work do you have in the working directory?
-   1. What work do you have staged ?
-   1. What does the commit log look like ?
-   1. What does the stash list look like ?
-1. Fix the typos in bug.txt on master and commit your changes.
-1. Now to get back to your work, apply the stash to master.
+   2. What work do you have staged ?
+   3. What does the commit log look like ?
+   4. What does the stash list look like ?
+3. Fix the typos in bug.txt on master and commit your changes.
+4. Now to get back to your work, apply the stash to master.
    1. What work do you have in the working directory?
-   1. What work do you have staged ?
+   2. What work do you have staged ?
    >*Oops. All our changes are unstaged now. This may be undesirable and unexpected*
-1. Undo our changes with `git reset --hard HEAD`. This is an unsafe command as it will remove files from your index and working directory permanently, but we have our changes safely stashed so we're ok. Review the [reset](reset/README.md) kata if you're unsure of what happens here.
-1. Apply the stash to master with the `--index` option.
+5. Undo our changes with `git reset --hard HEAD`. This is an unsafe command as it will remove files from your index and working directory permanently, but we have our changes safely stashed so we're ok. Review the [reset](reset/README.md) kata if you're unsure of what happens here.
+6. Apply the stash to master with the `--index` option.
    1. What work do you have in the working directory?
-   1. What work do you have staged ?
+   2. What work do you have staged ?
    >*Ok, back to where we were!*
-1. We won't need the stash anymore. Drop it.
+7. We won't need the stash anymore. Drop it.
    1. What does the stash list look like ?
-   1. What does the commit log look like ?
+   2. What does the commit log look like ?
 
 
 

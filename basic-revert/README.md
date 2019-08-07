@@ -8,13 +8,13 @@
 You again live in your own branch, this time we will revert some change on a branch.
 
 1. Create a branch called `reverting`
-1. Checkout the branch
-1. What is the output of `git branch`?
-1. What is the output of `git log --oneline --graph --all`
-1. Use `cat` to see the contents of the greetings
-1. Revert the latest change, so you get the original content in the file
-1. Use `cat` to see the contents of the greetings
-1. Diff the branches
+2. Checkout the branch
+3. What is the output of `git branch`?
+4. What is the output of `git log --oneline --graph --all`
+5. Use `cat` to see the contents of the greetings
+6. Revert the latest change, so you get the original content in the file
+7. Use `cat` to see the contents of the greetings
+8. Diff the branches
 
 ## Useful commands
 - `git branch`

@@ -12,8 +12,8 @@ We'll do this by setting up `merge-tst-files.sh` as a _merge driver_ for `.tst` 
 ## The task
 
 1. Define the `merge-tst-files.sh` script as a merge driver in `.git/config`
-1. Set the merge driver to be used for `.tst` files in `.gitattributes`
-1. Add the `merge-tst-files.sh` script to PATH
-1. Merge in the `feature/1` branch
-1. Check the output to verify that the `merge-tst-files.sh` script was used to resolve the conflict.
-1. Can you commit/push your merge driver configuration? If not, how else would you distribute it?
+2. Set the merge driver to be used for `.tst` files in `.gitattributes`
+3. Add the `merge-tst-files.sh` script to PATH
+4. Merge in the `feature/1` branch
+5. Check the output to verify that the `merge-tst-files.sh` script was used to resolve the conflict.
+6. Can you commit/push your merge driver configuration? If not, how else would you distribute it?

@@ -15,7 +15,7 @@ While you are at it I would really like the ugly `\n` characters inside `file.tx
 ## Task
 
 1. _Squash_ the five relevant commits into one, cleaning up the commit msg of one of the commits
-1. How does `git log` look now?
+2. How does `git log` look now?
 
 ### Relevant commands
 

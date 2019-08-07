@@ -14,7 +14,7 @@ The task is to look at the merge conflict, and solve it by editing the file acco
 ## The task
 
 1. Run `git branch` to see the two branches present
-1. `git merge Mergesort-impl`
-1. Solve the merge conflict :)
+2. `git merge Mergesort-impl`
+3. Solve the merge conflict :)
 
 

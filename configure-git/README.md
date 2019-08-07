@@ -3,7 +3,7 @@
 
 ## 1. Git Initial Configuration
 1. `git config --global user.name "John Doe"`
-1. `git config --global user.email "johndoe@example.com`
+2. `git config --global user.email "johndoe@example.com`
 
 For the vim scared:
 - `git config --global core.editor nano`
