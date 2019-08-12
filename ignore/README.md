@@ -15,18 +15,18 @@ If you want to signal to git that a file needs to be removed from git, but still
 ## The task
 
 1. Create a file with the name `foo.s`
-1. What is the output of `git status`?
-1. Create a `.gitignore` file in your working directory containing `*.s`
-1. What is the output of `git status`?
-1. Commit the `.gitignore` file
-1. Commit `file1.txt`
-1. Add `txt` files to `.gitignore` by adding a line in the file containing `*.txt`
-1. What does `git status` tell us?
-1. Change `file1.txt`
-1. What does `git status` tell us? Why was the file tracked even though the `txt` extension is in the ignore file?
-1. Make another text file in the repository, what does `git status` look like now? Why is it not tracked?
-1. Stage the removal of `file1.txt` with the command `git rm --cached`
-1. What does `git status` say?
+2. What is the output of `git status`?
+3. Create a `.gitignore` file in your working directory containing `*.s`
+4. What is the output of `git status`?
+5. Commit the `.gitignore` file
+6. Commit `file1.txt`
+7. Add `txt` files to `.gitignore` by adding a line in the file containing `*.txt`
+8. What does `git status` tell us?
+9. Change `file1.txt`
+10. What does `git status` tell us? Why was the file tracked even though the `txt` extension is in the ignore file?
+11. Make another text file in the repository, what does `git status` look like now? Why is it not tracked?
+12. Stage the removal of `file1.txt` with the command `git rm --cached`
+13. What does `git status` say?
 
 ## Useful commands
 - `git rm`

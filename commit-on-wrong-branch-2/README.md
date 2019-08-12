@@ -16,8 +16,8 @@ the `master` branch instead of the feature branch.
 
 ## The task
 
-2. Move the faulty commit from the `master` branch to the `new-feature` branch.
-3. How would you also bring the bugfix to your feature branch?
+1. Move the faulty commit from the `master` branch to the `new-feature` branch.
+2. How would you also bring the bugfix to your feature branch?
 
 ## Useful Commands
 
