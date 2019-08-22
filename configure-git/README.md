@@ -14,6 +14,9 @@ For the windows peeps:
 or alternatively:
 
 - `git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"`
+- `git config --global core.editor "atom --wait"`
+- `git config --global core.editor "code --wait"`
+
 
 
 ## Aliases
