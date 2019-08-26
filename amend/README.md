@@ -9,9 +9,16 @@ Sometimes we just forget something obvious that we want to fix quickly.
 1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## The task
+
 1. What does `git status` tell us?
 2. What does `git log` tell us?
 3. Stage the addition of bar.txt
 4. Run `git commit --amend`
 5. What happened? What does `git log` tell us?
 6. What happens if you run `git commit --amend` again?
+
+## Useful commands
+
+- `git add`
+- `git log --oneline --graph`
+- `git commit --amend`
