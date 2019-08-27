@@ -3,15 +3,14 @@
 source ../utils/utils.sh
 
 makefakeremoterepo 
+clone_remote_to_exercise
 
 echo "initial" > foo.txt
 git add foo.txt
-git commit -m "foo.txt"
-
-cd ..
-rm -rf exercise/
-git clone remote exercise
-cd exercise
+git commit -m "Initial commit"
+git tag -m 'Start' START
+git push origin master
+git push origin START
 
 echo "1" > file1
 git add file1
