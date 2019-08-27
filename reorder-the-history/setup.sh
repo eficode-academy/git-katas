@@ -2,11 +2,16 @@
 #Include utils
 source ../utils/utils.sh
 
-makerepo 
+makefakeremoterepo 
 
 echo "initial" > foo.txt
 git add foo.txt
 git commit -m "foo.txt"
+
+cd ..
+rm -rf exercise/
+git clone remote exercise
+cd exercise
 
 echo "1" > file1
 git add file1
