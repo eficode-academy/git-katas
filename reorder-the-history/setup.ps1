@@ -1,9 +1,13 @@
-. ..\utils\make-exercise-repo.ps1
+. ..\utils\make-fake-remote.ps1
+. ..\utils\clone-remote-to-exercise.ps1
 
 Set-Content -Value "initial" -Path foo.txt
 
 git add foo.txt
-git commit -m "foo.txt"
+git commit -m "Initial commit"
+git tag -m 'Start' START
+git push origin master
+git push origin START
 
 Set-Content -Value "1" -Path file1
 
