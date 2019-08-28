@@ -39,3 +39,22 @@ But you want it to look like this:
 Git ahead!
 
 Note: since the B in the current and in the target structure don't have the same parent they can't be literally the same commit.
+
+## The task
+
+1. Use `git log --oneline --graph --all` to view all the branches and their commits.
+2. Copy C onto master before B by rebasing quickfix on master.
+3. Make a new branch (changes-including-B) off of our master so we can keep working on B.
+4. Reset the HEAD on master back to C.
+5. Delete the quickfix branch.
+6. Push master. You can't do this in the training exercise.
+7. You can merge the changes-including-B branch to master and delete changes-including-B or just checkout changes-including-B and work there.
+
+## Useful commands
+- `git log --oneline --graph --all`
+- `git checkout <branch-name>`
+- `git rebase <branch-name>`
+- `git branch <branch-name>`
+- `git reset --soft HEAD~`
+- `git branch -d <branch-name>`
+- `git merge <branch-name>`
