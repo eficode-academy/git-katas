@@ -1,6 +1,8 @@
 # Git Kata: Basic Commits
 This kata will introduce you to the commands `git add` and `git commit`.
 
+This is a very introductory kata. if you have used `git status`, `git log --oneline --graph`, `git add` and `git commit` extensively you should probably skip it.
+
 You can look at the bottom of this file, if you have not yet done basic git configuration.
 
 ## Setup:
