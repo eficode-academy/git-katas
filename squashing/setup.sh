@@ -1,8 +1,9 @@
 kata="kata2-squashing"
-rm -rf exercise
-mkdir exercise
-cd exercise
-git init
+
+# Include utils
+source ../utils/utils.sh
+
+makerepo
 
 touch alsoafile.txt
 
