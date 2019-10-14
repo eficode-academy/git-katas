@@ -20,17 +20,35 @@ production, you decide to revert the merge commit.
 
 ## The task
 
-* Revert the merge commit  
-  *Note: You may assume that feature Y is also working with the old library version*
-* Take the role of the library team and fix the bug in the library on the branch
-* Explore how you can get the changes from the branch into the master again  
-  Try to merge first to see what happens
+1. Revert the merge commit. To resolve the conflict, you need to determine what
+features should be included in `mymodule.txt`.
+   * You can tell whether feature X should be included or not by when it was
+     commited.
+   * You may assume that feature Y is also working with the old library version.
+2. Take the role of the library team and fix the bug in the library on the
+   integrate branch, e.g. change `lib.txt`.
+3. Next we explore how you can get the changes from the branch into the master
+   again. First try to merge to see what happens. The `lib.txt` file changes as
+       expected, but '`mymodule.txt` does not. For an in depth discussion of
+       the reason why consult this gist: [Reverting a faulty merge](https://github.com/git/git/blob/master/Documentation/howto/revert-a-faulty-merge.txt).
+>  reverting a merge commit also
+>  undoes the _data_ that the commit changed, but it does absolutely
+>  nothing to the effects on _history_ that the merge had.
+>
+>  So the merge will still exist, and it will still be seen as joining
+>  the two branches together, and future merges will see that merge as
+>  the last shared state
 
-For in depth discussion of some the the issues that can happen when reverting a merge commit consult this gist:
-[Reverting a faulty merge](https://github.com/git/git/blob/master/Documentation/howto/revert-a-faulty-merge.txt).
+4. Undo the merge with a reset --hard
+5. Revert the revert and try the merge again. This time it works.
 
 ## Useful commands
 
-* `git revert`
-* `git rebase`
-* `git merge`
+* `git revert -m 1 <merge-sha1>`
+* `git log --oneline --graph --all`
+* `git add <file-name>`
+* `git revert --continue`
+* `git checkout <branch-name>`
+* `git merge <branch-name>`
+* `git reset --hard <sha1>`
+* `git revert <sha1>`
