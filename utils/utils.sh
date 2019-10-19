@@ -5,6 +5,6 @@
 
 # Using this weird seemingly arbitrary path to avoid path issues. 
 # Please let me know the _right_ way to do this
-source ../utils/make-exercise-repo.sh
-source ../utils/make-fake-remote.sh
-source ../utils/clone-remote-to-exercise.sh
+source ../../utils/make-exercise-repo.sh
+source ../../utils/make-fake-remote.sh
+source ../../utils/clone-remote-to-exercise.sh

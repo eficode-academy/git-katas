@@ -11,7 +11,7 @@ maintainer: randomsort
 
 ### On Your Local Machine
 
-![Quick Start](/images/quickstart.gif)
+![Quick Start](./docs/images/quickstart.gif)
 
 - Clone this repository
 - Go into the folder you want to solve an exercise in
@@ -28,7 +28,7 @@ The exercises are designed for use when we are teaching Git courses. You should 
 
 Exercises starting with _basic_ are entry-level - other exercises vary greatly in difficulty.
 
-To get an overview of the exercises in here look in [Overview.md](Overview.md).
+To get an overview of the exercises in here look in [Overview.md](./docs/Overview.md).
 
 Feel free to use these exercises, that's why they're public!
 
@@ -38,21 +38,21 @@ If you are coming to this repository for some basic Git knowledge, we recommend 
 This is the order that Jan Krag at Praqma teaches Git and might change over time. There are more exercises than this, but these should take you through
 everything you need to be able to use Git effectively in your day to day life. 
 
-- [Basic Commits](./basic-commits/README.md)
-- [Basic Staging](./basic-staging/README.md)
-- [Investigation](./investigation/README.md)
-- [Basic Branching](./basic-branching/README.md)
-- [Fast Forward Merge](./ff-merge/README.md)
-- [3 way Merge](./3-way-merge/README.md)
-- [Merge Mergesort](./merge-mergesort/README.md)
-- [Rebase Branch](./rebase-branch/README.md)
-- [Basic Revert](./basic-revert/README.md)
-- [Reset](./reset/README.md)
-- [Basic Cleaning](./basic-cleaning/README.md)
-- [Amend](./amend/README.md)
-- [Reorder the History](./reorder-the-history/README.md)
-- [Advanced Rebase Interactive](./advanced-rebase-interactive/README.md)
-- [Basic Stashing](./basic-stashing/README.md)
+- [Basic Commits](./katas/basic-commits/README.md)
+- [Basic Staging](./katas/basic-staging/README.md)
+- [Investigation](./katas/investigation/README.md)
+- [Basic Branching](./katas/basic-branching/README.md)
+- [Fast Forward Merge](./katas/ff-merge/README.md)
+- [3 way Merge](./katas/3-way-merge/README.md)
+- [Merge Mergesort](./katas/merge-mergesort/README.md)
+- [Rebase Branch](./katas/rebase-branch/README.md)
+- [Basic Revert](./katas/basic-revert/README.md)
+- [Reset](./katas/reset/README.md)
+- [Basic Cleaning](./katas/basic-cleaning/README.md)
+- [Amend](./katas/amend/README.md)
+- [Reorder the History](./katas/reorder-the-history/README.md)
+- [Advanced Rebase Interactive](./katas/advanced-rebase-interactive/README.md)
+- [Basic Stashing](./katas/basic-stashing/README.md)
 
 ## Contributing
 
@@ -141,4 +141,8 @@ git lol     # Does a "git log --graph --pretty=oneline --abbrev-commit --all"
 ## Testing
 
 There is a very small test that you can run in powershell or bash.
-It is contained in the scripts `test.sh` and `test.ps1`.
+It is contained in the scripts `test.sh` and `test.ps1` in the [tests](./tests) folder.
+
+## Shell basics survival guide
+
+If you need some shell basics commands to add new katas you can have a look to the [Shell survival guide](./docs/SHELL-BASICS.md)
