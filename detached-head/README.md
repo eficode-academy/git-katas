@@ -1,6 +1,6 @@
 # Detached head state
 
-When a user ends up in a "detached head" state, this is a scary situation, but as we know, git is not scary.
+When a user ends up in a "detached head" state, this is a scary situation, but as we know, Git is not scary.
 
 ## Setup:
 
