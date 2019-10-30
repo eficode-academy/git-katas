@@ -23,7 +23,6 @@ While you are at it I would really like the ugly `\n` characters inside `file.tx
 - `git rebase -i <ref>`
 - `git add`
 - `git commit --amend`
-- `git rev-parse <ref>` - Why is this command useful?
 
 ## Further information
 
