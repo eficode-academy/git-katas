@@ -15,7 +15,7 @@ Note that this task might seem more confusing if you did not run `setup.sh` in y
 
 We want to have a branch called `the-beginning` that is made from the first commit with message `A`. 
 
-3. Can you do this by first causing a detatched head?
+3. Can you do this by first causing a detached head?
 
 ## Useful commands
 
