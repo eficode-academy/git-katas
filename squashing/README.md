@@ -28,7 +28,7 @@ While you are at it I would really like the ugly `\n` characters inside `file.tx
 
 ### The seven rules of a great Git commit message
 
-From [How to Write a Git Commit Message](chris.beams.io/posts/git-commit/)
+From [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
 
 1. Separate subject from body with a blank line
 2. Limit the subject line to 50 characters
