@@ -131,11 +131,11 @@ git config --global alias.co "checkout"
 git co      # Does a "git checkout"
 
 ## Logging
-git log --graph --pretty=oneline --abbrev-commit --all # Show a nice graph of the previous commits
+git log --graph --oneline --all # Show a nice graph of the previous commits
 ## Adding an alias called "lol" (log oneline..) that shows the above
-git config --global alias.lol "log --graph --pretty=oneline --abbrev-commit --all"
+git config --global alias.lol "log --graph --oneline --all"
 ## Using the alias
-git lol     # Does a "git log --graph --pretty=oneline --abbrev-commit --all"
+git lol     # Does a "git log --graph --oneline --all"
 ```
 
 ## Testing
