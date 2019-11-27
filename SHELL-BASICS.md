@@ -39,6 +39,8 @@ Output:
 
 `cat file.txt` prints content of the file.txt to screen
 
+`less file.txt` print content of file.txt page-wise. Exit with `q`.
+
 `echo "Hello world" > file.txt`
 Writes the string "Hello World" to a file.txt, overwriting current content or creating the file if needed.
 
