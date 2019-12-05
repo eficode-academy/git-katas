@@ -11,11 +11,11 @@ This allows you to grab source change directly, as well as _pushing_ them back.
 
 ## The task
 
-After running `. setup.sh` or `. ./setup.sh`, you'll be left with two repositories inside the `exercises` folder.
+After running `. setup.sh` or `./setup.sh`, you'll be left with two repositories inside the `exercises` folder.
 
 * A `product` repository.
 * A `component` repository cloned from `remote/component-repo.git`.
-* A `remote` directory conatining a `component-repo.git` repository. This is the "remote" repository that would exist on your preferred git repository host, e.g. github.com.
+* A `remote` directory containing a `component-repo.git` repository. This is the "remote" repository that would exist on your preferred Git repository host, e.g. github.com.
 
 Go to the `product` repository.
 
