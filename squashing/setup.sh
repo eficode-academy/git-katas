@@ -1,3 +1,4 @@
+#!/bin/bash
 kata="kata2-squashing"
 
 # Include utils
