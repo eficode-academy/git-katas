@@ -54,6 +54,8 @@ everything you need to be able to use Git effectively in your day to day life.
 - [Advanced Rebase Interactive](./advanced-rebase-interactive/README.md)
 - [Basic Stashing](./basic-stashing/README.md)
 
+See [Overview.md](Overview.md) for a more complete list and suggested order.
+
 ## Contributing
 
 If you miss exercises or find errors in any of them, feel free to improve them and make a pull request.
