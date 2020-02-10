@@ -1,7 +1,7 @@
 # Git Katas: Submodules
 
 Submodules are a way to embed other git repositories into your own, retaining a pointer to its `origin`.
-This allows you to grab source change directly, as well as _pushing_ them back.
+This allows you to grab source changes directly, as well as _pushing_ them back.
 
 ## Setup
 
@@ -11,7 +11,7 @@ This allows you to grab source change directly, as well as _pushing_ them back.
 
 ## The task
 
-After running `. setup.sh` or `./setup.sh`, you'll be left with two repositories inside the `exercises` folder.
+After running the setup script, you'll be left with three repositories inside the `exercises` folder.
 
 * A `product` repository.
 * A `component` repository cloned from `remote/component-repo.git`.
