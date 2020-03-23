@@ -27,6 +27,7 @@ There is a way to easily fix it with advanced options for `git commit` and `git 
 - `git log --oneline`               # show history
 - `git log --stat`                  # log which files changed
 - `git log --patch`                 # log with diff
+- `git show <commit id>`            # show changes of a commit
 - `git add`                         # add file
 - `git commit --fixup=<commit id>`  # commit by autogenerating the message
 - `git rebase -i <ref>`             # run the interactive rebase back to <ref> and automaticaly reorder commits
