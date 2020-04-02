@@ -70,8 +70,19 @@ Thank you!
 A collection of useful commands to use throughout the exercises:
 
 ```shell
+# Initializing an empty git repository.
+git init            # Initialize an empty git repository under current directory.
+
 # Cloning a repository
 git clone https://github.com/praqma-training/git-katas.git      # Clone this repository to your current working directory
+
+# Git (user and repo level) configurations
+git config --local user.name "Repo-level Username"          # For setting a local git repo level user name.
+git config --local user.email "Repo-level.Email@Example.com" # For setting a local git repo level user email.
+                                                            # --system -> System level git config stored in /etc/gitconfig
+                                                            # --global -> User level git config stored in ~/.gitconfig
+                                                            # --local -> repo level config stored in repo's main dir under .git/config
+
 
 # See local changes
 git status                  # Show the working tree status
@@ -90,6 +101,10 @@ git commit -am "I still do!"            # A combination of the above
 git commit --amend                      # Re-do the commit message of the previous commit (don't do this after pushing!)
                                         #   We _never_ change "public history"
 
+git reset <commit_hash>                 # Undo all commits after <commit_hash> (local changes are preserved)
+git reset --soft <file>                 # Unstage a staged file leaving in working directory without losing any changes. 
+                                        # --hard mode would discard all changes to given file.
+
 # Configuring a different editor
 ## Avoid Vim but stay in terminal:
 - `git config --global core.editor nano`
@@ -101,12 +116,31 @@ git commit --amend                      # Re-do the commit message of the previo
 - or for instance Notepad++:
 `git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"`
 
+# Re/moving files under version control
+git rm <path/to/the/file>                 # remove file and stage the change to be committed.
+git mv <source/file> <destination/file>   # move/rename file and stage the change to be committed.  
 
 
 # See history
 git log             # Show commit logs
 git log --oneline   # Formats commits to a single line (shorthand for --pretty=oneline  --abbrev-commit )
 git log --graph     # Show a graph commits and branches
+git log --pretty=fuller     # To see commit log details with author and committer details, if any different.
+git log --follow <file>     # List history of given file.
+git log branch2..branch1    # Show commits present on branch1 compared to branch1
+
+# Deferring
+git stash                               # Stash (store temporarily) changes in working branch and enable checkingout a new branch
+git stash list                          # List stored stashes.
+git stash apply <stash>                 # Apply given <stash>, or if none given the latest from stash list.
+
+# Tagging
+
+
+git tag                                 # List tags
+git tag -l "name*"                      # List tags that are named <name>
+git tag -a "v1.0" -m "comment - v1.0"   # Creating annotated tag that creates checksum for the commit including verbose tagger details.
+git tag -d "v1.0"                       # Delete given tag in local repo
 
 # Working with Branches
 git branch my-branch       # Create a new branch called my-branch
@@ -123,6 +157,7 @@ git rebase master        # Rebase current branch on top of master branch
 git remote              # Show your current remotes
 git remote -v           # Show your current remotes and their URLs
 git push                # Publish your commits to the upstream master of your currently checked out branch
+git push -u origin my-branch            # To push newly created branch to remote repo.
 git pull                # Pull changes from the remote to your currently checked out branch
 
 # Aliases - it's possible to make aliases of frequently used commands
