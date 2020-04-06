@@ -99,7 +99,8 @@ git commit -a                           # Make a new commit and automatically "a
 git commit -am "I still do!"            # A combination of the above
 git commit --amend                      # Re-do the commit message of the previous commit (don't do this after pushing!)
                                         #   We _never_ change "public history"
-git reset --soft [commit_hash]          # Unstage a staged file leaving in working directory without losing any changes. 
+git reset <file>                        # Unstage a staged file leaving in working directory without losing any changes.
+git reset --soft [commit_hash]          # resets the current branch to <commit>. Does not touch the staging area or the working tree at all. 
                                         # --hard mode would discard all changes to given file.
 
 # Configuring a different editor
