@@ -1,11 +1,13 @@
 #!/bin/bash
 
+# kata: basic-stashing
+
+
 # Include utils
 source ../utils/utils.sh
 
-kata="basic-stashing"
 
-makerepo 
+pre-setup # Make exercise repo, and setup necessary.
 
 echo "Initial content of the file" > file.txt
 touch fix.txt
@@ -27,3 +29,4 @@ echo "some changes I made and did not stage yet" >> file.txt
 
 echo "changes I did not stage" > fix.txt
 
+post-setup
