@@ -101,7 +101,7 @@ git commit --amend                      # Re-do the commit message of the previo
                                         #   We _never_ change "public history"
 git reset <file>                        # Unstage a staged file leaving in working directory without losing any changes.
 git reset --soft [commit_hash]          # resets the current branch to <commit>. Does not touch the staging area or the working tree at all. 
-                                        # --hard mode would discard all changes to given file.
+                                        # --hard mode would discard all changes.
 
 # Configuring a different editor
 ## Avoid Vim but stay in terminal:
