@@ -1,7 +1,7 @@
 # Git Kata: rebase branch
 
 ## Setup:
-1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
 
 ## The task

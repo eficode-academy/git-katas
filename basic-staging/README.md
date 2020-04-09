@@ -14,7 +14,7 @@ We will also work with `git reset` to reset the staged changes of a file, and `g
 
 ## Setup:
 
-1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## The task
 

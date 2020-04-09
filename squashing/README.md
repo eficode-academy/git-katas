@@ -10,7 +10,7 @@ While you are at it I would really like the ugly `\n` characters inside `file.tx
 
 ## Setup
 
-1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## The task
 

@@ -14,7 +14,7 @@ As this is an advanced exercise, there are no specific steps to follow and no si
 
 ## Setup:
 
-1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## Task
 
