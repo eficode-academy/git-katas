@@ -2,7 +2,7 @@
 
 ## Setup
 
-1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## The task
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.

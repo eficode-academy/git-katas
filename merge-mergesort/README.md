@@ -9,7 +9,7 @@ The task is to look at the merge conflict, and solve it by editing the file acco
 
 ## Setup:
 
-1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## The task
 

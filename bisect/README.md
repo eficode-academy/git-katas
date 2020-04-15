@@ -16,7 +16,7 @@ $ ./test.sh
 ```
 ## Setup:
 
-1. Run `. setup.sh`
+1. Run `source setup.sh`
 
 ## Tasks
 

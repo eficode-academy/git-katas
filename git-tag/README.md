@@ -1,7 +1,7 @@
 # Git Kata: Tagging of the commits
 ## Setup:
 
-1. Run `. setup.sh`
+1. Run `source setup.sh`
 
 ## Motivation
 

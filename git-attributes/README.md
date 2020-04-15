@@ -9,7 +9,7 @@ are for GNU/Linux platforms and Mac.
 
 ## Setup:
 
-1. Run `. setup.sh`
+1. Run `source setup.sh`
 
 ## The task
 

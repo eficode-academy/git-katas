@@ -7,7 +7,7 @@ You can look at the bottom of this file, if you have not yet done basic git conf
 
 ## Setup:
 
-1. Run `. setup.sh` (or `.\setup.ps1` in PowerShell)
+1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## The task
 
