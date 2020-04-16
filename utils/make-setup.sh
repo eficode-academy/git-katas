@@ -49,3 +49,5 @@ pre-setup () {
 post-setup () {
     clear-local-user
 }
+
+set +e
