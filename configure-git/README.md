@@ -35,7 +35,7 @@ https://help.github.com/articles/generating-an-ssh-key
 
     `ssh-keygen -t rsa -b 4096 -C "your_email@somewhere.com"`
 
-This generates public/private keys in `%USERPROFILE%/.ssh` (named `id_rsa.pub`)
+This generates public/private keys in `%USERPROFILE%/.ssh` (named `id_rsa.pub`/`id_rsa`, respectively)
 
 The public key can then be uploaded to your repo server:
 For GitHub this is a section in user settings.
