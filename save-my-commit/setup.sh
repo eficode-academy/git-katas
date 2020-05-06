@@ -7,7 +7,8 @@ makerepo
 
 echo "initial" > thing.txt
 git add thing.txt
-git commit -m "Inital commit"
+git commit -m "Initial commit"
+git tag initial-commit
 
 echo "This is a relevant fact" > file.txt
 
