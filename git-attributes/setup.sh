@@ -4,7 +4,7 @@
 source ../utils/utils.sh
 
 kata="git-attributes"
-makerepo
+make-exercise-repo
 
 printf 'hello æøå\r\n' > file1.txt
 git init

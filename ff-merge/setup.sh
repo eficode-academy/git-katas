@@ -4,7 +4,7 @@
 source ../utils/utils.sh
 
 kata="ff-merge"
-makerepo
+make-exercise-repo
 
 touch greeting.txt
 git add greeting.txt

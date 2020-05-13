@@ -4,7 +4,7 @@
 source ../utils/utils.sh
 
 kata="merge-mergesort"
-makerepo
+make-exercise-repo
 
 cp ../base.py mergesort.py
 git add mergesort.py

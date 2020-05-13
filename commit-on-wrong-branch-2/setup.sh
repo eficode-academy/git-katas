@@ -3,7 +3,7 @@
 # Include utils
 source ../utils/utils.sh
 
-makerepo
+make-exercise-repo
 
 echo "Some coode" > myapp.txt
 echo "Some other line of code" >> myapp.txt

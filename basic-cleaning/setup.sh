@@ -5,7 +5,7 @@ source ../utils/utils.sh
 
 kata="basic-cleaning"
 
-makerepo 
+make-exercise-repo 
 mkdir src
 
 echo "** SOME USEFUL INFO ** " > README.txt

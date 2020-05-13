@@ -2,7 +2,7 @@
 #Include utils
 source ../utils/utils.sh
 
-makerepo
+make-exercise-repo
 
 git commit --allow-empty -m "Initial commit"
 

@@ -2,7 +2,7 @@
 
 source ../utils/utils.sh
 
-makerepo
+make-exercise-repo
 
 echo "#! /usr/bin/env bash" > 'test.sh'
 echo 'echo "Running tests on commit $(git rev-parse --short HEAD)"' >> 'test.sh'

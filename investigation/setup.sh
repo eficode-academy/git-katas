@@ -2,7 +2,7 @@
 
 # Include utils
 source ../utils/utils.sh
-makerepo
+make-exercise-repo
 
 touch test.md
 git add test.md

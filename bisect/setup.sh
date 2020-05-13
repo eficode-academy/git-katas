@@ -1,7 +1,7 @@
 #!/bin/bash
 source ../utils/utils.sh
 
-makerepo
+make-exercise-repo
 
 echo '#! /usr/bin/env bash' > 'test.sh'
 echo 'if [[ $(( $(find * | wc -l) + 10 )) -gt 32 ]] ;then' >> 'test.sh'

@@ -2,8 +2,8 @@
 #Include utils
 source ../utils/utils.sh
 
-makefakeremoterepo 
-clone_remote_to_exercise
+make-bare-remote-repo 
+clone-remote-to-exercise
 
 echo "initial" > foo.txt
 git add foo.txt
