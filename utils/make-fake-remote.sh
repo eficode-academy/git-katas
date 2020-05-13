@@ -1,5 +1,5 @@
 #!/bin/bash
-makefakeremoterepo() {
+make-bare-remote-repo() {
     # First cleanup if there is an old exercise repository
     rm -rf remote/
 

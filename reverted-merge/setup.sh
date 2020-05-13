@@ -3,7 +3,7 @@
 # Include utils
 source ../utils/utils.sh
 
-makerepo
+make-exercise-repo
 
 echo "library-1.2.3" > lib.txt
 echo "module using library-1.2.3" > mymodule.txt

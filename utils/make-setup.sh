@@ -42,7 +42,7 @@ clear-local-user() {
 
 pre-setup () {
     kata="$(basename $(pwd))"   # kata: name of the exercise which is respective folder name
-    makerepo
+    make-exercise-repo
     config-local-username
 }
 

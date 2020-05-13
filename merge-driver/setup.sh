@@ -4,7 +4,7 @@
 source ../utils/utils.sh
 
 kata="merge-driver"
-makerepo
+make-exercise-repo
 
 cp ../../utils/resources/merge-tst-files.sh merge-tst-files.sh
 git add merge-tst-files.sh

@@ -5,7 +5,7 @@ source ../utils/utils.sh
 
 kata="kata4-bad-commit"
 
-makerepo
+make-exercise-repo
 
 touch file1
 git add file1
