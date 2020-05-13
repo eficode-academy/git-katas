@@ -1,6 +1,6 @@
 # Git Kata: Save my commit
 
-In this repository we had added the holy grail in `holygrail.txt`. Unfortunately, we reset our `master` branch to the initial commit. Now is is the time to recover from the mistake.
+In this repository we had added the holy grail in `holygrail.txt`. Unfortunately, we reset our `master` branch to the initial commit. Now it is time to recover from the mistake.
 
 ## Setup
 
