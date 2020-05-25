@@ -12,8 +12,8 @@ In order to do that, configure user name and user email towards git with the fol
 
 ### Editor setup
 
-Sometime git needs you to edit a file it creates e.g. the message of a commit you create.
-As a standard, it is configured with VIM, but that has a steep learning curve, so you might be better of with another tool of yor liking:
+Sometimes git needs you to edit a file it creates e.g. the message of a commit you create.
+As default, git is configured with VIM, but that has a steep learning curve, so you might be better off with another tool of yor liking:
 
 If you want to use the cli based editor nano:
 - `git config --global core.editor nano`
@@ -32,7 +32,7 @@ or alternatively other tools you already are familiar with:
 You can set up aliases as such:
 * `git config --global alias.lol 'log --oneline --graph --all'`
 
-This might be useful to you when you look at the git graph.
+This might be useful to you when you look at the Git graph.
 Paste that into your terminal, and try it out with `git lol`.
 
 ## 2. Downloading and Installing on Windows
