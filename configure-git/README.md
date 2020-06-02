@@ -1,19 +1,19 @@
-# Git Kata: Configuring git
+# Git Kata: Configuring Git
 
 This kata has no `setup.sh` script. Just read and follow along.
 
 ## 1. Git Initial Configuration
 
 Git wants to know who it should write as the committer of changes etc.
-In order to do that, configure user name and user email towards git with the following commands:
+In order to do that, configure user name and user email towards Git with the following commands:
 
 1. `git config --global user.name "John Doe"`
 2. `git config --global user.email "johndoe@example.com`
 
 ### Editor setup
 
-Sometimes git needs you to edit a file it creates e.g. the message of a commit you create.
-As default, git is configured with VIM, but that has a steep learning curve, so you might be better off with another tool of yor liking:
+Sometimes Git needs you to edit a file it creates e.g. the message of a commit you create.
+As default, Git is configured with VIM, but that has a steep learning curve, so you might be better off with another tool of yor liking:
 
 If you want to use the cli based editor nano:
 - `git config --global core.editor nano`
