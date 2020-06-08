@@ -1,36 +1,30 @@
-# First cleanup if there is an old exercise repository
+# First cleanup if there is an old exercise folder
 if (Test-Path .\exercise) {
-	Remove-Item .\exercise\ -force -recurse
+	Remove-Item .\exercise -force -recurse
 }
 
+# Create exercise folder & go there
 New-Item -ItemType Directory -Path exercise | Out-Null
-Set-Location .\exercise\
+Set-Location .\exercise
 
-# Create component repo
-New-Item -ItemType Directory -Path .\remote\component | Out-Null
-Set-Location .\remote\component
-git init
+# Create remote repo
+git init --bare remote
 
+# Clone it so that it is ready for the exercise
+git clone remote component
+
+# Commit a file to the component repo & push it to the remote
+Set-Location .\component
 Set-Content -Value "" -Path component.h
 git add component.h
 git commit -m "Touch component header"
-
-# Convert to a bare repository and delete the original working directory.
-Move-Item -Path ".git" -Destination ..\component-repo.git
-Set-Location ..\component-repo.git
-git config --bool core.bare true
-Set-Location ..
-Remove-Item -Path ./component -Force -Recurse
+git push
 Set-Location ..
 
-# And clone it so that it is ready for the exrcise.
-git clone remote/component-repo.git component
-
-# Create a product repository.
+# Create a product repo
 git init product
 Set-Location -Path .\product
 Set-Content -Value "" -Path .\product.h
 git add .\product.h
 git commit -m "Touch product header"
-
-Set-Location .\..
+Set-Location ..

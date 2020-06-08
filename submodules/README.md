@@ -11,15 +11,15 @@ This allows you to grab source changes directly, as well as _pushing_ them back.
 
 ## The task
 
-After running the setup script, you'll be left with three repositories inside the `exercises` folder.
+After running the setup script, you'll be left with three repositories inside the `exercise` folder.
 
+* A `component` repository cloned from `remote`.
 * A `product` repository.
-* A `component` repository cloned from `remote/component-repo.git`.
-* A `remote` directory containing a `component-repo.git` repository. This is the "remote" repository that would exist on your preferred Git repository host, e.g. github.com.
+* A `remote` repository. This is the "remote" repository that would exist on your preferred Git repository host, e.g. github.com.
 
 Go to the `product` repository.
 
-1. Add component as a submodule of product by running `git submodule add ../remote/component-repo.git/ include`.
+1. Add component as a submodule of product by running `git submodule add ../remote include`.
 2. What does your working directory look like?
 3. Does `git status` look like you expect?
 4. What if you cd to `include`?
@@ -54,7 +54,7 @@ Go to the `product` repository.
 Go to the `product_alpha` repository. We'll ensure that we have the latest changes from product.
 
 20. Run `git submodule update`.
-19. Is the latest change from `component` available in include?
+19. Is the latest change from `component` available in `include`?
 20. Examine the output of `git submodule status`. Compare the commit id with the `component` repository.
 21. Run `git submodule update --remote`.
 19. Is the latest change from `component` available in include?
