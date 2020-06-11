@@ -11,6 +11,9 @@ New-Item -ItemType Directory -Path .\remote\component | Out-Null
 Set-Location .\remote\component
 git init
 
+git config --local user.name "git-katas trainer bot"
+git config --local user.email "git-katas@example.com"
+
 Set-Content -Value "" -Path component.h
 git add component.h
 git commit -m "Touch component header"
@@ -28,6 +31,10 @@ git clone remote/component-repo.git component
 
 # Create a product repository.
 git init product
+
+git config --local user.name "git-katas trainer bot"
+git config --local user.email "git-katas@example.com"
+
 Set-Location -Path .\product
 Set-Content -Value "" -Path .\product.h
 git add .\product.h
