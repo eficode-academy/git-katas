@@ -32,16 +32,13 @@ git clone remote/component-repo.git component
 # Create a product repository.
 git init product
 
-git config --local user.name "git-katas trainer bot"
-git config --local user.email "git-katas@example.com"
-
 Set-Location -Path .\product
 
 git config --local user.name "git-katas trainer bot"
 git config --local user.email "git-katas@example.com"
 
 Set-Content -Value "" -Path .\product.h
-git add .\product.h
+git add .
 git commit -m "Touch product header"
 
 Set-Location .\..
