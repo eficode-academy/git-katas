@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  setup-bash:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run bash test scripts
+      run: ./test.sh
+      shell: bash
+
+jobs:
+  setup-pwsh:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run PowerShell Core test scripts
+      run: ./test.ps1
+      shell: pwsh

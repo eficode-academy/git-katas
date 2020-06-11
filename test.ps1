@@ -1,3 +1,5 @@
-cd basic-commits
+Push-Location basic-commits
+
 .\setup.ps1
-cd ..
+
+Pop-Location
