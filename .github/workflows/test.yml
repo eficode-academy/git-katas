@@ -16,8 +16,8 @@ jobs:
     - name: Run bash test scripts
       shell: bash
       run: |
-      chmod +x ./test.sh
-      ./test.sh
+        chmod +x ./test.sh
+        ./test.sh
 
   setup-pwsh:
     runs-on: ubuntu-latest
