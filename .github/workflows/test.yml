@@ -19,6 +19,18 @@ jobs:
         chmod +x ./test.sh
         ./test.sh
 
+  setup-bash-macos:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run bash test scripts
+      shell: bash
+      run: |
+        chmod +x ./test.sh
+        ./test.sh
+
   setup-pwsh:
     runs-on: ubuntu-latest
 
