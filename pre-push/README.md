@@ -9,7 +9,7 @@ You can look in the `.git/hooks/` folder to see what hooks are available.
 They are all named `*.sample` to prevent them from being executed.
 ## Setup
 
-- run `source setup.sh`
+- run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## Task
 
