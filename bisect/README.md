@@ -16,7 +16,7 @@ $ ./test.sh
 ```
 ## Setup:
 
-1. Run `source setup.sh`
+1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## Tasks
 
@@ -26,9 +26,9 @@ $ ./test.sh
 
 When I'm done I may test the solution with the verify script
 
-```
+```bash
 $ cd ..
-$ ./verify.sh
+$ ./verify.sh # or .\verify.ps1` in PowerShell
 ```
 
 ## If I get stuck
