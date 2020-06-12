@@ -9,7 +9,7 @@ are for GNU/Linux platforms and Mac.
 
 ## Setup:
 
-1. Run `source setup.sh`
+1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## The task
 
