@@ -41,7 +41,7 @@ jobs:
       run: ./test.ps1
       shell: pwsh
 
-  setup-pwsh:
+  setup-zsh:
     runs-on: ubuntu-latest
 
     steps:
