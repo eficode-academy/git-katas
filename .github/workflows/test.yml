@@ -40,3 +40,14 @@ jobs:
     - name: Run PowerShell Core test scripts
       run: ./test.ps1
       shell: pwsh
+
+  setup-pwsh:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build Zsh image
+      run: docker build -t zshell -f .github/Dockerfile .
+    - name: running zsh test
+      run: docker run zshell
