@@ -4,10 +4,10 @@
 # spread over multiple files in the utils folder.
 
 # First, guard against Error 40 if user does not invoke using source:
-if [[ $0 != *"bash"* ]]; then
-  printf "Start this script using:\n source setup.sh"
-  exit 1
-fi
+#if [[ $0 != *"bash"* ]]; then
+#  printf "Start this script using:\n source setup.sh"
+#  exit 1
+#fi
 
 
 # Using this weird seemingly arbitrary path to avoid path issues. 
