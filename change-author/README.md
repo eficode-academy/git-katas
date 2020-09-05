@@ -13,12 +13,12 @@ But alas, you realized after the first few commits that you forgot to setup your
 Your workplace is kind enough to let you use your work computer to contribute to open source projects, but this also means that your new git repo used the global config on your machine, i.e. your work name and email.
 On top of all that you've already pushed the first few commits to your remote repository.
 
-No worries, you remember something about [setting up configs][config], [rebasing][rebase].
+No worries, you remember something about [setting up configs](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration), [rebasing](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History).
 
-You also remember that changing the config will only change the `comitter` of a commit but not its `author`, so you'll also need to [set][setauthor] or [reset][resetauthor] the author.
-You know that you need to rebase all the way from the the [root commit][root].
+You also remember that changing the config will only change the `committer` of a commit but not its `author`, so you'll also need to [set](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---authorltauthorgt) or [reset](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---reset-author) the author.
+You know that you need to rebase all the way from the the [root commit](https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---root).
 
-Thankfully you just started the project so you can still [force push][push] without fear of messing up ([The Perils of Rebasing][perilsofrebase]) someone elses local repo.
+Thankfully you just started the project so you can still [force push](https://git-scm.com/docs/git-push#Documentation/git-push.txt--f) without fear of messing up ([The Perils of Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)) someone elses local repo.
 
 ## Useful commands
 - `git config --local user.name "my name"`
@@ -28,11 +28,3 @@ Thankfully you just started the project so you can still [force push][push] with
 - `git commit --amend --reset-author --no-edit`
 - `git rebase --continue`
 - `git push --force`
-
-[config]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
-[rebase]: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
-[setauthor]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---authorltauthorgt
-[resetauthor]: https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---reset-author
-[push]: https://git-scm.com/docs/git-push#Documentation/git-push.txt--f
-[root]: https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---root
-[perilsofrebase]: https://git-scm.com/book/en/v2/Git-Branching-Rebasing
