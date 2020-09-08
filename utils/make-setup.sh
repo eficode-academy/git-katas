@@ -23,7 +23,6 @@ config-local-username() {
     fi
 }
 
-
 clear-local-user() {
 # In the exercise repo, unset local git user name and email to distinguish commits between user and setup script.
 
@@ -40,14 +39,43 @@ clear-local-user() {
 
 }
 
+config-local-gpgsigning() {
+    # In the exercise repo, disable signing commits as it might be enabled globally.
+    EXERCISE_REPO_NAME='exercise'
+
+    REPO=$(git rev-parse --show-toplevel) # Grab the git repo name
+    REPO_NAME=$(basename ${REPO})
+
+    if [[ ! -z ${REPO_NAME} && ${REPO_NAME} == 'exercise' ]]; then
+        git config --local commit.gpgsign "false"
+        echo "Successfully disable local GPG signing"
+    fi
+}
+
+clear-local-gpgsigning() {
+# In the exercise repo, unset locally disabled signing of commits.
+
+    EXERCISE_REPO_NAME='exercise'
+
+    REPO=$(git rev-parse --show-toplevel) # Grab the git repo name
+    REPO_NAME=$(basename ${REPO})
+
+    if [[ ! -z ${REPO_NAME} && ${REPO_NAME} == 'exercise' ]]; then
+        git config --local --unset commit.gpgsign
+        echo "Successfully unset local GPG signing"
+    fi
+}
+
 pre-setup () {
     kata="$(basename $(pwd))"   # kata: name of the exercise which is respective folder name
     make-exercise-repo
     config-local-username
+    config-local-gpgsigning
 }
 
 post-setup () {
     clear-local-user
+    clear-local-gpgsigning
 }
 
 set +e
