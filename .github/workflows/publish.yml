@@ -2,7 +2,8 @@ name: Publish
 
 on:
   push:
-    branches: [ release ]
+    tags:
+    - '*'
 
 jobs:
   publish:
@@ -11,11 +12,27 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Archive
+    - name: Archive katas
       shell: bash
       run: git archive --output=git-katas.zip HEAD
 
-    - uses: actions/upload-artifact@v2
+    - name: Create GitHub release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        name: git-katas.zip
-        path: git-katas.zip
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: false
+
+    - name: Attach katas
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./git-katas.zip
+          asset_name: git-katas-${{ github.ref }}.zip
+          asset_content_type: application/zip
