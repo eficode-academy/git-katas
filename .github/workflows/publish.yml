@@ -1,0 +1,21 @@
+name: Publish
+
+on:
+  push:
+    branches: [ release ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Archive
+      shell: bash
+      run: git archive --output=git-katas.zip HEAD
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: git-katas.zip
+        path: git-katas.zip
