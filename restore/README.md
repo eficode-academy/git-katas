@@ -18,11 +18,17 @@ This is where `git restore` comes into play.
 5. Call `git status` once more\
  What happened to `bar.txt`?
 6. Restore the `bar.txt` file using `git restore bar.txt`
-7. Call `git status` one last time\
+7. Call `git status` once more\
  What happened to `bar.txt`?
+8. Call `git log --oneline`\
+ Do you spot the tag?
+9. Restore `foo.txt`'s contents to their previous version using `git restore -s v1.0.0 foo.txt`
+10. Call `git status` one last time\
+ What happened to `foo.txt`?
 
 ## Useful commands
 
 - `git status`
+- `git log --oneline`
 - `git restore`
 - `git restore --staged`
