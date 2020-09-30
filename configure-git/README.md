@@ -41,6 +41,8 @@ You can set up aliases as such:
 This might be useful to you when you look at the Git graph.
 Paste that into your terminal, and try it out with `git lol`.
 
+More on aliases can be found in the alias kata.
+
 ### SSH authentication
 
 - See https://help.github.com/articles/generating-an-ssh-key for details about authenticating against SSH-enabled repositories
