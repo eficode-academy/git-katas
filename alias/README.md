@@ -25,7 +25,7 @@ Are there any difference in the output?
  Can you find your alias configurations?
 8. Try running `git lome` in a different git repository\
  Does it work?
-9. Remove your `git lol` alias by running `git config --unset alias.lol`
+9. Remove your `git lol` alias by running `git config --global --unset alias.lol`
 
 ## Useful commands
 
