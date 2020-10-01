@@ -12,7 +12,7 @@
 4. [ff-merge](ff-merge/README.md) - A tour around the most trivial of merges.
 5. [3-way-merge](3-way-merge/README.md) - A basic merge, involving multiple diverged branches.
 6. [merge-conflict](merge-conflict/README.md) - A basic merge between diverging branches with incompatible (but simple) changesets.
-7. [merge-mergesort](merge-mergesort/README.md) - A merge conflict with actual code.
+7. [merge-conflict-2](merge-conflict-2/README.md) - A merge conflict with actual code.
 8. [rebase-branch](rebase-branch/README.md) - Using rebase as an alternative to merging.
 9. [basic-revert](basic-revert/README.md) - Use revert to revert a change
 10. [reset](reset/README.md) - Reset is a powerful and slightly dangerous command if you do not know what you are doing. Go through the three modes of resetting here.

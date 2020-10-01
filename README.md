@@ -44,7 +44,7 @@ everything you need to be able to use Git effectively in your day to day life.
 - [Basic Branching](./basic-branching/README.md)
 - [Fast Forward Merge](./ff-merge/README.md)
 - [3 way Merge](./3-way-merge/README.md)
-- [Merge Mergesort](./merge-mergesort/README.md)
+- [Merge Conflict](./merge-conflict-2/README.md)
 - [Rebase Branch](./rebase-branch/README.md)
 - [Basic Revert](./basic-revert/README.md)
 - [Reset](./reset/README.md)
