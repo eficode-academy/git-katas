@@ -1,4 +1,4 @@
-# Git kata: Amending commits
+# Git kata: Restoring files
 
 We all make mistakes. Sometimes we make changes we'd rather not have made, or accidentally stage changes we didn't intend to stage.
 This is where `git restore` comes into play.
