@@ -1,8 +1,8 @@
 # Git kata: Aliases
 
-While working, we tend to write a lot of commands. This can get tedious, especially when the commands are rather long. Git allows you to create an alias for commands, dramatically shortening the time spent typing them.
+While working, we tend to write a lot of commands. This can get tedious, especially when the commands are rather long. Git allows you to create an alias for commands, dramatically shortening the time spent typing them and reducing the risk of doing typos.
 
-Aliases are stored in your git config and can thus be global or local. Global config is tied to your user, while local config lives inside a specific repository.
+Aliases are stored in your git config and can thus be system, global or local. System is valid for every user on the machine, global config is tied to your user, while local config lives inside a specific repository.
 
 ## Setup
 
