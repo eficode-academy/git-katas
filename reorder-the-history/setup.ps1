@@ -4,6 +4,7 @@ Set-Content -Value "initial" -Path foo.txt
 
 git add foo.txt
 git commit -m "foo.txt"
+git tag START
 
 Set-Content -Value "1" -Path file1
 
