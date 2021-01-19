@@ -20,7 +20,7 @@ In this task a few changes snuck in, that we'd like to get out. Our history is p
 11. Use `ls` to see the content of the workspace
 12. How many commits were added or changed by the last revert?
 13. Use `git show` with the sha of the commit you reverted to see that the credentials file is stilll in the history
-
+14. As you have now reverted the credentials file, so it is removed from your working directory, is it also removed from git?
 
 ## Useful commands
 - `git revert <ref>`
