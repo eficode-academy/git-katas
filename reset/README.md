@@ -15,10 +15,12 @@ We use reset to unstage change, but we can also do many more different things.
 4. What happens to your working directory, your log and your stage?
 5. Run `git reset --mixed HEAD~1`
 6. What happens to your working directory, your log and your stage?
-7. Run `git reset --hard HEAD~1`
+7. Run `git add 10.txt` and modify the file without adding it again
 8. What happens to your working directory, your log and your stage?
-9. Now try to use `git revert HEAD~1`
+9. Run `git reset --hard HEAD~1`
 10. What happens to your working directory, your log and your stage?
+11. Now try to use `git revert HEAD~1`
+12. What happens to your working directory, your log and your stage?
 
 ## Useful commands
 
