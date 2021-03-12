@@ -26,7 +26,7 @@ cd ${EXERCISE_DIR}
 mkdir component
 
 cd component
-git init
+git -c init.defaultBranch=master init
 echo "1st component commit" >> component.h
 git add component.h
 git commit -m "1st component commit"
@@ -35,7 +35,7 @@ cd ..
 
 mkdir product
 cd product
-git init
+git -c init.defaultBranch=master init
 echo "1st  product commit" >> product.h
 git add product.h
 git commit -m "1st product commit"

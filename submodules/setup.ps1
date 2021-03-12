@@ -8,7 +8,7 @@ New-Item -ItemType Directory -Path exercise | Out-Null
 Set-Location .\exercise
 
 # Create remote repo
-git init --bare remote
+git -c init.defaultBranch=master init --bare remote
 
 
 git config --local user.name "git-katas trainer bot"
@@ -28,7 +28,7 @@ git push
 Set-Location ..
 
 # Create a product repo
-git init product
+git -c init.defaultBranch=master init product
 
 Set-Location -Path .\product
 

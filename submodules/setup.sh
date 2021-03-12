@@ -26,7 +26,7 @@ git push
 cd ..
 
 # Create a product repo
-git init product
+git -c init.defaultBranch="$DEFAULT_BRANCH" init product
 
 # Commit a file to the product repo
 cd product

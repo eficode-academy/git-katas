@@ -5,8 +5,8 @@ make-exercise-repo() {
     rm -rf exercise/
 
     # Initialize a new repository
-    git init exercise
+    git -c init.defaultBranch="$DEFAULT_BRANCH" init exercise
 
     # Go there
-    cd exercise
+    cd exercise || true
 }

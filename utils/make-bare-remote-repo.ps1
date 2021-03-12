@@ -4,4 +4,4 @@ if (Test-Path .\remote) {
 }
 
 # Initialize a new remote repository
-git init --bare remote
+git -c init.defaultBranch=master init --bare remote

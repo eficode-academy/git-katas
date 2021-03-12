@@ -5,7 +5,7 @@ try {
 	}
 
 	# Initialize a new repository
-	git init exercise
+	git -c init.defaultBranch=master init exercise
 
 	# Go there
 	Set-Location .\exercise\
