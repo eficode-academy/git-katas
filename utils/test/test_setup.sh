@@ -15,6 +15,7 @@ if [ $exitcode = 0 ]; then
 else
   echo -e "${RED}FAILED${RC} $(pwd)" 
   echo "$output"
+  exit 2
 fi
 
 unset TEST
