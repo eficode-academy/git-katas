@@ -78,4 +78,4 @@ post-setup () {
     clear-local-gpgsigning
 }
 
-set +e
+[ "$TEST" = true ] || set +e 

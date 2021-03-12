@@ -31,7 +31,7 @@ git add mymodule.txt
 git commit -m"Add feature X"
 
 
-git merge integrate-library-1.2.4 --no-edit
+git merge integrate-library-1.2.4 --no-edit || true
 # deal with merge conflict
 echo "module using library-1.2.4" > mymodule.txt
 echo "Promising feature X" >> mymodule.txt
