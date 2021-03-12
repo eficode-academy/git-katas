@@ -7,5 +7,4 @@ kata="git-attributes"
 make-exercise-repo
 
 printf 'hello æøå\r\n' > file1.txt
-git init
 git checkout -b master

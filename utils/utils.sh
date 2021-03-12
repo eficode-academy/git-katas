@@ -9,7 +9,7 @@
 #  exit 1
 #fi
 
-
+export DEFAULT_BRANCH=master
 # Using this weird seemingly arbitrary path to avoid path issues. 
 # Please let me know the _right_ way to do this
 source ../utils/make-exercise-repo.sh

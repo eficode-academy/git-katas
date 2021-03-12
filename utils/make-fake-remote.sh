@@ -4,5 +4,5 @@ make-bare-remote-repo() {
     rm -rf remote/
 
     # Initialize a new remote repository
-    git init --bare remote
+    git -c init.defautBranch="$DEFAULT_BRANCH" init --bare remote
 }

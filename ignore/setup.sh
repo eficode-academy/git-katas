@@ -7,5 +7,4 @@ kata="basic-ignore"
 make-exercise-repo
 
 echo "hello" > file1.txt
-git init
 git checkout -b master
