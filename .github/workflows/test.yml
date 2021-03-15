@@ -16,6 +16,8 @@ jobs:
     - name: Run bash test scripts
       shell: bash
       run: |
+        git config user.name "GitHub Actions"
+        git config user.email "nobody@localhost"
         chmod +x ./test-all.sh
         ./test-all.sh
 
