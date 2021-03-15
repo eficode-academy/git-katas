@@ -16,8 +16,8 @@ jobs:
     - name: Run bash test scripts
       shell: bash
       run: |
-        chmod +x ./test.sh
-        ./test.sh
+        chmod +x ./test-all.sh
+        ./test-all.sh
 
   setup-bash-macos:
     runs-on: macos-latest
@@ -28,8 +28,8 @@ jobs:
     - name: Run bash test scripts
       shell: bash
       run: |
-        chmod +x ./test.sh
-        ./test.sh
+        chmod +x ./test-all.sh
+        ./test-all.sh
 
   setup-pwsh:
     runs-on: ubuntu-latest
