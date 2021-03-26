@@ -7,13 +7,13 @@ on:
     branches: [ master ]
 
 jobs:
-  setup-bash:
+  test-all-ubuntu-bash:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
 
-    - name: Run bash test scripts
+    - name: Run setup scripts with Bash
       shell: bash
       run: |
         git config --global user.name "GitHub Actions"
@@ -21,19 +21,32 @@ jobs:
         chmod +x ./test-all.sh
         ./test-all.sh
 
-  setup-bash-macos:
+  test-all-macos-bash:
     runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v2
 
-    - name: Run bash test scripts
+    - name: Run setup scripts with Bash
       shell: bash
       run: |
         chmod +x ./test-all.sh
-        ./test-all.sh
+        echo "Test using bash"
+        ./test-all.sh -s bash
 
-  setup-pwsh:
+  test-all-macos-zsh:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run setup scripts with Zsh
+      shell: bash
+      run: |
+        chmod +x ./test-all.sh
+        echo "Test using zsh"
+        ./test-all.sh -s zsh
+
+  test-basic-ubuntu-pwsh:
     runs-on: ubuntu-latest
 
     steps:
@@ -42,14 +55,3 @@ jobs:
     - name: Run PowerShell Core test scripts
       run: ./test.ps1
       shell: pwsh
-
-  setup-zsh:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Build Zsh image
-      run: docker build -t zshell -f .github/Dockerfile .
-    - name: running zsh test
-      run: docker run zshell
