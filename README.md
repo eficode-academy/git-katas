@@ -36,7 +36,7 @@ Feel free to use these exercises, that's why they're public!
 
 If you are coming to this repository for some basic Git knowledge, we recommend going through the exercises in the following order.
 This is the order that Jan Krag at Praqma teaches Git and might change over time. There are more exercises than this, but these should take you through
-everything you need to be able to use Git effectively in your day to day life. 
+everything you need to be able to use Git effectively in your day to day life.
 
 - [Basic Commits](./basic-commits/README.md)
 - [Basic Staging](./basic-staging/README.md)
@@ -100,7 +100,7 @@ git commit -am "I still do!"            # A combination of the above
 git commit --amend                      # Re-do the commit message of the previous commit (don't do this after pushing!)
                                         #   We _never_ change "public history"
 git reset <file>                        # Unstage a staged file leaving in working directory without losing any changes.
-git reset --soft [commit_hash]          # resets the current branch to <commit>. Does not touch the staging area or the working tree at all. 
+git reset --soft [commit_hash]          # resets the current branch to <commit>. Does not touch the staging area or the working tree at all.
                                         # --hard mode would discard all changes.
 
 # Configuring a different editor
@@ -144,13 +144,13 @@ git rebase master        # Rebase current branch on top of master branch
 git remote              # Show your current remotes
 git remote -v           # Show your current remotes and their URLs
 git push                # Publish your commits to the upstream master of your currently checked out branch
-git push -u origin my-branch  # Push newly created branch to remote repo setting up to track remote branch from origin. 
+git push -u origin my-branch  # Push newly created branch to remote repo setting up to track remote branch from origin.
                               # No need to specify remote branch name, for e.g., when doing a 'git pull' on that branch.
 git pull                # Pull changes from the remote to your currently checked out branch
 
 # Re/moving files under version control
 git rm <path/to/the/file>                 # remove file and stage the change to be committed.
-git mv <source/file> <destination/file>   # move/rename file and stage the change to be committed.  
+git mv <source/file> <destination/file>   # move/rename file and stage the change to be committed.
 
 # Aliases - it's possible to make aliases of frequently used commands
 #   This is often done to make a command shorter, or to add default flags
@@ -172,3 +172,9 @@ git lol     # Does a "git log --graph --oneline --all"
 
 There is a very small test that you can run in powershell or bash.
 It is contained in the scripts `test.sh` and `test.ps1`.
+
+### Cleanup
+You can remove testing artifacts, `exercise` directories, with the git clean command:
+```sh
+git clean -ffdX
+```
