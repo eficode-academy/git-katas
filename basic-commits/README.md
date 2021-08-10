@@ -26,7 +26,7 @@ You can look at the bottom of this file, if you have not yet done basic git conf
 13. Change the file again
 14. Make a `commit`
 15. What does the `status` look like now? The `log`?
-16. Add and commit the newest change
+
 
 ## Useful commands
 - `git add`
