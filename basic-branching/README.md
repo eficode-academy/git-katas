@@ -5,13 +5,13 @@
 
 ## The task
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
-Hint: `git checkout` will make you switch from one branch to another.
+Hint: `git switch` and `git checkout` will make you switch from one branch to another.
 
 1. Use `git branch` to see the two branches that are relevant for this exercise
 2. What branch are you on?
 3. Use `git branch mybranch` to create a new branch called _mybranch_
 4. Use `git branch` again to see the new branch created.
-5. Use `git checkout mybranch` to switch to your new branch.
+5. Use `git switch mybranch` to switch to your new branch.
 6. How does the output from `git status` change when you switch between the _master_ and the new branch that you have created?
 7. How does the workspace change when you change between the two branches?
 8. Make sure you are on your _mybranch_ branch before you continue.
@@ -27,6 +27,7 @@ Hint: `git checkout` will make you switch from one branch to another.
 18. Use `git diff mybranch master` to see the difference between the two branches.
 
 ## Useful commands
+- `git switch`
 - `git checkout`
 - `git checkout -b`
 - `git log --oneline --graph`
