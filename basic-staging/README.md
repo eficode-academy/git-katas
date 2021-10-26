@@ -3,6 +3,7 @@
 This kata will examine the staging area of git.
 
 In git we are working with three different areas:
+
 * The working directory where you are making your changes
 * The staging area where all changes you have added through `git add` will stay
 * The repository where every commit ends up, making your history. To put your staged changes in here you issue the `git commit` command.
@@ -12,7 +13,7 @@ These changes do not have to be the same.
 
 We will also work with `git reset` to reset the staged changes of a file, and `git checkout` to return a file to a previous state.
 
-## Setup:
+## Setup
 
 1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
@@ -43,8 +44,6 @@ You live in your own repository. There is a file called `file.txt`.
 21. What is the content of `file.txt`?
 22. What does `git status` tell us?
 
-
-
 ## Useful commands
 
 - `git add`
@@ -56,7 +55,7 @@ You live in your own repository. There is a file called `file.txt`.
 - `git log -n 5`
 - `git log --oneline`
 - `git log --oneline --graph`
-- `git reset HEAD `
+- `git reset HEAD`
 - `git checkout`
 
 ## Aliases

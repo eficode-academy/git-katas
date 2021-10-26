@@ -1,10 +1,11 @@
 # Git Kata: rebase branch
 
-## Setup:
+## Setup
+
 1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
-
 ## The task
+
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
 
 1. Which branches exist?
@@ -18,6 +19,7 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 9. What does the log look like now?
 
 ## Useful commands
+
 - `git checkout <branch-name>`
 - `git rebase <branch-name>`
 - `git log --oneline --graph --all`
