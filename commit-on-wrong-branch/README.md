@@ -58,7 +58,7 @@ Note: since the `B` in the current and in the target structure don't have the sa
 ## Useful commands
 
 - `git log --oneline --graph --all`
-- `git checkout <branch-name>`
+- `git switch <branch-name>`
 - `git rebase <branch-name>`
 - `git branch <branch-name>`
 - `git reset --soft HEAD~`

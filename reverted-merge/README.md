@@ -49,7 +49,7 @@ features should be included in `mymodule.txt`.
 * `git log --oneline --graph --all`
 * `git add <file-name>`
 * `git revert --continue`
-* `git checkout <branch-name>`
+* `git switch <branch-name>`
 * `git merge <branch-name>`
 * `git reset --hard <sha1>`
 * `git revert <sha1>`

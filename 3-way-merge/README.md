@@ -25,8 +25,8 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 - `git branch`
 - `git branch <branch-name>`
 - `git branch -d <branch-name>`
-- `git checkout <branch-name>`
-- `git checkout -b <branch-name>`
+- `git switch <branch-name>`
+- `git switch -c <branch-name>`
 - `git branch -v`
 - `git add`
 - `git commit`

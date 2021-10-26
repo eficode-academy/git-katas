@@ -50,7 +50,6 @@ You live in your own repository. There is a file called `file.txt`.
 - `git commit`
 - `git commit -m "My lazy short commit message"`
 - `git reset`
-- `git checkout`
 - `git log`
 - `git log -n 5`
 - `git log --oneline`
