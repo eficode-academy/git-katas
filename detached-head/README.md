@@ -21,5 +21,4 @@ We want to have a branch called `the-beginning` that is made from the first comm
 
 - `git status`
 - `git log --oneline --graph --all`
-- `git checkout <ref>`
-
+- `git checkout <ref>` or `git switch --detach <ref>`
