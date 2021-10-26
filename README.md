@@ -174,7 +174,9 @@ There is a very small test that you can run in powershell or bash.
 It is contained in the scripts `test.sh` and `test.ps1`.
 
 ### Cleanup
+
 You can remove testing artifacts, `exercise` directories, with the git clean command:
+
 ```sh
 git clean -ffdX
 ```

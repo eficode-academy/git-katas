@@ -1,9 +1,11 @@
 # Git Kata: Basic Branching
-## Setup:
+
+## Setup
 
 1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## The task
+
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
 Hint: `git switch` and `git checkout` will make you switch from one branch to another.
 
@@ -27,6 +29,7 @@ Hint: `git switch` and `git checkout` will make you switch from one branch to an
 18. Use `git diff mybranch master` to see the difference between the two branches.
 
 ## Useful commands
+
 - `git switch`
 - `git checkout`
 - `git checkout -b`

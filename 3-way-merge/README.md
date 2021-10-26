@@ -5,6 +5,7 @@
 1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## The task
+
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
 
 1. Create a branch called greeting and check it out
@@ -20,6 +21,7 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 11. What is the output of `git log --oneline --graph --all` now? Observe the extra merge commit created with the message "Merge branch 'greeting'".
 
 ## Useful commands
+
 - `git branch`
 - `git branch <branch-name>`
 - `git branch -d <branch-name>`
