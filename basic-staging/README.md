@@ -53,7 +53,6 @@ You live in your own repository. There is a file called `file.txt`.
 - `git log -n 5`
 - `git log --oneline`
 - `git log --oneline --graph`
-- `git restore --source`
 - `git restore --staged`
 
 ## Aliases
