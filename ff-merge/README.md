@@ -8,11 +8,11 @@
 
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
 
-1. Create a (feature)branch called feature/uppercase
+1. Create a (feature)branch called `feature/uppercase` (yes, `feature/uppercase` is a perfectly legal branch name, and a common convention).
 2. Switch to this branch
 3. What is the output of `git status`?
 4. Edit the greeting.txt to contain an uppercase greeting
-5. Add greeting.txt files to staging area and commit
+5. Add `greeting.txt` files to staging area and commit
 6. What is the output of `git branch`?
 7. What is the output of `git log --oneline --graph --all`
 
