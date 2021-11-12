@@ -11,7 +11,7 @@ In git we are working with three different areas:
 A file can have changes both in the working directory and staging area at the same time.
 These changes do not have to be the same.
 
-We will also work with `git reset` to reset the staged changes of a file, and `git checkout` to return a file to a previous state.
+We will also work with `git restore` to restore the staged changes of a file, and `git checkout` to return a file to a previous state.
 
 ## Setup
 
@@ -33,14 +33,14 @@ You live in your own repository. There is a file called `file.txt`.
 10. What does `git diff --staged` tell you?
 11. Explain what is happening
 12. Run `git status` and observe that `file.txt` are present twice in the output.
-13. Run `git reset HEAD file.txt` to unstage the change
+13. Run `git restore --staged file.txt` to unstage the change
 14. What does `git status` tell you now?
 15. Stage the change and make a commit
 16. What does the log look like?
 17. Overwrite the content in `file.txt`: `echo 4 > file.txt` (or `sc file.txt '4'` in PowerShell)
 18. What is the content of `file.txt`?
 19. What does `git status` tell us?
-20. Run `git checkout file.txt`
+20. Run `git restore file.txt`
 21. What is the content of `file.txt`?
 22. What does `git status` tell us?
 
@@ -49,13 +49,11 @@ You live in your own repository. There is a file called `file.txt`.
 - `git add`
 - `git commit`
 - `git commit -m "My lazy short commit message"`
-- `git reset`
 - `git log`
 - `git log -n 5`
 - `git log --oneline`
 - `git log --oneline --graph`
-- `git reset HEAD`
-- `git checkout`
+- `git restore --staged`
 
 ## Aliases
 
