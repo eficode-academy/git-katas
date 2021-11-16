@@ -19,11 +19,10 @@ You again live in your own branch, this time we will be doing a bit of juggling 
    *Remember: you want to pull in the commit on the feature branch into master. The command 'git merge [branch name]' takes one branch as argument from which it takes commits. The commits are applied to the branch pointed to by HEAD (currently checked out branch).*
 
 8. Switch to the `master` branch
-9. Use `cat` to see the contents of the greetings
-10. Diff the branches
-11. Merge the branches
-12. Use `cat` to see the contents of the greetings
-13. Delete the uppercase branch
+9. Diff the branches
+10. Merge the branches
+11. Use `cat` to see the contents of the greetings
+12. Delete the uppercase branch
 
 ## Useful commands
 
