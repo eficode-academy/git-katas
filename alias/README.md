@@ -31,5 +31,5 @@ Are there any difference in the output?
 
 - `git config --list`
 - `git config --list --show-origin`
-- `git config get <configuration>`
+- `git config --get <configuration>`
 - `git config --unset <configuration>`
