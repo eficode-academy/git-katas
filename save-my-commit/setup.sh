@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 kata="kata6-save-my-commit"
 
 # Include utils
