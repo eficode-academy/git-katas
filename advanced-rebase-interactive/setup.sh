@@ -2,11 +2,15 @@
 #Include utils
 source ../utils/utils.sh
 
-makerepo
+make-bare-remote-repo 
+clone-remote-to-exercise
 
 git commit --allow-empty -m "Initial commit"
 
 git tag v0.0
+
+git push origin master
+git push origin v0.0
 
 echo "Hello" > hello.code
 git add hello.code
@@ -21,7 +25,7 @@ git commit -am "Finished HW feature"
 echo "Hello World!" > hello.code
 git commit -am "Really made the thingy done"
 
-echo "println DEBUG" > hello.code
+echo "println DEBUG" >> hello.code
 git commit -am "debugging"
 
 echo "4321pass" > private.secret

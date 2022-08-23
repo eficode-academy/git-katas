@@ -7,7 +7,7 @@ We'll do this by setting up `merge-tst-files.sh` as a _merge driver_ for `.tst` 
 
 ## Setup:
 
-1. Run `source setup.sh`
+1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## The task
 

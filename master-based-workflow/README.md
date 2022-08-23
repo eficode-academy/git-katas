@@ -6,7 +6,7 @@ We will work with a fake remote repository, that serves as a standin for one hos
 
 ## Setup
 
-Run `source setup.sh` to setup the exercise.
+Run `source setup.sh` (or `.\setup.ps1` in PowerShell) to setup the exercise.
 
 ## Task
 
@@ -19,7 +19,7 @@ Run `source setup.sh` to setup the exercise.
 7. Run `git status` to see that you are up-to-date
 8. Add another line of text to `README.md`
 9. Commit the change
-10. Run the command `../fitzgerald-pushes-before-we-do.sh` to simulate a collaborator delivering changes to the fake remote
+10. Run the command `../fitzgerald-pushes-before-we-do.sh` (or `..\fitzgerald-pushes-before-we-do.ps1` in PowerShell) to simulate a collaborator delivering changes to the fake remote
 11. Push your change. Notice that they are rejected by the remote
 12. Run the command `git fetch` to retrieve the changes from the fake remote
 13. Run `git status` to see how your `master` branch and the remote `master` branch have diverged

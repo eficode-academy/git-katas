@@ -4,7 +4,7 @@
 source ../utils/utils.sh
 
 kata="kata3-detached-head"
-makerepo
+make-exercise-repo
 
 
 touch file1

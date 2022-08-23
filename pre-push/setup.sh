@@ -2,8 +2,8 @@
 #Include utils
 source ../utils/utils.sh
 
-makefakeremoterepo 
-clone_remote_to_exercise
+make-bare-remote-repo 
+clone-remote-to-exercise
 
 touch README.md
 git add README.md

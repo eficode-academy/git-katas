@@ -4,7 +4,7 @@
 source ../utils/utils.sh
 
 kata="3-way-merge"
-makerepo
+make-exercise-repo
 
 touch greeting.txt
 git add greeting.txt

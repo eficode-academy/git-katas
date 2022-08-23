@@ -1,0 +1,94 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test-all-ubuntu-bash:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run setup scripts with Bash
+      shell: bash
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "nobody@localhost"
+        chmod +x ./test-all.sh
+        ./test-all.sh
+
+  test-all-macos-bash:
+    needs: test-all-ubuntu-bash
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run setup scripts with Bash
+      shell: bash
+      run: |
+        chmod +x ./test-all.sh
+        echo "Test using bash"
+        ./test-all.sh -s bash
+
+  test-all-macos-zsh:
+    needs: test-all-ubuntu-bash
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run setup scripts with Zsh
+      shell: bash
+      run: |
+        chmod +x ./test-all.sh
+        echo "Test using zsh"
+        ./test-all.sh -s zsh
+
+  test-basic-ubuntu-pwsh:
+    needs: test-all-ubuntu-bash
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run PowerShell Core test scripts
+      run: ./test.ps1
+      shell: pwsh
+
+  test-all-container-git-versions:
+    needs: test-all-ubuntu-bash
+    strategy:
+      # do not exit if one of the builds fail
+      fail-fast: false
+      matrix:
+        # docker tags to use in matrix build
+        git_version: [latest, 2.30.2, 2.23.0, 2.19.2]
+    runs-on: ubuntu-latest
+    container:
+      image: bitnami/git:${{ matrix.git_version }}
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run setup scripts with Bash
+      shell: bash
+      run: |
+        git config --global --add safe.directory /__w/git-katas/git-katas
+        git --version
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "nobody@localhost"
+        chmod +x ./test-all.sh
+        ./test-all.sh
+
+  # job will succeed if all matrix builds succeed,
+  # used a toll gate to merge pr, without having
+  # to manually require all matrix steps...
+  test-all-container-matrix-success:
+    runs-on: ubuntu-latest
+    needs: test-all-container-git-versions
+    steps:
+    - run: echo Done!

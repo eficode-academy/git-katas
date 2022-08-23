@@ -4,8 +4,7 @@
 source ../utils/utils.sh
 
 kata="basic-ignore"
-makerepo
+make-exercise-repo
 
 echo "hello" > file1.txt
-git init
 git checkout -b master

@@ -5,7 +5,7 @@ source ../utils/utils.sh
 
 kata="kata5-commit-on-wrong-branch"
 
-makerepo 
+make-exercise-repo 
 
 touch file.txt
 

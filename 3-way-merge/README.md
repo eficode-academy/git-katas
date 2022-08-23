@@ -5,9 +5,10 @@
 1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
 ## The task
+
 You again live in your own branch, this time we will be doing a bit of juggling with branches, to show how lightweight branches are in git.
 
-1. Create a branch called greeting and check it out
+1. Create a branch called greeting and switch to it
 2. Edit the greeting.txt to contain your favorite greeting
 3. Add greeting.txt files to the staging area
 4. Commit
@@ -17,13 +18,15 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 8. What is the output of `git log --oneline --graph --all`?
 9. Diff the branches
 10. Merge the greeting branch into master
+11. What is the output of `git log --oneline --graph --all` now? Observe the extra merge commit created with the message "Merge branch 'greeting'".
 
 ## Useful commands
+
 - `git branch`
 - `git branch <branch-name>`
 - `git branch -d <branch-name>`
-- `git checkout <branch-name>`
-- `git checkout -b <branch-name>`
+- `git switch <branch-name>`
+- `git switch -c <branch-name>`
 - `git branch -v`
 - `git add`
 - `git commit`

@@ -28,8 +28,11 @@ If you want to signal to Git that a file needs to be removed from git, but still
 11. Make another text file in the repository, what does `git status` look like now? Why is it not tracked?
 12. Stage the removal of `file1.txt` with the command `git rm --cached`
 13. What does `git status` say?
-14. Add a new file `file2.txt` and add `!file2.txt` to `.gitignore`.
+14. Create a new file called `file2.txt` and add the line `!file2.txt` to `.gitignore`. (See _note_ below)
 15. What does `git status` say? Can you think of a use-case for keeping track of a file although the extension is ignored?
+
+## Note
+If you are using `zsh` instead of `bash`(default on Mac and some Linux') then `echo "!file2.txt" >> .gitignore` will fail because of shell expansion. Either use an editor to modify the file or escape the `!` e.g. `echo "\!file2.txt" >> .gitignore`
 
 ## Useful commands
 - `git rm`
