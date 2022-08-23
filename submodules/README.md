@@ -61,3 +61,10 @@ Go to the `product_alpha` repository. We'll ensure that we have the latest chang
 20. Examine the output of `git submodule status`. Compare the commit id with the `component` repository.
 
 Draw this entire exercise!
+
+## Useful commands
+
+```shell
+git diff [--cached] --submodule
+git log -p --submodule
+```
