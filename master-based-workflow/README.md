@@ -25,7 +25,7 @@ Run `source setup.sh` (or `.\setup.ps1` in PowerShell) to setup the exercise.
 13. Run `git status` to see how your `master` branch and the remote `master` branch have diverged
 14. Run `git merge origin/master` to apply the changes from the fake remote to your master branch
 15. Run `git status` to see the how the local and remote master branches relate
-16. Run `git log --all --oneline --decorate --graph` to see the merge commit on the master branch
+16. Run `git log --all --oneline --graph` to see the merge commit on the master branch
 17. Run `git push` to deliver your changes to the fake-remote
 18. Run `git status` to see that your `master` branch is up-to-date and has no undelivered changes
 
@@ -34,5 +34,5 @@ Run `source setup.sh` (or `.\setup.ps1` in PowerShell) to setup the exercise.
 - `git push`
 - `git fetch`
 - `git merge`
-- `git log --oneline --decorate --graph --all`
+- `git log --oneline --graph --all`
 - `git clone`
