@@ -18,7 +18,7 @@ We currently have this git history in our exercise repository :
 
     A - B - C - D         master
           \
-            E - F - G - H feature 
+            E - F - G - H feature
 
 As you can see the `feature` branch and the `master` branch have progressed with different commits. We want to cherry pick the commits F and G and add them onto the master branch, so that our Git history looks like this:
 
