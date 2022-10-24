@@ -7,7 +7,7 @@ line ending that should be used, or if you have some binary files in your reposi
 you can specify what program that should be used for showing the diff. The following exercises
 are for GNU/Linux platforms and Mac.
 
-## Setup:
+## Setup
 
 1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
@@ -35,26 +35,46 @@ are for GNU/Linux platforms and Mac.
    to an interpreter. GNU/Linux systems will have a problem running them, e.g., `bash\r` is not
    recognized as an interpreter.
 
-5. Git is mostly suitable for text files, but it can also handle binary files
-   and you can set programs to show the diff. You need to have installed exif (or exiftool)
-   for this to work. If you don't have a png image on your machine, you can use:
-   https://www.freepngimg.com/download/mario/20698-7-mario-transparent-background.png
+   Note: The line endings can also be controlled through
+   [`git config`](https://www.git-scm.com/book/en/v2/Customizing-Git-Git-Configuration) but that is a whole different topic.
 
-    `*.png diff=exif`
+5. Git is mostly suitable for text files, but it can also handle binary files and you can set programs to show the diff.
+   In this example, we are going to use the command line tool `exiftool` to show and compare meta-data for iamges. You will need to have this tool installed for the example to work. (There is also a similar tool called just `exif` which would also work, but only for `jpg` files). If you don't have exiftool already it is usually quite easy to install with your favorite package manager e.g. `brew install exiftool` or `apt install exiftool`
 
-6. Replace the image, e.g., using this one which is a smaller version of the image
-  https://www.freepngimg.com/download/temp/20698-7-mario-transparent-background_400x400.png
+   Once we have exiftool installed, we will need to configure a new "diff driver" in the git config that uses exiftool to "convert" a binary file to a text representation that can be diff'ed.
 
-  Now, run git diff,and you can see which attributes that were changed.
+   Add the following to your global ~/.gitconfig or to the local .git/config file.
 
-7. The line endings can also be controlled through 
-   [`git config`](https://www.git-scm.com/book/en/v2/Customizing-Git-Git-Configuration):
+   ```shell
+   [diff "useexif"]
+   textconv = exiftool
+   cachetextconv = true
+   ```
 
-    git config --global core.autocrlf input
-  
-   This will make sure that the repository always contains LF line endings, as line
-   endings are converted to LF on pushes. The configuration can also be set to `true` 
-   and `false`. You can experiment a bit with this.
+   Then we need to actually tell Git to use this new "driver" for any files of the type `PNG`. Add the following to the .gitattributes file you created at the start of the exercise:
+
+   ```shell
+   *.png diff=exif
+   ```
+
+## Advanced bonus task
+
+6. Now that everything is set up, let us test it out.
+   You can use the image mario.png located next to this README file. ( Mario png borrowed from <https://www.freepngimg.com/download/mario/20698-7-mario-transparent-background.png> )
+
+   ![Mario large](mario.png)
+
+   Copy/move this image to the exercise folder (e.g. with `cp ../mario.png .`), then use `git add` to stage the image and put it under Git's control.
+
+   Now we can run `git diff --staged` to view the change, and hopefully Git will print out the full `exiftool` output in green as it is comparing to the previous (non-existing) /dev/null version.
+
+7. To really see the value, replace the image with a different one, e.g., using the smaller version of the image also in this folder:
+
+   ![Mario small](mario-small.png)
+
+   If you copy this file to the exerise folder and rename it to `mario.png` Git will correctly see it as a changed file. (you can do this easily using `cp ../mario-small.png ./mario.png` to get the smaller one and overwrite the existing)
+
+   Now, just run the regular `git diff` to have Git compare the new smaller one with the original that is currently staged. It should be easy to see which attributes of the image were changed in the resize.
 
 ## Useful commands
 
