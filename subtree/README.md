@@ -44,7 +44,7 @@ From ../component/
  * [new branch]      master     -> component/master
 Added dir 'component'
 ```
-* Please explain what happend and what the result is. Consider running this command in both `product` and `component` repositories. `git log --graph --decorate --oneline --all
+* Please explain what happend and what the result is. Consider running this command in both `product` and `component` repositories. `git log --graph --oneline --all
 ` and explain the common history and the newest commit in `product`.
 
 ### Pull in new commits from subtree
@@ -66,7 +66,7 @@ Merge made by the 'recursive' strategy.
  1 file changed, 1 insertion(+)
 ```
 * Please explain what happend and what the result is. Consider running this command in both `product` and `component` repositories.
-  `git log --graph --decorate --oneline --all` and explain the common history and the newest commits in `product`.
+  `git log --graph --oneline --all` and explain the common history and the newest commits in `product`.
 
 ### Modify component directory and push commits to component repository
 We have updated `component` directory from the `component` repository. We now want to modify the `component` directory and deliver the changes to the `component` repository. NOTE: We push to a new branch.
@@ -87,13 +87,13 @@ To ../component/.git
 ```
 
 * Please explain what happend and what the result is. Consider running this command in both `product` and `component` repositories.
-  `git log --graph --decorate --oneline --all` and explain the common history and the newest commits in `product`.
+  `git log --graph --oneline --all` and explain the common history and the newest commits in `product`.
 * Why do we push to a new branch?
 * How would you do it if you not owner nor collaborator on the `component` repository on for example GitHub?
 
 ## Useful commands
 
-* `git log --graph --decorate --oneline --all`
+* `git log --graph --oneline --all`
 * `git subtree add --prefix component component master`
 * `git remote add component ../component/.git`
 * `git subtree push --prefix <prefix/directory> <repo> <branch>`
