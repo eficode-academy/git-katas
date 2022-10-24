@@ -13,9 +13,9 @@ This allows you to grab source changes directly, as well as _pushing_ them back.
 
 After running the setup script, you'll be left with three repositories inside the `exercise` folder.
 
+* A `remote` repository. This is the "remote" repository that would normally exist on your preferred Git repository host, e.g. github.com.
 * A `component` repository cloned from `remote`.
 * A `product` repository.
-* A `remote` repository. This is the "remote" repository that would exist on your preferred Git repository host, e.g. github.com.
 
 Go to the `product` repository.
 
@@ -23,7 +23,7 @@ Go to the `product` repository.
 2. What does your working directory look like?
 3. Does `git status` look like you expect?
 4. What if you cd to `include`?
-5. Run `git diff --cached` in `product`. Where can you find the commit id shown in the `+Subproject commit ...` line?
+5. Run `git diff --staged` in `product`. Where can you find the commit id shown in the `+Subproject commit ...` line?
 6. Commit the changes on the `product` repository.
 
 Go to the `component` repository.
