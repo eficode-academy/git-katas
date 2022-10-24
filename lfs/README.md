@@ -11,6 +11,7 @@ In order to run this exercise, we need to have `git lfs` installed.
 ### Install LFS
 
 Mac:
+
 ```shell
 brew install git-lfs
 # or
@@ -18,6 +19,7 @@ port install git-lfs
 ```
 
 Linux (distroes with apt):
+
 ```shell
 sudo apt install git-lfs
 ```
@@ -26,6 +28,7 @@ Windows:
 > Go to <https://git-lfs.github.com/>, download git-lfs installer and then install it.
 
 Windows (chocolatey):
+
 ```shell
 choco install git-lfs.install
 ```
@@ -54,7 +57,6 @@ When you have run the script, you should have two folders:
 
 and you should currently be in the `exercise` folder. `exercise` is a clone of `remote` and you will be pushing changes back to this remote in the exercise.
 
-
 ## The task
 
 ### Phase 1
@@ -63,12 +65,11 @@ and you should currently be in the `exercise` folder. `exercise` is a clone of `
 2. Notice that there is a 'large' file called file2.mpeg. We want to commit this file to our history, but we want to use LFS to handle this type of files for the efficiency it provides. We will have to tell this Git repository that it should handle *.mpeg files via LFS. You can use the `git lfs track ...` command for this. (Note: If you want a wild-card pattern for this, you will have to quote it like `'*.mpeg'` to avoid shell expansion)
 3. As this repo didn't yet have a `.gitattributes` file, the `track` sub-command created one for us. Have a look at its content. This is a file we want to share, so add and commit it to the repo with a suitable commit message.
 4. Now we are ready to actually add the big mpeg file to our repository but have it stored within the LFS "system". Due to the magic of LFS, this is 100% transparent. So just add the file like you would any other. Use `git lfs status` before and after to get a feel for what is happening. Now make a commit with the new file. Notice how this behaves exactly as with any other file. Even a `git push` behaves exactly as expected.
-
-5. The only thing that has changed, is the way Git stores the actual file. Instead of storing the raw content directly, it has stored a reference to an object in the LFS-cache. If we want to inspect this, we can use the plumbing command `git cat-file` with a little trick: 
+5. The only thing that has changed, is the way Git stores the actual file. Instead of storing the raw content directly, it has stored a reference to an object in the LFS-cache. If we want to inspect this, we can use the plumbing command `git cat-file` with a little trick:
 
    ```shell
    git cat-file -p HEAD:file2.mpeg
-   ``` 
+   ```
 
    (show the blob object of `file2.mpeg` as found at the commit referenced by `HEAD`.)
 
@@ -87,7 +88,7 @@ Luckily they are not actually really mpeg files so we can just "cheat" and use o
     ```shell
     echo "more" >> file2.mpeg
     ```
-  
+
 7. Use `git lfs status` and see how it reflects the change in the file. How does this differ from what a normal `git status` displays? Add the file and run the command again. Commit and check again.
 8. Now push the waiting changes to the remote.
 
@@ -97,11 +98,11 @@ Let us now pretend to be a second developer.
 
 1. Leave the exercise folder and go back up to the `lfs` exercise folder with `cd ..`.
 2. Now let us make a new clone of the (local) remote. We can force Git to behave more like a regular clone by using:
-    
-    ```shell
-    git clone --no-local remote newclone
-    ```
-    
+
+   ```shell
+   git clone --no-local remote newclone
+   ```
+
 3. cd into the `newclone` folder and investigate a bit. Notice how everything has just worked out by magic, and all checkout files have the expected size and content?
 4. Feel free to make more changes in any of the two remotes and push/pull these as time allows.
 
