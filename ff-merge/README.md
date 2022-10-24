@@ -16,7 +16,7 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 6. What is the output of `git branch`?
 7. What is the output of `git log --oneline --graph --all`
 
-   *Remember: you want to pull in the commit on the feature branch into master. The command 'git merge [branch name]' takes one branch as argument from which it takes commits. The commits are applied to the branch pointed to by HEAD (currently checked out branch).*
+   *Remember: You want to update the master branch so it also has all the changes currently on the feature branch. The command 'git merge [branch name]' takes one branch as argument from which it takes changes. The branch pointed to by HEAD (currently checked out branch) is then updated to also include these changes.*
 
 8. Switch to the `master` branch
 9. Use `cat` to see the contents of the greetings
