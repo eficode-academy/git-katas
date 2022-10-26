@@ -54,7 +54,7 @@ are for GNU/Linux platforms and Mac.
    Then we need to actually tell Git to use this new "driver" for any files of the type `PNG`. Add the following to the .gitattributes file you created at the start of the exercise:
 
    ```shell
-   *.png diff=exif
+   *.png diff=useexif
    ```
 
 ## Advanced bonus task
