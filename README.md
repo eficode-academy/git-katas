@@ -1,5 +1,5 @@
 ---
-maintainer: randomsort
+maintainer: JKrag
 ---
 # Git Katas
 
