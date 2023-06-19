@@ -1,5 +1,5 @@
 ---
-maintainer: JKrag
+maintainer: JKrag and @sofusalbertsen
 ---
 # Git Katas
 
