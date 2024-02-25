@@ -48,7 +48,7 @@ Note: since the `B` in the current and in the target structure don't have the sa
 ## The task
 
 1. Use `git log --oneline --graph --all` to view all the branches and their commits.
-2. Copy `C` onto `master` before `B` by rebasing `quickfix` on `master`.
+2. Copy `C` onto `master` before `B` by rebasing `master` on `quickfix`.
 3. Make a new branch (`changes-including-B`) off of our `master` so we can keep working on `B`.
 4. Reset `master` back to `C`.
 5. Delete the `quickfix` branch.
