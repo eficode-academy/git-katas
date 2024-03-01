@@ -10,8 +10,8 @@ git add .
 git commit -m "Initial commit"
 
 git checkout -b pipeline-improvement
-Set-Content -Value "Step 1 after improvement" > step1.pipeline
-Set-Content -Value "Step 3 after changes" > step3.pipeline
-Set-Content -Value "Utilities after changes" > stepx.utils
+Set-Content -Value "Step 1 after improvement" -Path step1.pipeline
+Set-Content -Value "Step 3 after changes" -Path step3.pipeline
+Set-Content -Value "Utilities after changes" -Path stepx.utils
 git add .
 git commit -m "Improve pipeline - name change"
