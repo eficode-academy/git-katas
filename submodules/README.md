@@ -15,7 +15,7 @@ This allows you to grab source changes directly, as well as _pushing_ them back.
 
 1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
 
-> NOTE: If running setup.sh on windows, you can run into problems by sourcing the setup script. Instead, run `./setup.sh`, and the folders would be created correctly.
+> NOTE: If running setup.sh on Windows, you can run into problems by sourcing the setup script. Instead, run `./setup.sh`, and the folders would be created correctly.
 
 ## The task
 
