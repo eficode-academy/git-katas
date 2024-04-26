@@ -10,7 +10,7 @@ This allows you to grab source changes directly, as well as _pushing_ them back.
 > as the setup script for this exercise relies on cloning a local repository, it will only work if you specifically allow this before running the script.
 > `git config --global protocol.file.allow always`
 >
-> If you want to remove this "openening" afterwards, you should wait until you are done with the whole exercise, and then run:
+> If you want to remove this "opening" afterward, you should wait until you are done with the whole exercise, and then run:
 > `git config --global --unset protocol.file.allow`
 
 1. Run `source setup.sh` (or `.\setup.ps1` in PowerShell)
