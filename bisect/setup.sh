@@ -2,6 +2,7 @@
 source ../utils/utils.sh
 
 make-exercise-repo
+config-local-username
 
 echo '#! /usr/bin/env bash' > 'test.sh'
 echo 'if [[ $(( $(find * | wc -l) + 10 )) -gt 32 ]] ;then' >> 'test.sh'
