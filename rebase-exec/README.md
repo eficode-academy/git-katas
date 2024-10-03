@@ -6,16 +6,23 @@
 
 ## Task
 
-Doing local development we've created a bunch of commits. We would like to deliver them all to master. We would also like all commits to pass our tests.
+### Example 1:
+Adding content to file in last 3 commits using `git rebase -i --exec <command(s)> HEAD~3`.
 
-Our test suite is contained in `test.sh`. We can use `git rebase --exec` to run the test suite for all commits. We have tagged the first commit in our history with `initial-commit`.
+1. Run `git log --patch` command to see what changes are include in last commit.
+2. Run `git rebase -i --exec "echo '1' >> 4.txt && git add 4.txt && git commit --amend --no-edit" HEAD~3` command it will open configured editor with information what command will be executed for each commits which is notified by `exec <command>` you can either modify the command or save and exit the editor to let the command run for that specific commit.
+3. Run `git log --patch` command to see what are the changes in commits.
 
-1. Run the test script using `./test.sh` to see the most recent commit succeed
-1. Use `git rebase -i --exec ./test.sh initial-commit` to run the test script on all commits. You will be shown the plan, you do not need to change anything.
-1. The tests will run, and fail on a single commit. The tests fail because the test script changes. So you need to fix it
-1. Change the following strings in `test.sh`
-    - `One test failed` to `all tests pass`
-    - `exit 1` to `exit 0`
-1. Stage `test.sh` and use `git commit --amend` to fix the broken commit
-1. Run `git rebase --continue` to execute the test suite on the remaining commits
-1. You may run `verify.sh` (or `verify.ps1` in PowerShell) to verify your solution
+### Example 2:
+Change the author for all the commits using `git rebase -i --exec`.
+
+1. Run `git log --format="commit: %H%nauthor: %an%n"` command to see detail related to commit and author.
+2. Run `git rebase -i --root --exec "git commit --amend --author='my name <myemail@home.com>' --no-edit"` command it will open configured editor with information what command will be executed for each commits which is notified by `exec <command>` you can either modify the command or save and exit the editor to let the command run for that specific commit.
+3. Run `git log --format="commit: %H%nauthor: %an%n"` command to see the changes author information for the commits.
+
+## Useful commands
+
+- `git log --patch`
+- `git rebase -i --exec "echo '1' >> 4.txt && git add 4.txt && git commit --amend --no-edit" HEAD~3`
+- `git log --format="commit: %H%nauthor: %an%n"`
+- `git rebase -i --root --exec "git commit --amend --author='my name <myemail@home.com>' --no-edit"` or `git rebase -i --exec "git commit --amend --author='my name <myemail@home.com>' --no-edit" first-commit`
