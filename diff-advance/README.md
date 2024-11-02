@@ -15,7 +15,7 @@ Run `source setup.sh` or `bash setup.sh` or `./setup.sh` (or `.\setup.ps1` in Po
 5. Include `--name-only` option with `git diff` and see the result.
 6. With `--name-only`, we get a list of changed files. This can be useful for example when we want to do selective compile/test of changed files instead of a full re-build, given that steps can be compiled/tested independently. In our exercise, there are 3 steps in a pipeline and an utilities file. Let's say we only want to test the pipelines because we're confident enough with the utils to not test them (naughty-list programmer). We can do something like this:
 
-    `git diff --name-only | grep '.pipeline' | xargs cat`
+    `git diff --name-only master | grep '.pipeline' | xargs cat`
 
     This will:
     1. Get a list of the changed files
