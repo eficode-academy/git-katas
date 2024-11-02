@@ -31,6 +31,6 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 - `git add`
 - `git commit`
 - `git commit -m`
-- `git merge <branchA> <branchB>`
+- `git merge <branch-name>`
 - `git diff <branchA> <branchB>`
 - `git log --oneline --graph --all`
