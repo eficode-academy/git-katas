@@ -1,6 +1,6 @@
 #! /usr/bin/env sh
 
-cd exercise
+cd exercise || exit
 if [ "$(git log -1 --format='%s' refs/bisect/bad -- )" = '22' ] ; then
   echo "You managed to find the bad commit with bisect"
 else

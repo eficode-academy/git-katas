@@ -1,8 +1,7 @@
 #!/bin/bash
 source ../utils/utils.sh
 
-make-exercise-repo
-config-local-username
+pre-setup # Make exercise repo, and setup necessary.
 
 echo '#! /usr/bin/env bash' > 'test.sh'
 echo 'if [[ $(( $(find * | wc -l) + 10 )) -gt 32 ]] ;then' >> 'test.sh'
@@ -24,3 +23,4 @@ do
   git commit -m $i
 done
 
+post-setup
