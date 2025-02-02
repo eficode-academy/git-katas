@@ -36,8 +36,8 @@ You can look at the bottom of this file, if you have not yet done basic git conf
 - `git log -n 5`
 - `git log --oneline`
 - `git log --oneline --graph`
-- `touch filename` to create a file (or `sc filename ''` in PowerShell)
-- `echo content > file` to overwrite file with content (or `sc filename 'content'` in PowerShell)
+- `touch filename` to create a file (or `Set-Content filename ''` in PowerShell)
+- `echo content > file` to overwrite file with content (or `Set-Content filename 'content'` in PowerShell)
 - `echo content >> file` to append file with content (or `ac filename 'content'` in PowerShell)
 
 
