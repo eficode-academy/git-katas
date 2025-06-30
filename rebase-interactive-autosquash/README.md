@@ -16,7 +16,7 @@ There is a way to easily fix it with advanced options for `git commit` and `git 
 
 1. Explore the repo and the history so you know when the documentation file was added.
 2. Fix `README.md` file and add it.
-3. Add your commit by using `git commit --fixup=<commit id to be fixed>`.
+3. Add your commit by using `git commit --fixup=<commit id to be fixed>`or use just git commit --fixup= commit id.
 4. Use `git rebase --autosquash --interactive v0.0` to view the rebase recipe automatically generated.
 5. Use `git log` to view your new beautiful history.
 
