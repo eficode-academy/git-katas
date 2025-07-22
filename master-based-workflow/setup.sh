@@ -3,9 +3,8 @@ source ../utils/utils.sh
 
 rm -rf exercise
 
-mkdir exercise
-cp fitzgerald-pushes-before-we-do.sh ./exercise/
-cd exercise
+make-exercise-repo
+cp ../fitzgerald-pushes-before-we-do.sh .
 
 git  -c init.defaultBranch="$DEFAULT_BRANCH" init fake-remote-repository
 pushd fake-remote-repository 
