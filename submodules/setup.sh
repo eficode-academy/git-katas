@@ -8,8 +8,7 @@ source ../utils/utils.sh
 rm -rf exercise
 
 # Create exercise folder & go there
-mkdir exercise
-cd exercise
+make-exercise-repo
 
 # Create remote repo
 make-bare-remote-repo
