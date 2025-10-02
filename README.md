@@ -1,6 +1,7 @@
 ---
 maintainer: JKrag
 ---
+---
 student: Matthew
 ---
 # Git Katas
