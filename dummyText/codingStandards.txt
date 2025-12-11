@@ -1,0 +1,4 @@
+Variables/Functions: Use camelCase (e.g., calculateSum()).
+○ Classes: Use PascalCase (e.g., HttpServer).
+○ Constants: Use ALL_UPPERCASE (e.g., API_URL).
+
