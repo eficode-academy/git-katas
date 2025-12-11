@@ -1,4 +1,5 @@
 Variables/Functions: Use camelCase (e.g., calculateSum()).
 ○ Classes: Use PascalCase (e.g., HttpServer).
-○ Constants: Use ALL_UPPERCASE (e.g., API_URL).
-
+○ Constants: Use ALL_UPPERCASE (e.g., API_URL). 
+Break your code into smaller, reusable modules.
+Handle errors using try-catch for async functions
