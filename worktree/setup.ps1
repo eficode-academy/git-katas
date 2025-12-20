@@ -6,7 +6,7 @@ git add README.txt
 git commit -m "Initial commit on master"
 
 # Create feature branch with some commits
-git checkout -b feature
+git switch -c feature
 Set-Content -Value "Feature work" -Path feature.txt
 git add feature.txt
 git commit -m "Add feature.txt"
@@ -16,4 +16,4 @@ git add feature.txt
 git commit -m "Update feature.txt"
 
 # Go back to master
-git checkout master
+git switch master
