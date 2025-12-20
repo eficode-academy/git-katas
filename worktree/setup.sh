@@ -3,7 +3,6 @@
 # Include utils
 source ../utils/utils.sh
 
-kata="worktree"
 make-exercise-repo
 config-local-username
 
