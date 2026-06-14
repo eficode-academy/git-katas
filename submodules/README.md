@@ -19,7 +19,8 @@ After running the setup script, you'll be left with three repositories inside th
 
 Go to the `product` repository.
 
-1. Add component as a submodule of product by running `git submodule add ../remote include`.
+1. Add component as a submodule of product by running `git -c protocol.file.allow=always submodule add ../remote include`.
+> NOTE: Newer git versions block file protocol by default. 'git -c protocol.file.allow=always' is a temporary one-time override for just this command.
 2. What does your working directory look like?
 3. Does `git status` look like you expect?
 4. What if you cd to `include`?
