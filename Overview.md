@@ -33,6 +33,7 @@
 3. [reverted-merge](reverted-merge/README.md) - We revert a merge, but, after fixes are added to the merged branch, we want the changes from merge and the new fixes.
 4. [save-my-commit](save-my-commit/README.md) - Should you accidentally or on purpose delete a commit, go here to try and save it. You will use the reflog.
 5. [detached-head](detached-head/README.md) - git complains that you are in a "You are in 'detached HEAD' state". What do you do?
+6. [force-with-lease](force-with-lease/README.md) - You amended a commit you had already pushed, and now the remote refuses it. Force pushing safely turns out to be harder than `--force-with-lease` suggests.
 
 ## Katas On Advanced features
 
