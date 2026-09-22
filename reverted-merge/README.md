@@ -30,7 +30,7 @@ features should be included in `mymodule.txt`.
 3. Next we explore how you can get the changes from the branch into the master
    again. First try to merge to see what happens. The `lib.txt` file changes as
    expected, but '`mymodule.txt` does not. For an in depth discussion of
-   the reason why, consult this gist: [Reverting a faulty merge](https://github.com/git/git/blob/master/Documentation/howto/revert-a-faulty-merge.txt).
+   the reason why, consult this guide: [Reverting a faulty merge](https://github.com/git/git/blob/master/Documentation/howto/revert-a-faulty-merge.adoc).
 
 > reverting a merge commit also
 > undoes the _data_ that the commit changed, but it does absolutely
