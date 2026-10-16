@@ -44,3 +44,4 @@
 6. [Objects](objects/README.md) - A small exercise into Git internals.
 7. [merge-driver](merge-driver/README.md) - Defining a custom merge driver.
 8. [rebase-exec](rebase-exec/README.md) - Run tests on every commit using `git rebase --exec`
+9. [signed-commits](signed-commits/README.md) - Set up SSH or GPG signing of commits on Windows, macOS or Linux, and verify them.

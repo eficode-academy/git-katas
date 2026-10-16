@@ -1,75 +1,158 @@
-### Signed Commits
+# Signed Commits
 
-This exercise walks you through the process of setting up GPG signing of commits, and how to verify them.
-We will use Github as the remote repository, but the process is the same for Gitlab .
-The format is a bit different than the other exercises, since it is more of a guide than a kata.
-There are therefore no setup script.
+This exercise walks you through setting up signing of commits and how to verify them.
+We use GitHub as the remote repository, but the process is the same for GitLab.
+The format is a bit different from the other exercises, since it is more of a guide than a kata.
+There is therefore no setup script.
 
-## Setup:
+There are two ways to sign commits:
 
-On the workstation, you need to setup a tool that can produce GPG keys.
+- **SSH signing** (Git 2.34 or newer). The simplest option, and you may already have an SSH key. **Recommended.**
+- **GPG signing.** The classic option, with more moving parts that differ per operating system.
 
-- Install a version of the GPG tool. For windows the best option is probably Gpg4win which can be 
-installed from [GPG4win.org](https://gpg4win.org/download.html) or via Chocolatey (`choco install Gpg4win`)
-- Basically just follow the [Github step by step guide](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key): or [Gitlab help GPG guide](https://docs.gitlab.com/ee/user/project/repository/signed_commits/gpg.html) or follow the shorter/longer instructions below.
+Pick one and follow its section. Then continue with [Verify commits](#verify-commits) and the [exercise](#exercise).
 
+> :warning: The `git config --global` commands below change your real Git configuration.
+> On a shared or borrowed machine, drop `--global` and run the commands inside the repository you create in the [Exercise](#exercise) instead.
 
-### Generate key
+Check your Git version first:
 
+```bash
+git --version   # SSH signing needs 2.34 or newer
+```
 
-> :bulb: Note: Before generating a new GPG key, make sure you've verified your email address. If you haven't verified your email address, you won't be able to sign commits and tags with GPG. For more information, see "Verifying your email address." The email address used for your GPG key should match an email address in your git config. For more information, see [Setting your commit email address in Git](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-in-git)
+## Option A: SSH signing (recommended)
 
-- Open a terminal on your workstation.
-- Enter `gpg --full-generate-key`.
-- Select the default options when prompted for key type and key size.
-- Set the expiration date you are comfortable with. If you don't want your key to expire, press Enter.
+### 1. Get an SSH key
 
-Note: When asked to enter your email address, ensure that you enter the verified email address for your GitHub account. To keep your email address private, use your GitHub-provided no-reply email address. For more information, see ["Verifying your email address."](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/verifying-your-email-address
-)
+If you already have a key (e.g. `~/.ssh/id_ed25519.pub`), you can reuse it, or create a dedicated one:
 
-- You will be asked for a Passphrase (remember to store this on a secured location in case you forgot it)
+```bash
+ssh-keygen -t ed25519 -C "your-email@example.com" -f ~/.ssh/id_ed25519_signing
+```
 
-## Export key
+On Windows, run this in Git Bash or PowerShell (OpenSSH is built into Windows 10/11). `~` is your home directory in both.
 
-This is well described in the Gitlab guide, but basically just run:
+### 2. Tell Git to sign with it
+
+```bash
+git config --global gpg.format ssh
+git config --global user.signingkey ~/.ssh/id_ed25519_signing.pub
+git config --global commit.gpgsign true    # sign every commit automatically
+```
+
+### 3. Add the key to GitHub as a *signing* key
+
+- Go to <https://github.com/settings/keys> and click **New SSH key**.
+- Set **Key type** to **Signing Key** (a key added only as an *Authentication Key* will not make commits verified).
+- Paste the contents of the `.pub` file. To copy it to the clipboard:
+
+| OS      | Command                                           |
+| ------- | ------------------------------------------------- |
+| macOS   | `pbcopy < ~/.ssh/id_ed25519_signing.pub`          |
+| Linux   | `xclip -selection clipboard < ~/.ssh/id_ed25519_signing.pub` (or `wl-copy < ...` on Wayland) |
+| Windows (PowerShell) | `Get-Content $HOME\.ssh\id_ed25519_signing.pub \| Set-Clipboard` |
+| Git Bash | `clip < ~/.ssh/id_ed25519_signing.pub`           |
+
+### 4. (Optional) Verify signatures locally
+
+GitHub verifies signatures for you, but for `git log --show-signature` to say "Good signature" locally,
+Git needs a list of trusted keys:
+
+```bash
+echo "your-email@example.com $(cat ~/.ssh/id_ed25519_signing.pub)" >> ~/.config/git/allowed_signers
+git config --global gpg.ssh.allowedSignersFile ~/.config/git/allowed_signers
+```
+
+(Create the folder `~/.config/git` first if it does not exist.)
+
+If your key has a passphrase, load it into `ssh-agent` so you are not asked on every commit (`ssh-add ~/.ssh/id_ed25519_signing`).
+On macOS, `ssh-add --apple-use-keychain` stores it in the keychain.
+
+## Option B: GPG signing
+
+### 1. Install GPG
+
+| OS      | Install                                                                                         |
+| ------- | ----------------------------------------------------------------------------------------------- |
+| Windows | [Gpg4win](https://gpg4win.org/download.html), or `choco install gpg4win` / `winget install GnuPG.Gpg4win` |
+| macOS   | `brew install gnupg pinentry-mac` (pinentry-mac gives you a GUI passphrase prompt)               |
+| Linux   | `sudo apt install gnupg` (Debian/Ubuntu), `sudo dnf install gnupg2` (Fedora)                     |
+
+Check with `gpg --version`.
+
+You can also follow the [GitHub step by step guide](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key)
+or the [GitLab GPG guide](https://docs.gitlab.com/ee/user/project/repository/signed_commits/gpg.html).
+
+### 2. Generate a key
+
+> :bulb: Verify your email address on GitHub first. The email address in your GPG key must match
+> an email address verified on your account **and** the `user.email` you commit with. To keep your address private,
+> use your GitHub-provided `no-reply` address (see
+> [Setting your commit email address](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)).
+
+```bash
+gpg --full-generate-key
+```
+
+- Choose the default key type (currently ECC / ed25519; older GPG versions default to RSA, where you should pick 4096 bits).
+- Choose an expiration you are comfortable with (or press Enter for no expiry).
+- Enter your name and the email address described above.
+- Choose a passphrase and store it somewhere safe.
+
+### 3. Export the public key
 
 ```bash
 gpg --list-secret-keys --keyid-format LONG
-# Then find the ID part in output, i.e. the HEX string after "sec   rsa4096/" (see guide)
-gpg --armor --export <KEY_ID> 
-# will print out the public key, which is what you need for Girhub.
-# For convenience, just run:
-gpg --armor --export <KEY_ID> | clip
-# to send output directly to your clipboard (aka. copy/paste buffer)
 ```
 
-## Add key to your Github account
-
-- Go to your Github account settings and into the keys section https://github.com/settings/keys
-- Click "New GPG key"
-- Paste the key you copied from the previous step into the "Key" field.
-- Click "Add GPG key"
-- Confirm the action by entering your Github password/ 2FA code.
-
-## Configure Git
-
-Tell Git about your new key:
+Find the ID in the line starting with `sec`. It is the hex string after the slash, e.g. `sec   ed25519/1A96FB9E811B9920`
+(or `rsa4096/...` for an RSA key). Then print the public key:
 
 ```bash
-git config --global user.signingkey <KEY ID>
+gpg --armor --export <KEY_ID>
 ```
 
-This will let you sign individual commits manually with `git commit -S`
+To copy it directly to the clipboard, pipe it to the command for your OS:
+`| pbcopy` (macOS), `| xclip -selection clipboard` (Linux), `| clip` (Windows, Git Bash or cmd), `| Set-Clipboard` (PowerShell).
 
-If you want Git to automatically sign all your commit, which I suggest:
+### 4. Add the key to your GitHub account
+
+- Go to <https://github.com/settings/keys>.
+- Click **New GPG key**, paste the key, and click **Add GPG key**.
+- Confirm with your password / 2FA.
+
+### 5. Configure Git
 
 ```bash
-git config --global commit.gpgsign true
+git config --global user.signingkey <KEY_ID>
+git config --global commit.gpgsign true    # sign every commit automatically
 ```
 
-### Tell Git to use GPG4Win for signing
+Without `commit.gpgsign`, you sign individual commits with `git commit -S`.
 
-You may get the following error when running `git commit -S -m "<message>"`:
+### 6. OS specific gotchas
+
+**macOS / Linux: "Inappropriate ioctl for device".** If `git commit` fails with
+
+```
+gpg: signing failed: Inappropriate ioctl for device
+```
+
+GPG cannot open a prompt for your passphrase. Add this to your `~/.zshrc` or `~/.bashrc` and open a new terminal:
+
+```bash
+export GPG_TTY=$(tty)
+```
+
+On macOS with a GUI prompt, also run:
+
+```bash
+echo "pinentry-program $(brew --prefix)/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+gpgconf --kill gpg-agent
+```
+
+**Windows: "No secret key".** If you have installed Gpg4win and see
 
 ```
 gpg: skipped "5D882E3762132C82": No secret key
@@ -78,70 +161,115 @@ error: gpg failed to sign the data
 fatal: failed to write commit object
 ```
 
-Git is by default using a bundled version of GPG. If you have installed GPG4win, your key will be
-stored in a different location than the bundled GPG expects.
-To remedy this, you have to tell Git which GPG to use.
+Git for Windows uses its own bundled GPG, which keeps keys in a different place than Gpg4win. Tell Git to use Gpg4win's `gpg`:
 
-In Powershell:
+In PowerShell:
 
-``` powershell
+```powershell
 git config --global gpg.program $(Resolve-Path (Get-Command gpg | Select-Object -Expand Source) | Select-Object -Expand Path)
 ```
 
-In Git Bash:
+In Git Bash (assumes Gpg4win is installed on C:):
 
-``` bash
-git config --global gpg.program $(cygpath -w $(which --all gpg | grep "/c/"))  # Assumes that GPG4Win is installed on C:
+```bash
+git config --global gpg.program "$(cygpath -w "$(which --all gpg | grep '/c/' | head -1)")"
 ```
 
-## Caching Passphrase
+(If you only have one GPG installed, you do not need this.)
 
-In the default setup, every commit will query you for your passphrase for every commit, and since you have ofcourse used a very long safe passphrase, this quickly becomes very annoying.
+### 7. Cache your passphrase
 
-It is possibly to set a "expiry" timeout for this, so it asks less frequently, and it seems there are at least two ways to do that.
+By default you are asked for the passphrase on every commit. `gpg-agent` can remember it for a while.
 
-### Method 1, using Kleopatra
-
-If you have set up GPG using Gpg4win, it should also ahve installed a management utility called Kleopatra. (which you could probably also have used to create the key)
-
-- Open Kleopatra
-- Open Settings (ctrl + shit + ,)
-- Go to "GnuPG System" -> "Private keys"
-- In the field for "Set maximum PIN cache lifetime to N seconds" you can set your desired expiration, e.g. 7200 to cache for 2 hours.
-
-### Method 2, using gpg-agent
-
-E.g If you have used regular gpg instead of Gpg4Win.
-
-Note: *Not tested. (If you do and it works, please remove this note)*
-
-- Edit or create the file `%APPDATA%/gpg-agent.conf`
-- Add the following (edit to your liking)
+**All OSs** (Gpg4win, macOS, Linux): edit `gpg-agent.conf` and add (values are in seconds):
 
 ```conf
-default-cache-ttl 72000
-max-cache-ttl 72000
+default-cache-ttl 7200
+max-cache-ttl 7200
 ```
 
-## Verifying commits
+The file is at `~/.gnupg/gpg-agent.conf` on macOS and Linux, and `%APPDATA%\gnupg\gpg-agent.conf` on Windows.
+Then restart the agent for the change to take effect:
 
-You can verify an existing commit with e.g.:
+```bash
+gpgconf --kill gpg-agent
+```
+
+**Windows alternative, using Kleopatra:** Gpg4win installs the key manager Kleopatra.
+Open **Settings** (Ctrl+Shift+,), go to **GnuPG System** -> **Private Keys**, and set
+"Set maximum PIN cache lifetime to N seconds" (e.g. 7200 for two hours).
+
+## Exercise
+
+Do not rely on a pre-made repository. Make a fresh one, so you also see what happens before signing is configured.
+
+```bash
+mkdir signing-test && cd signing-test
+git init
+git config user.email "your-verified-email@example.com"   # must match your key / GitHub account
+echo hello > hello.txt && git add hello.txt
+```
+
+1. Make a commit **without** signing: `git -c commit.gpgsign=false commit -m "unsigned"`.
+2. Make a commit **with** signing: `git commit -S -m "signed"` (if you set `commit.gpgsign true` globally, plain `git commit` is enough).
+3. Compare the two with `git log --show-signature` (see below). Which one has a signature?
+4. Create a repository on GitHub, push both commits, and look at the commit list in the web UI.
+   The signed commit has a green **Verified** badge, the unsigned one has none.
+5. Try the usual failure: set `git config user.email someone-else@example.com`, make another signed commit and push.
+   With a GPG key whose email differs, the badge says **Unverified** (the commit is signed, but GitHub cannot match it to your account).
+6. Sign an existing commit afterwards: `git commit --amend --no-edit -S`. What happened to the commit ID, and why?
+
+## Verify commits
+
+You can verify an existing commit with:
 
 ```bash
 git log -1 --show-signature
 ```
 
-![Example of git log with signature](git-log-show-signature.png)
+For a good GPG signature, the output looks like this:
 
-I have added a git alias for this with:
+```
+commit 3228dd25255256614678489e5ebc8d957d9b7556
+gpg: Signature made Fri 16 Oct 13:04:51 2026 CEST
+gpg:                using EDDSA key 317C7319C6A7B96DF5F561F31A96FB9E811B9920
+gpg: Good signature from "Your Name <your-email@example.com>" [ultimate]
+Author: Your Name <your-email@example.com>
+Date:   Fri Oct 16 13:04:51 2026 +0200
 
-```bash
-git config --global alias.v log -1 --show-signature
+    my commit message
 ```
 
+For SSH signing it is a single line, `Good "git" signature for your-email@example.com with ED25519 key SHA256:...`
+(or `No principal matched` / `gpg.ssh.allowedSignersFile needs to be configured` if you skipped step A4).
 
+Two more ways to look:
 
-### Further information
+```bash
+git log --pretty="format:%h %G? %GS %s"   # %G? is G = good, B = bad, N = no signature, U = good but untrusted
+git verify-commit HEAD
+```
 
-- Blog on secure supply chain: https://www.eficode.com/blog/mitigate-against-attacks-secure-your-software-delivery-chain
-- An additional, informative, and entertaining view on these from Kelsey Hightower is available at: https://www.youtube.com/watch?v=VHcw4BUNsBc
+A handy alias for the first:
+
+```bash
+git config --global alias.v "log -1 --show-signature"
+```
+
+## Troubleshooting
+
+| Symptom | Likely cause / fix |
+| ------- | ------------------ |
+| `gpg failed to sign the data` / `Inappropriate ioctl for device` | Set `GPG_TTY` (see GPG gotchas above), or fix pinentry. |
+| `No secret key` | `user.signingkey` does not match a key in the GPG that Git uses. Check `gpg --list-secret-keys --keyid-format LONG`, and on Windows `gpg.program`. |
+| `error: Load key ...: invalid format` / `Couldn't load public key` (SSH) | `user.signingkey` must point at the `.pub` file (or contain the literal public key). Check the path. |
+| GitHub shows **Unverified** | The commit email does not match an email verified on your GitHub account, or the key is not uploaded (for SSH: uploaded as *Signing Key*). Also check that `user.email` is what you think with `git config user.email`. |
+| Asked for passphrase on every commit | Configure the cache (GPG step 7), or use `ssh-agent` (SSH). |
+| `git log --show-signature` shows nothing | The commit is not signed. Check `git config commit.gpgsign` and `git config gpg.format`. |
+
+## Further information
+
+- Blog on secure supply chain: <https://www.eficode.com/blog/mitigate-against-attacks-secure-your-software-delivery-chain>
+- GitHub docs on [signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits) and [SSH commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification)
+- Sigstore [gitsign](https://github.com/sigstore/gitsign) for "keyless" signing with short-lived certificates.
+- An additional, informative, and entertaining view from Kelsey Hightower: <https://www.youtube.com/watch?v=VHcw4BUNsBc>
