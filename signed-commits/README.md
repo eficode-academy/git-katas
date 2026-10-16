@@ -41,6 +41,14 @@ git config --global user.signingkey ~/.ssh/id_ed25519_signing.pub
 git config --global commit.gpgsign true    # sign every commit automatically
 ```
 
+Before signing commits, load the matching private key into a running `ssh-agent`, even if it has no passphrase:
+
+```bash
+ssh-add ~/.ssh/id_ed25519_signing
+```
+
+On macOS, use `ssh-add --apple-use-keychain ~/.ssh/id_ed25519_signing` to store its passphrase in the keychain.
+
 ### 3. Add the key to GitHub as a *signing* key
 
 - Go to <https://github.com/settings/keys> and click **New SSH key**.
@@ -65,9 +73,6 @@ git config --global gpg.ssh.allowedSignersFile ~/.config/git/allowed_signers
 ```
 
 (Create the folder `~/.config/git` first if it does not exist.)
-
-If your key has a passphrase, load it into `ssh-agent` so you are not asked on every commit (`ssh-add ~/.ssh/id_ed25519_signing`).
-On macOS, `ssh-add --apple-use-keychain` stores it in the keychain.
 
 ## Option B: GPG signing
 
@@ -125,6 +130,7 @@ To copy it directly to the clipboard, pipe it to the command for your OS:
 ### 5. Configure Git
 
 ```bash
+git config --global gpg.format openpgp
 git config --global user.signingkey <KEY_ID>
 git config --global commit.gpgsign true    # sign every commit automatically
 ```
@@ -211,11 +217,11 @@ echo hello > hello.txt && git add hello.txt
 ```
 
 1. Make a commit **without** signing: `git -c commit.gpgsign=false commit -m "unsigned"`.
-2. Make a commit **with** signing: `git commit -S -m "signed"` (if you set `commit.gpgsign true` globally, plain `git commit` is enough).
+2. Make a commit **with** signing: `git commit --allow-empty -S -m "signed"` (if you set `commit.gpgsign true` globally, use `git commit --allow-empty -m "signed"`).
 3. Compare the two with `git log --show-signature` (see below). Which one has a signature?
 4. Create a repository on GitHub, push both commits, and look at the commit list in the web UI.
    The signed commit has a green **Verified** badge, the unsigned one has none.
-5. Try the usual failure: set `git config user.email someone-else@example.com`, make another signed commit and push.
+5. Try the usual failure: set `git config user.email someone-else@example.com`, then make another signed commit with `git commit --allow-empty -S -m "wrong email"` and push (or use `git commit --allow-empty -m "wrong email"` if automatic signing is enabled).
    With a GPG key whose email differs, the badge says **Unverified** (the commit is signed, but GitHub cannot match it to your account).
 6. Sign an existing commit afterwards: `git commit --amend --no-edit -S`. What happened to the commit ID, and why?
 
