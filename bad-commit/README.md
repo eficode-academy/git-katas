@@ -17,7 +17,7 @@ For this exercise, the version is bad if `badfile` exists.
 
 1. Start `git bisect`.
 2. Usually the HEAD is "bad", as it is in this exercise. Use `git bisect bad` to indicate it.
-3. Usually some old version will be good. In this exercise, the start version is. Use `git bisect good <commit-ish>` to indicate it.
+3. Usually some old version will be good. In this exercise, the start version is `63e1df85cb135e97e562c8f15f883bb4e5137e8c`. Use `git bisect good <commit-ish>` to indicate it.
 4. `git bisect` will then checkout various commits to find the bad commit. Continue indicating the state until it tells you the first bad commit. Keep track of this commit.
 5. Run `git bisect reset` so we can work on the repository.
 6. Use `git diff` to make sure that the bad commit only introduced `badfile`.
